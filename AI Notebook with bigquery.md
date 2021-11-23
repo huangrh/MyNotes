@@ -64,13 +64,17 @@ df = query_job.to_dataframe()
 df
 ```
 
+- save the data 
+```py
+df.to_pickle("file_name.pkl")
+dat = pd.read_pickle("mosaic_readm_2019_2021.pkl")
+```
+
 # 3. upload data to bigquery
 
 ```py
 # https://stackoverflow.com/questions/48886761/efficiently-write-a-pandas-dataframe-to-google-bigquery
 client = bigquery.Client(location="US")
-project_id = 
-table_id = 'my_dataset_id.mytable_name'
 
 # convert into a string
 df = df.astype(str)
