@@ -1,11 +1,10 @@
-# 1. setup
+# 1. conda setup
 
-### conda 
+### create a new enviroment  
   -  create a new enviroment with a specific version of python
   - ref: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-python.html
-  - -n : --name; py39 is the name of the new enviroment 
-
-### create a new enviroment
+  - -n : --name; py39 is the name of the new enviroment  
+  
 > conda create -n myenv python=3.6 -y  
 > conda create -n py39  python=3.9    anaconda 
 
@@ -29,7 +28,7 @@
 > conda install -n myenv requests -y
 
 
-- install pandas-gbq   
+- install the latest pandas-gbq from github  
 > conda install git pip   
 > pip install git+https://github.com/pydata/pandas-gbq.git
 
