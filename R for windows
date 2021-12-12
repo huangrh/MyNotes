@@ -1,0 +1,11 @@
+Installation and Setup of R for Windows
+
+# 1. setup environvariable
+
+R_LIBS_USER = C:\Lib\R
+R_USER = C:\Lib
+
+# 2. install R for Windows
+
+# 3. install Rstudio
+
