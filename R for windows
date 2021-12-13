@@ -5,9 +5,13 @@ Installation and Setup of R for Windows
 R_LIBS_USER = C:\Lib\R
 R_USER = C:\Lib
 
-# 2. install R for Windows
-download R https://cran.r-project.org/bin/windows/base/old/3.6.3/
-install under C drive: C:\App
+# 2. Install R for Windows
+Download R https://cran.r-project.org/bin/windows/base/old/3.6.3/
+Install under C drive: C:\App
+
+# 3. Install Rtools under C:\App
+
+
 # 3. install Rstudio
 Install under C drive: C:\App
 
