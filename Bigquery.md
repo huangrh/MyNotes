@@ -33,4 +33,20 @@ DATE_DIFF(to_date, date_birth, YEAR) -
 );
 ```
 
+2. get average and median at the same time
 
+
+```sql
+  SELECT
+    DISTINCT mpi,
+    year,
+    COUNT(*) OVER (PARTITION BY mpi, year)           test_count,
+    MIN(numeric_value) OVER (PARTITION BY mpi, year) egfr_min,
+    MAX(numeric_value) OVER (PARTITION BY mpi, year) egfr_max,
+    AVG(numeric_value) OVER (PARTITION BY mpi, year) egfr_avg,
+    --     PERCENTILE_DISC(numeric_value, 0) OVER (partition by mpi, year)   egfr_min,
+    PERCENTILE_DISC(numeric_value, 0.5) OVER (PARTITION BY mpi, year)        egfr_median,
+    --     PERCENTILE_DISC(numeric_value, 1) OVER (partition by mpi, year)   egfr_max
+  FROM 
+    dat
+```
