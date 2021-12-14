@@ -45,9 +45,26 @@ Updating ea1b82a..05e9557
 $ git branch -d myfeature # Delet the branch named 'myfeature' (was 05e9557).
 $ git push origin develop
 ```
-
+ 
 The --no-ff flag causes the merge to always create a new commit object, even if the merge could be performed with a fast-forward. This avoids losing information about the historical existence of a feature branch and groups together all commits that together added the feature. 
 
+
+# other 
+```
+# http://stackoverflow.com/questions/5772192/how-can-i-reconcile-detached-head-with-master-origin 
+$ git checkout - # go back to previous branch or # this saves me.
+```
+
+
+```
+### more about git checkout
+git checkout @{14.days.ago} # Cloning an older version of github repo
+git checkout 'master@{1979-02-26 18:30:00}' # based on a date
+git checkout afe52          # checkout based on a hash
+git checkout master         # go back to the most recent version 
+
+
+```
 ## Ref:
 
 https://nvie.com/posts/a-successful-git-branching-model/
