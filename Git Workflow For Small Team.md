@@ -65,12 +65,24 @@ git checkout master         # go back to the most recent version
 
 ```
 # untrack a specific file  
-> git rm --cached mylogfile.log  
+> git rm --cached mylogfile.log    
 and for a single directory:  
 # untrack all file under a directory  
 > git rm --cached -r mydirectory  
 ```
 
+```
+# How to config two github ssh files under one computer account. 
+# Account 1
+Host github.com
+HostName github.com
+IdentifyFile ~/.ssh/id_rsa
+
+# Account 2
+Host github.com
+HostName github.com-other
+IdentifyFile ~/.ssh/other_id_rsa
+```
 
 ## Ref:
 
