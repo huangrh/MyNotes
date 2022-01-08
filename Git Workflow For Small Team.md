@@ -84,8 +84,9 @@ HostName github.com-other
 IdentifyFile ~/.ssh/other_id_rsa
 ```
 
+[How can I make git show a list of the files that are being tracked?](https://stackoverflow.com/questions/15606955/how-can-i-make-git-show-a-list-of-the-files-that-are-being-tracked/15606998)
 ```
-# [How can I make git show a list of the files that are being tracked?](https://stackoverflow.com/questions/15606955/how-can-i-make-git-show-a-list-of-the-files-that-are-being-tracked/15606998)
+# 
 # 
 git ls-files
 git ls-tree master
