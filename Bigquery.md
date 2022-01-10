@@ -50,3 +50,35 @@ DATE_DIFF(to_date, date_birth, YEAR) -
   FROM 
     dat
 ```
+
+
+
+
+```sql
+CREATE OR REPLACE FUNCTION `project_id.dataset.get_eGFR2009`(creatinine NUMERIC, sex STRING, age INT64, race STRING) RETURNS FLOAT64 AS (
+(
+    WITH
+      v1 AS (
+      SELECT
+      IF(REGEXP_CONTAINS(UPPER(sex), '^F$|FEMALE'), 0.7,   0.9) k,
+      IF(REGEXP_CONTAINS(UPPER(sex), '^F$|FEMALE'),-0.329, -0.411) a ,
+      IF(REGEXP_CONTAINS(UPPER(sex), '^F$|FEMALE'),1.018,  1) female_adj,
+      IF(REGEXP_CONTAINS(UPPER(race),'BLACK|AFRICAN AMERICAN'), 1.159, 1) race_adj,
+      ----------------------------------------
+      ),
+      v2 AS (
+      SELECT
+        IF(creatinine/k >1, 1, creatinine/k) min_cr,
+        IF(creatinine/k <1, 1, creatinine/k) max_cr,
+        v1.*
+      FROM
+        v1 
+        ---------------------------------------
+        )
+      --final result
+    SELECT
+      141  * POW(min_cr,a) * POW(MAX_CR,-1.209) * POW(0.993,age) * female_adj * race_adj
+    FROM
+      v2 )
+);
+```
