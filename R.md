@@ -1,2 +1,2 @@
-# Useful R function
+# Useful Resource
 [eGFR](https://cran.r-project.org/web/packages/transplantr/vignettes/egfr.html)
