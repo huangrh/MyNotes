@@ -53,7 +53,7 @@ DATE_DIFF(to_date, date_birth, YEAR) -
 
 
 
-
+3. eGFR 
 ```sql
 CREATE OR REPLACE FUNCTION `project_id.dataset.get_eGFR2009`(creatinine NUMERIC, sex STRING, age INT64, race STRING) RETURNS FLOAT64 AS (
 (
