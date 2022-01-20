@@ -93,6 +93,18 @@ git ls-tree master
 git ls-tree -r master --name-only
 ```
 
+[how-do-i-fix-a-git-detached-head](https://stackoverflow.com/questions/10228760/how-do-i-fix-a-git-detached-head)
+```
+> git log --oneline # find the commit id
+> git checkout d45c57a # git reflog to see the index. 
+> git log --all 
+> git checkout master # go back to the brach
+> git checkout HEAD@{1}  # HEAD@{0, 1,2,3,4,5, etc}
+If you want to go back to any commit you previously checked out (either 1, 2, or 3 etc steps) then you can take a look at git reflog
+> git reflog # 
+
+```
+
 ## Ref:
 
 https://nvie.com/posts/a-successful-git-branching-model/
