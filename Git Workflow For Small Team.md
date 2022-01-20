@@ -98,11 +98,34 @@ git ls-tree -r master --name-only
 > git log --oneline # find the commit id
 > git checkout d45c57a # git reflog to see the index. 
 > git log --all 
-> git checkout master # go back to the brach
+> git checkout master # go back to the master branch  
+> git checkout your-branch # go back to your branch  
 > git checkout HEAD@{1}  # HEAD@{0, 1,2,3,4,5, etc}
 If you want to go back to any commit you previously checked out (either 1, 2, or 3 etc steps) then you can take a look at git reflog
 > git reflog # 
+# Git only requires a network connection on fetch/push/pull operations.
+# git a dog
+git log --all --decorate --oneline --graph
+```
 
+```
+Commit changes you want to keep. If you want to take over any of the changes you made in detached HEAD state, commit them. Like:
+
+> git commit -a -m "your commit message"
+Discard changes you do not want to keep. The hard reset will discard any uncommitted changes that you made in detached HEAD state:
+
+> git reset --hard
+(Without this, step 3 would fail, complaining about modified uncommitted files in the detached HEAD.)
+
+Check out your branch. Exit detached HEAD state by checking out the branch you worked on before, for example:
+
+> git checkout master
+Take over your commits. You can now take over the commits you made in detached HEAD state by cherry-picking, as shown in my answer to another question.
+
+> git reflog
+> git cherry-pick <hash1> <hash2> <hash3> …
+# Since "detached head state" has you on a temp branch, just use 
+> git checkout - # which puts you on the last branch you were on.
 ```
 
 ## Ref:
