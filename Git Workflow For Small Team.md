@@ -55,6 +55,14 @@ The --no-ff flag causes the merge to always create a new commit object, even if 
 $ git checkout - # go back to previous branch or # this saves me.  
 ```  
 
+```
+
+> git stash
+# when you are ready to restore a saved stash, git stash pop will apply the newest stash and clear it from your stash clipboard. 
+# stash is not bound to the branc where you created it. when you restore it, the chagnes witll e applied to your current HEAD branch, whichever this may be. 
+> git stash pop
+```
+
 ```  
 ### more about git checkout  
 git checkout @{14.days.ago} # Cloning an older version of github repo  
@@ -127,6 +135,16 @@ Take over your commits. You can now take over the commits you made in detached H
 # Since "detached head state" has you on a temp branch, just use 
 > git checkout - # which puts you on the last branch you were on.
 ```
+
+```
+# https://stackoverflow.com/questions/8358035/whats-the-difference-between-git-revert-checkout-and-reset
+git checkout 
+git revert commit-hash
+git reset --hard commit-hash
+git reset --soft commit-hash
+```
+
+
 
 ## Ref:
 
