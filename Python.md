@@ -89,3 +89,19 @@ df >> mutate(z=if_else(f.x>1, 1, 0)) >> filter(f.z==1)
 1       3    three       1
 """
 ```
+
+
+```
+# https://stackoverflow.com/questions/40923165/python-pandas-equivalent-to-r-groupby-mutate
+df = pd.DataFrame(
+    dict(
+        a=(1 , 1, 0, 1, 0 ), 
+        b=(1 , 0, 0, 1, 0 ),
+        c=(10, 5, 1, 5, 10),
+        d=(3 , 1, 2, 1, 2 ),
+    )
+).assign(
+    prod_c_d = lambda x: x['c'] * x['d'], 
+    ratio    = lambda x: x['c'] / (x.groupby(['a','b']).transform('sum')['prod_c_d'])
+)
+```
