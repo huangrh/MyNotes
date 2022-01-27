@@ -103,3 +103,23 @@ SELECT * FROM
   (SELECT product, sales, quarter FROM Produce)
   PIVOT(SUM(sales) FOR quarter IN ('Q1', 'Q2', 'Q3', 'Q4'))
 ```
+
+```
+# https://towardsdatascience.com/pivot-in-bigquery-4eefde28b3be
+SELECT * FROM
+(
+  -- #1 from_item
+  SELECT 
+    airline,
+    departure_airport,
+    departure_delay
+  FROM `bigquery-samples.airline_ontime_data.flights`
+)
+PIVOT
+(
+  -- #2 aggregate
+  AVG(departure_delay) AS avgdelay
+  -- #3 pivot_column
+  FOR airline in ('AA', 'KH', 'DL', '9E')
+)
+```
