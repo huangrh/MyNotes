@@ -144,7 +144,10 @@ git reset --hard commit-hash
 git reset --soft commit-hash
 ```
 
-
+```
+# How to amend last commited message
+git commit --amend -m "New and correct message"
+```
 
 ## Ref:
 
