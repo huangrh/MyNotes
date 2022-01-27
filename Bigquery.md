@@ -123,3 +123,31 @@ PIVOT
   FOR airline in ('AA', 'KH', 'DL', '9E')
 )
 ```
+
+```
+# https://towardsdatascience.com/pivot-in-bigquery-4eefde28b3be
+# dynamic 
+DECLARE airlines STRING;
+SET airlines = (
+  SELECT 
+    CONCAT('("', STRING_AGG(DISTINCT airline, '", "'), '")'),
+  FROM `bigquery-samples.airline_ontime_data.flights`
+);
+
+EXECUTE IMMEDIATE format("""
+SELECT * FROM
+(
+  SELECT 
+    airline,
+    departure_airport,
+    departure_delay
+  FROM `bigquery-samples.airline_ontime_data.flights`
+)
+PIVOT
+(
+  AVG(departure_delay) AS avgdelay
+  FOR airline in %s
+)
+ORDER BY departure_airport ASC
+""", airlines);
+```
