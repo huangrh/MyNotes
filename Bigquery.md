@@ -49,6 +49,7 @@ DATE_DIFF(to_date, date_birth, YEAR) -
 # The difference between PERCENTILE_CONT and PERCENTILE_DISC
 # https://stackoverflow.com/questions/23585667/percentile-disc-vs-percentile-cont
 # PERCENTILE_DISC returns a value in your set/window, whereas PERCENTILE_CONT will interpolate;
+#  the idea was the PERCENTILE_DISC() was supposed to be for discrete ranges, while PERCENTILE_CONT() was supposed to be for continuous ranges.
     PERCENTILE_DISC(numeric_value, 0.5) OVER (PARTITION BY mpi, year)        egfr_median,
     PERCENTILE_CONT(numeric_value, 0.5) OVER (PARTITION BY mpi, year)        egfr_median,
     --     PERCENTILE_DISC(numeric_value, 1) OVER (partition by mpi, year)   egfr_max
