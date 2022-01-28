@@ -45,10 +45,20 @@ DATE_DIFF(to_date, date_birth, YEAR) -
     MAX(numeric_value) OVER (PARTITION BY mpi, year) egfr_max,
     AVG(numeric_value) OVER (PARTITION BY mpi, year) egfr_avg,
     --     PERCENTILE_DISC(numeric_value, 0) OVER (partition by mpi, year)   egfr_min,
+
+# The difference between PERCENTILE_CONT and PERCENTILE_DISC
+# https://stackoverflow.com/questions/23585667/percentile-disc-vs-percentile-cont
+# PERCENTILE_DISC returns a value in your set/window, whereas PERCENTILE_CONT will interpolate;
     PERCENTILE_DISC(numeric_value, 0.5) OVER (PARTITION BY mpi, year)        egfr_median,
+    PERCENTILE_CONT(numeric_value, 0.5) OVER (PARTITION BY mpi, year)        egfr_median,
     --     PERCENTILE_DISC(numeric_value, 1) OVER (partition by mpi, year)   egfr_max
   FROM 
     dat
+```
+
+
+```
+
 ```
 
 
