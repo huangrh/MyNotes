@@ -8,3 +8,5 @@ https://data.cms.gov/provider-data/topics/hospitals
 [Quality Net](https://qualitynet.cms.gov/inpatient/hac/resources)
 
 [IPPS Final Rule](https://www.cms.gov/medicare/acute-inpatient-pps/fy-2022-ipps-final-rule-home-page)
+
+[HRRP Definition](https://www.law.cornell.edu/cfr/text/42/412.152)
