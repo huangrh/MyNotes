@@ -1,4 +1,5 @@
-
+# How to display static webside
+#
 ```
 ui <- navbarPage(
     title = 'title',
@@ -12,3 +13,12 @@ server <- function(input, output){
 }
 shinyApp(ui = ui, server = server)
 ```
+
+# https://stackoverflow.com/questions/21465411/r-shiny-passing-reactive-to-selectinput-choices
+# ui
+uiOutput("carControls")
+
+#server
+output$carControls <- renderUI({
+    selectInput("cars", "Choose cars", rownames(mtcars))
+})
