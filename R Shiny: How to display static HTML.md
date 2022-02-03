@@ -18,7 +18,7 @@ shinyApp(ui = ui, server = server)
 # ui
 uiOutput("carControls")
 
-#server
+# server  
 output$carControls <- renderUI({
     selectInput("cars", "Choose cars", rownames(mtcars))
 })
