@@ -22,3 +22,7 @@ uiOutput("carControls")
 output$carControls <- renderUI({
     selectInput("cars", "Choose cars", rownames(mtcars))
 })
+
+
+# Improve UI
+https://www.christophenicault.com/post/improve_shiny_ui/
