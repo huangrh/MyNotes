@@ -28,6 +28,10 @@
 > 
 
 
+# Github ssh key setup
+
+
+
 # 5. Git Branch Model  
 
 1. Create a new branch off from the develop branch and Switched to a new branch "myfeature"
@@ -147,6 +151,12 @@ git reset --soft commit-hash
 ```
 # How to amend last commited message
 git commit --amend -m "New and correct message"
+```
+
+
+```
+> git config --global user.email "your_email@example.com"
+> git config --global user.name "First Name Last Name"
 ```
 
 ## Ref:
