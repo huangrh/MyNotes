@@ -1,3 +1,13 @@
+```
+# One Hot Encoder
+def cat1hot_encoder(x):
+    from sklearn.preprocessing import OneHotEncoder
+    cat_encoder = OneHotEncoder(sparse=False)
+    cat_1hot = cat_encoder.fit_transform(x)
+    cat_1hot_df = pd.DataFrame(cat_1hot, dtype = int, columns = cat_encoder.categories_[0])
+    return cat_1hot_df
+```
+
 1. [SHAP (SHapley Additive exPlanations)](https://github.com/helenaEH/SHAP_tutorial)
 
 2. [SHAP Values Explained ](https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30#:~:text=In%20a%20nutshell%2C%20SHAP%20values,answer%20the%20%E2%80%9Chow%20much%E2%80%9D.)
