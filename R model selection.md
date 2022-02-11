@@ -1,7 +1,4 @@
-#' Get Sensitivity
-#'
-#' @export
-#'
+```
 get_sensitivity <- function(x=x, ehr = ehr,cutoff_tops = c(10, 100, 1000)) {
 
     trigger_dts <- unique(x) %>%
@@ -83,3 +80,4 @@ get_sensitivity <- function(x=x, ehr = ehr,cutoff_tops = c(10, 100, 1000)) {
         })
     # oe
 }
+```
