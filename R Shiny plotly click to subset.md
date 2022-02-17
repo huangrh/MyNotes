@@ -1,5 +1,7 @@
 # How to grap clicked data from plotly
 
+- The key attribute is only supported in shiny, but customdata is officially supported by plotly.js, and thus can also be used to attach meta-information to event
+
 ```
 library(plotly)
 library(shiny)
