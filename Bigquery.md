@@ -162,3 +162,11 @@ PIVOT
 ORDER BY departure_airport ASC
 """, airlines);
 ```
+
+# Dedup
+```
+ROW_NUMBER() OVER (
+        PARTITION BY  key 
+        ORDER BY date DESC
+                , value DESC) ranknum
+```
