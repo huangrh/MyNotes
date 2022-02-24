@@ -74,3 +74,17 @@ xgb_cl = xgb.XGBClassifier(use_label_encoder=True,
                            max_depth=10,
                            eval_metric='mlogloss')
 ```
+
+# SHAP
+```
+# calculate shap value
+import shap
+explainer = shap.Explainer(model=xgb_cl)
+shap_values = explainer(X_test)
+# summarize the effects of all the features
+shap.plots.beeswarm(shap_values)
+# measure importance
+shap.plots.bar(shap_values)
+# visualize the first prediction's explanation
+shap.plots.waterfall(shap_values[0])
+```
