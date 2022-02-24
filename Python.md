@@ -1,4 +1,8 @@
 ```
+# https://pandas.pydata.org/docs/user_guide/reshaping.html#reshaping-dummies
+# columns = the column to encoder. 
+pandas.get_dummies(df, columns = ['col1','col2']) 
+
 # One Hot Encoder
 def cat1hot_encoder(x):
     from sklearn.preprocessing import OneHotEncoder
