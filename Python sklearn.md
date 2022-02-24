@@ -21,3 +21,45 @@ print(metrics.confusion_matrix(y_true, y_pred))
 # Print the precision and recall, among other metrics
 print(metrics.classification_report(y_true, y_pred, digits=3))
 ```
+
+
+# AUC Plot
+```
+def plot_auc(X,y,model):
+    import matplotlib.pyplot as plt
+    from sklearn import metrics
+    pred = model.predict_proba(X)
+    fpr, tpr, thresholds = metrics.roc_curve(y, pred[::,1], pos_label=1)
+    auc = metrics.auc(fpr, tpr)
+    plt.plot(fpr, tpr,label="ROC AUC="+str(round(auc, 3)))
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
+    plt.legend(loc=4)
+    plt.show()
+```
+
+# Model Eval: precision and recall, f1 score
+```
+
+def eval_perf(X,y,tops,model):
+    
+    from sklearn.metrics import confusion_matrix
+    
+    pred_test = model.predict_proba(X)
+    p_sorted  = np.sort(pred_test[:,1])
+    def mcm(top, p = p_sorted):
+        cutoff = p[-1*top]
+        y_pred_test = (pred_test[::,1] >=cutoff ).astype(int)
+        # 
+        tn, fp, fn, tp = confusion_matrix(y_true=y, y_pred = y_pred_test).ravel()
+        total     = tn + fp + fn + tp
+        top_pct   = top / total
+        recall    = tp / (tp + fn)
+        precision = tp/(tp + fp)
+        f1        = 2/(1/precision + 1/recall)
+        return top,top_pct, cutoff, tn, fp, fn, tp,total,precision, recall, f1
+
+    res = list(map(mcm,tops))
+    return pd.DataFrame(res, columns = ['top','top(%)','cutoff','tn', 'fp', 'fn', 'tp','total','precision', 'recall', 'f1 score'])
+
+```
