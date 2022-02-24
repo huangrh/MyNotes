@@ -63,3 +63,14 @@ def eval_perf(X,y,tops,model):
     return pd.DataFrame(res, columns = ['top','top(%)','cutoff','tn', 'fp', 'fn', 'tp','total','precision', 'recall', 'f1 score'])
 
 ```
+
+
+# XGBoost
+```
+import xgboost as xgb
+xgb_cl = xgb.XGBClassifier(use_label_encoder=True,
+                           learning_rate=0.1,
+#                          num_iterations=1000,
+                           max_depth=10,
+                           eval_metric='mlogloss')
+```
