@@ -1,3 +1,5 @@
+[Multiclass and multioutput and multilabel](https://scikit-learn.org/stable/modules/multiclass.html)
+
 
 https://towardsdatascience.com/understanding-the-confusion-matrix-from-scikit-learn-c51d88929c79
 
