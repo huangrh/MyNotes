@@ -88,3 +88,20 @@ shap.plots.bar(shap_values)
 # visualize the first prediction's explanation
 shap.plots.waterfall(shap_values[0])
 ```
+
+# save the model
+```
+# https://stackoverflow.com/questions/56107259/how-to-save-a-trained-model-by-scikit-learn
+##########################
+# SAVE-LOAD using joblib #
+##########################
+import joblib
+
+# save
+joblib.dump(clf, "model.pkl") 
+
+# load
+clf2 = joblib.load("model.pkl")
+
+clf2.predict(X[0:1])
+```
