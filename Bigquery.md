@@ -183,3 +183,14 @@ ROW_NUMBER() OVER (
         ORDER BY date DESC
                 , value DESC) ranknum
 ```
+
+# How to write to bigquery from python
+```
+# https://stackoverflow.com/questions/63200201/create-a-bigquery-table-from-pandas-dataframe-without-specifying-schema-explici
+import pandas as pd
+from google.cloud import bigquery
+df = pd.DataFrame({'a': [1,2,4], 'b': ['123', '456', '000']})
+table = "dataset_name.table_name"
+client = bigquery.Client(location = "US", project="project_name")
+job = client.load_table_from_dataframe(df, table, location="US")
+```
