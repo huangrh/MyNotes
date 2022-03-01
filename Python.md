@@ -1,4 +1,19 @@
 ```
+dat_path = "data/dat.pkl"
+#
+if Path(dat_path).exists(): 
+    print("read data from: ", dat_path)
+    dat = pd.read_pickle(dat_path)
+else:
+    query = f"SELECT * FROM `project_id`.dataset.table"
+    print("Download data query: ", query)
+    client = bigquery.Client(location = "US")
+    job = client = client.query(query)
+    dat = job.to_dataframe()
+    dat.to_pickle(dat_path)
+```
+
+```
 # https://pandas.pydata.org/docs/user_guide/reshaping.html#reshaping-dummies
 # columns = the column to encoder. 
 pandas.get_dummies(df, columns = ['col1','col2']) 
