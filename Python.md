@@ -1,6 +1,8 @@
+# Test if path exists
 ```
 dat_path = "data/dat.pkl"
 #
+from pathlib import Path
 if Path(dat_path).exists(): 
     print("read data from: ", dat_path)
     dat = pd.read_pickle(dat_path)
