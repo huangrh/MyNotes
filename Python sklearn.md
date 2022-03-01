@@ -75,6 +75,16 @@ xgb_cl = xgb.XGBClassifier(use_label_encoder=True,
                            eval_metric='mlogloss')
 ```
 
+# Model Feature Importance
+
+```
+feat_importances = pd.Series(xgb_cl.feature_importances_, index=X_train.columns)
+# 
+feat_importances.nlargest(20).sort_values(ascending = True).\
+plot(kind="barh",title="Feature Importance", figsize=(6,8))
+plt.show()
+```
+
 # SHAP
 ```
 # calculate shap value
