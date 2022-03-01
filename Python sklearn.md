@@ -89,7 +89,7 @@ shap.plots.bar(shap_values)
 shap.plots.waterfall(shap_values[0])
 ```
 
-# save the model
+# Save the model
 ```
 # https://stackoverflow.com/questions/56107259/how-to-save-a-trained-model-by-scikit-learn
 ##########################
