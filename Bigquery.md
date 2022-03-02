@@ -194,3 +194,32 @@ table = "dataset_name.table_name"
 client = bigquery.Client(location = "US", project="project_name")
 job = client.load_table_from_dataframe(df, table, location="US")
 ```
+
+# Find census tract from x,y-coordinates by bigquery
+
+```
+# ST_COVERS
+SELECT
+  
+  dat.address_latitude,
+  dat.address_longitude,
+  tract.geo_id,
+  svi.socioeconomic,
+  svi.household_composition_disability,
+  svi.minority_status_lang,
+  svi.housing_type_transportation,
+  svi.svi,
+
+FROM
+  dat
+JOIN
+  `bigquery-public-data.geo_census_tracts.us_census_tracts_national` tract
+ON
+  ST_COVERS(tract.tract_geom,
+            st_geogpoint(dat.address_longitude,dat.address_latitude))
+LEFT JOIN
+  myproject.mydata.us_svi2018 svi
+ON
+  svi.fips = tract.geo_id
+
+```
