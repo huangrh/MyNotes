@@ -218,7 +218,8 @@ ON
   ST_COVERS(tract.tract_geom,
             st_geogpoint(dat.address_longitude,dat.address_latitude))
 LEFT JOIN
-  myproject.mydata.us_svi2018 svi
+  -- https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html
+  us_svi2018 svi
 ON
   svi.fips = tract.geo_id
 
