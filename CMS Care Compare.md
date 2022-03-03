@@ -13,12 +13,22 @@ https://data.cms.gov/provider-data/topics/hospitals
 
 # Planned readmission version 4
 
-#### Algorithm: In brief, the algorithm identifies a short list of always planned admissions.
-- PA1: The **principal procedure**:  major organ transplant or maintenance chemotherapy; See MCC PAA PA1 : Transplant (bone marrow, kidney, other organ)
-- PA2: The **principal discharge diagnosis** MCC PAA PA2: radiotherapy/chemotherapy, rehabilitation) 
-- PA3: A potentially planned procedure (for example, total hip replacement or cholecystectomy; See MCC PAA PA3: **principle procedure.**)
+#### Algorithm: In brief, the algorithm identifies a short list of always planned admissions.  
+- PA1: The **principal procedure**:  major organ transplant or maintenance chemotherapy; See MCC PAA PA1 : Transplant (bone marrow, kidney, other organ)  
+- PA2: The **principal discharge diagnosis** MCC PAA PA2: radiotherapy/chemotherapy, rehabilitation)   
+- PA3: A potentially planned procedure (for example, total hip replacement or cholecystectomy; See MCC PAA PA3: **principle procedure.**)  
 - PA4: a non-acute **principal discharge diagnosis** code (See MCC PAA PA4 for acute diagnoses). 
 - Admissions that include potentially planned procedures that might represent complications of ambulatory care, such as cardiac catheterization, are not considered planned.
+
+#### CCSR for icd10-cm diag.
+
+https://www.hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp#download  
+Clinical Classifications Software Refined (CCSR) for ICD-10-CM Diagnoses  
+https://www.hcup-us.ahrq.gov/toolssoftware/ccsr/prccsr.jsp#download  
+
+#### Planned readmission code    
+https://qualitynet.cms.gov/inpatient/measures/readmission/methodology  
+https://qualitynet.cms.gov/files/60943ca9fd340b002259fe16?filename=2021_HWR.xlsx  
 
 ```
 dplyr::mutate(
