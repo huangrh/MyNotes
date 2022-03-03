@@ -11,6 +11,10 @@ https://data.cms.gov/provider-data/topics/hospitals
 
 [HRRP Definition](https://www.law.cornell.edu/cfr/text/42/412.152)
 
+# Place of service
+
+https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set
+
 # Planned readmission version 4
 
 #### The Planned Readmission Algorithm has three fundamental principles  
