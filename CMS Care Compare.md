@@ -13,12 +13,23 @@ https://data.cms.gov/provider-data/topics/hospitals
 
 # Planned readmission version 4
 
-#### Algorithm: In brief, the algorithm identifies a short list of always planned admissions.  
-- PA1: The **principal procedure**:  major organ transplant or maintenance chemotherapy; See MCC PAA PA1 : Transplant (bone marrow, kidney, other organ)  
-- PA2: The **principal discharge diagnosis** MCC PAA PA2: radiotherapy/chemotherapy, rehabilitation)   
-- PA3: A potentially planned procedure (for example, total hip replacement or cholecystectomy; See MCC PAA PA3: **principle procedure.**)  
-- PA4: a non-acute **principal discharge diagnosis** code (See MCC PAA PA4 for acute diagnoses). 
-- Admissions that include potentially planned procedures that might represent complications of ambulatory care, such as cardiac catheterization, are not considered planned.
+#### The Planned Readmission Algorithm has three fundamental principles  
+
+1. A few specific, limited types of care are always considered planned
+- obstetric delivery,   
+- transplant surgery,   
+- maintenance chemotherapy/immunotherapy,   
+- rehabilitation  
+2. Otherwise, a planned readmission is defined as a non-acute readmission for a scheduled procedure  
+3. Admissions for acute illness or for complications of care are never planned. The algorithm was developed in 2011 as part of the Hospital-Wide Readmission measure. In 2013, CMS applied the algorithm to its other readmission measures.  
+
+
+#### Algorithm: In brief, the algorithm identifies a short list of always planned admissions.   
+- PA1: The **principal procedure**:  major organ transplant or maintenance chemotherapy; See MCC PAA PA1 : Transplant (bone marrow, kidney, other organ)   
+- PA2: The **principal discharge diagnosis** MCC PAA PA2: radiotherapy/chemotherapy, rehabilitation)    
+- PA3: A potentially planned procedure (for example, total hip replacement or cholecystectomy; See MCC PAA PA3: **principle procedure.**)   
+- PA4: a non-acute **principal discharge diagnosis** code (See MCC PAA PA4 for acute diagnoses).   
+- Admissions that include potentially planned procedures that might represent complications of ambulatory care, such as cardiac catheterization, are not considered planned.  
 
 #### CCSR for icd10-cm diag.
 
