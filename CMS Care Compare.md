@@ -3,13 +3,14 @@ https://data.cms.gov/provider-data/topics/hospitals
 
 [MEDPAR Limited Data Set (LDS) - Hospital (National) | CMS]()https://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/LimitedDataSets/MEDPARLDSHospitalNational
 
-[Data Documentation - MedPAR](https://resdac.org/cms-data/files/medpar/data-documentation)
+[Data Documentation - MedPAR](https://resdac.org/cms-data/files/medpar/data-documentation)  # deidentified data
 
 [Quality Net](https://qualitynet.cms.gov/inpatient/hac/resources)
 
 [IPPS Final Rule](https://www.cms.gov/medicare/acute-inpatient-pps/fy-2022-ipps-final-rule-home-page)
 
 [HRRP Definition](https://www.law.cornell.edu/cfr/text/42/412.152)
+[NTIS Death Maste](https://dmf.ntis.gov/)
 
 # Place of service
 
@@ -69,3 +70,13 @@ dplyr::mutate(
         T, F)
 )  %>%
 ```
+
+# [NQF Measures](https://www.qualityforum.org/QPS/)
+- 2888 Risk-Standardized Acute Admission Rates for Patients with Multiple Chronic Conditions  
+- ACO37 - HF
+- ACO27 - HbA1c
+- ACO38 - comobidities
+- ACO09 - COPD/Asthma
+- NQF1550 - CJR
+- 
+- 
