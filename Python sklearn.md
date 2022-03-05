@@ -97,7 +97,10 @@ shap.plots.beeswarm(shap_values)
 shap.plots.bar(shap_values)
 # visualize the first prediction's explanation
 shap.plots.waterfall(shap_values[0])
-```
+```  
+- https://towardsdatascience.com/explainable-ai-xai-with-shap-multi-class-classification-problem-64dd30f97cea  
+- 
+
 
 # Save the model
 ```
