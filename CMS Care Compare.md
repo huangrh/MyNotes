@@ -79,4 +79,50 @@ dplyr::mutate(
 - ACO09 - COPD/Asthma
 - NQF1550 - CJR
 - 
-- 
+# Elixhauser
+```
+# 2021 update
+# https://www.hcup-us.ahrq.gov/toolssoftware/comorbidityicd10/comorbidity_icd10.jsp
+elixhauser_icd10_grouping_ver2021_1 <- . <- readLines( file.path(
+        "C:/Elixhauser/ElixhauserComorbidity_v2021-1",
+        "Comorb_ICD10CM_Format_v2021-1.sas"
+    )) %>% {
+        start = (2+which(grepl("Proc format lib=library;", .)))
+        end = which(grepl(" other = ",.))[1] -2
+        (line = .[start:end])
+    }  %>% {
+        splitAt2 <- function(x, pos) {
+            out <- list()
+            pos2 <- c(1, pos, length(x)+1)
+            for (i in seq_along(pos2[-1])) {
+                out[[i]] <- x[pos2[i]:(pos2[i+1]-1)]
+            }
+            return(out)
+        }
+
+        splitAt <- function(x, pos) {
+            pos <- c(1L, pos, length(x) + 1L);
+            Map(function(x, i, j) x[i:j], list(x), head(pos, -1L), tail(pos, -1L) - 1L)
+        }
+        splitAt(., which(. %in% ""))
+    } %>%
+    sapply(function(x) {
+        x = subset(x,grepl(".", x))
+        out <- data.frame(
+            icd10 = gsub('.*"([A-z]+[0-9]+.*?)".*',"\\1",x),
+            group = gsub('.*"([A-z]+)".*',  "\\1",x[length(x)]) %>%
+                tolower(),
+            # desc  = gsub('.*/\\*{1,2}(.{2,})\\*{1,2}/.*',"\\1",x[length(x)]),
+            stringsAsFactors = F)
+    }, simplify = F) %>% {
+        do.call(rbind,.)
+    } %>%
+    # transform(group = gsub("htn|htncx", tolower("HTN_C (using HTN, HTNCX)"), group)) %>%
+    dplyr::mutate(
+        icd10std = gsub('(.{3})(.*)',"\\1.\\2",icd10) ,
+        icd10std = gsub("\\.$", "", icd10std)
+    ) %>% 
+    # subset((group) %in% tolower(ahc29$name))  %>% 
+    as.data.frame()
+
+```
