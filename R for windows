@@ -10,6 +10,7 @@ Download R https://cran.r-project.org/bin/windows/base/old/3.6.3/
 Install under C drive: C:\App
 
 # 3. Install Rtools under C:\App
+Yes - Create start-menu icons to msys2 shells
 
 
 # 3. install Rstudio
