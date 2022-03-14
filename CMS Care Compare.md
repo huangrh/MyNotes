@@ -1,4 +1,6 @@
 # Public Data Resource  
+[Clinical Classifications Software Refined (CCSR)](https://www.hcup-us.ahrq.gov/toolssoftware/ccsr/ccs_refined.jsp)
+
 https://data.cms.gov/provider-data/topics/hospitals  
 
 [MEDPAR Limited Data Set (LDS) - Hospital (National) | CMS](https://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/LimitedDataSets/MEDPARLDSHospitalNational)
