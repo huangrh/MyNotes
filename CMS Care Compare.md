@@ -1,5 +1,7 @@
 # Public Data Resource  
 
+[Medicare-Provider-Charge-Data/Physician-and-Other-Supplier](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier)
+
 [CMS DPC API](https://dpc.cms.gov/data)
 
 [Clinical Classifications Software Refined (CCSR)](https://www.hcup-us.ahrq.gov/toolssoftware/ccsr/ccs_refined.jsp)
