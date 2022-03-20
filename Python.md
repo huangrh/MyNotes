@@ -1,3 +1,5 @@
+# [python package](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+
 # Test if path exists
 ```
 dat_path = "data/dat.pkl"
