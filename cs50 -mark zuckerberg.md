@@ -1,4 +1,4 @@
-"its really important to do something instead of worrying about what end result will be" -mark zuckerberg
+"**its really important to do something instead of worrying about what end result will be"** -*mark zuckerberg*
 
 This learn as you do method really makes you do something you think you cant   
 
