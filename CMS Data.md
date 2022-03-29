@@ -6,3 +6,7 @@
 
 ## [cms risk adjustment](https://csscoperations.com/internet/csscw3.nsf/RiskAdjustmentMethodologyTranscript.pdf)
 
+## [HCC Risk Score Calculator-youtube](https://youtu.be/cKsm5jOsPjk)
+
+## [http://hcc.medicareinformatics.com](http://hcc.medicareinformatics.com)
+
