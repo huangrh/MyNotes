@@ -4,4 +4,5 @@
 
 ## [cms regulations and guidance](https://www.cms.gov/regulations-and-guidance/regulations-and-guidance)
 
+## [cms risk adjustment](https://csscoperations.com/internet/csscw3.nsf/RiskAdjustmentMethodologyTranscript.pdf)
 
