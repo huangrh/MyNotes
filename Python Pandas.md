@@ -1,3 +1,9 @@
+# Pandas options
+```
+pd.set_option("display.max.columns", None)
+pd.set_option("display.precision", 2)
+
+```
 
 # Pandas cheatsheet
 - Calculate the row average
