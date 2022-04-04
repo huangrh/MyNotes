@@ -17,3 +17,9 @@
 - ICD10-PCS: 2022 ICD-10-PCS Codes File - updated December 1, 2021 (ZIP)
 
 ## [Care Compare: Doctors and Clinicians Initiative](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/Care-Compare-DAC-Initiative)
+
+## [AMA-CPT Codes](https://www.ama-assn.org/press-center/press-releases/ama-releases-2022-cpt-code-set)
+
+## [what-is-the-difference-between-icd-10-and-snomed](https://medicalsciences.stackexchange.com/questions/20558/what-is-the-difference-between-icd-10-and-snomed)
+
+SNOMED is clinically-based, documents whatever is needed for patient care and has better clinical coverage than ICD. It is used directly by healthcare providers during the process of care.
