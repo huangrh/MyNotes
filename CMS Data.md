@@ -31,6 +31,15 @@ When medical coders and billers talk about HCPCS codes, they're referring to HCP
 
 ![hcpcs time time](https://cache.aapc.com/cache/webp/hcpcs-timeline-v1.webp)
 
+https://www.cms.gov/Medicare/Coding/MedHCPCSGenInfo/HCPCS_Coding_Questions
+
+HCPCS Codes
+•	Level I codes consist of the AMA's CPT codes and is numeric.
+  o	Level I HCPCS (CPT-4 codes) for hospital providers
+  o	Level I of the HCPCS is comprised of Current Procedural Terminology (CPT-4) , a numeric coding system maintained by the American Medical Association (AMA).
+•	Level II codes are the HCPCS alphanumeric code set and primarily include non-physician products, supplies, and procedures not included in CPT.
+
+
 ## [what-is-the-difference-between-icd-10-and-snomed](https://medicalsciences.stackexchange.com/questions/20558/what-is-the-difference-between-icd-10-and-snomed)
 
 SNOMED is clinically-based, documents whatever is needed for patient care and has better clinical coverage than ICD. It is used directly by healthcare providers during the process of care.
