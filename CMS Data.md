@@ -13,5 +13,7 @@
 ## [ACO REACT](https://innovation.cms.gov/innovation-models/aco-reach)   
 
 ## [CMS ICD10 Desc](https://www.cms.gov/Medicare/Coding/ICD10)
+- ICD10-CM: 2022 Code Descriptions in Tabular Order - Updated 02/01/2022 (ZIP)
+- ICD10-PCS: 2022 ICD-10-PCS Codes File - updated December 1, 2021 (ZIP)
 
 ## [Care Compare: Doctors and Clinicians Initiative](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/Care-Compare-DAC-Initiative)
