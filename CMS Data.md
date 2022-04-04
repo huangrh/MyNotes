@@ -18,8 +18,18 @@
 
 ## [Care Compare: Doctors and Clinicians Initiative](https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/Care-Compare-DAC-Initiative)
 
-## [AMA-CPT Codes](https://www.ama-assn.org/press-center/press-releases/ama-releases-2022-cpt-code-set)
+## [AMA-CPT Codes](https://www.ama-assn.org/press-center/press-releases/ama-releases-2022-cpt-code-set)  
+- 2022 - the total number of CPT codes to 10,819 per the AMA
+
+- HCPCS comprises two medical code sets, HCPCS Level I and HCPCS Level II.
+
+- HCPCS Level I consists of the Current Procedural Terminology (CPT®) code set and is used to submit medical claims to payers for procedures and services performed by physicians, nonphysician practitioners, hospitals, laboratories, and outpatient facilities.
+
+HCPCS Level II is the national procedure code set for healthcare practitioners, providers, and medical equipment suppliers when filing health plan claims for medical devices, supplies, medications, transportation services, and other items and services.
+
+When medical coders and billers talk about HCPCS codes, they're referring to HCPCS Level II codes. When they talk about CPT® coding, they’re actually referring to HCPCS Level I.
 
 ## [what-is-the-difference-between-icd-10-and-snomed](https://medicalsciences.stackexchange.com/questions/20558/what-is-the-difference-between-icd-10-and-snomed)
 
 SNOMED is clinically-based, documents whatever is needed for patient care and has better clinical coverage than ICD. It is used directly by healthcare providers during the process of care.
+
