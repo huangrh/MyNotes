@@ -29,6 +29,8 @@ HCPCS Level II is the national procedure code set for healthcare practitioners, 
 
 When medical coders and billers talk about HCPCS codes, they're referring to HCPCS Level II codes. When they talk about CPT® coding, they’re actually referring to HCPCS Level I.
 
+[hcpcs time time](https://cache.aapc.com/cache/webp/hcpcs-timeline-v1.webp)
+
 ## [what-is-the-difference-between-icd-10-and-snomed](https://medicalsciences.stackexchange.com/questions/20558/what-is-the-difference-between-icd-10-and-snomed)
 
 SNOMED is clinically-based, documents whatever is needed for patient care and has better clinical coverage than ICD. It is used directly by healthcare providers during the process of care.
