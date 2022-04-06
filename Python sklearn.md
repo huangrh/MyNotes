@@ -163,3 +163,5 @@ clf2 = joblib.load("model.pkl")
 
 clf2.predict(X[0:1])
 ```
+
+# https://neptune.ai/blog/f1-score-accuracy-roc-auc-pr-auc
