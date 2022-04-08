@@ -42,3 +42,11 @@ df.groupby(['key1','key2'], as_index = False).apply(lambda g: pd.Series(dict(
     col5 = g.a
 )))
 ```
+# merge / join
+
+# pivot  
+## wide to long
+## long to wide 
+
+
+
