@@ -1,0 +1,13 @@
+
+```
+-- string manipulation: regexp_extract and split and explode  
+
+%sql
+WITH dat AS (
+SELECT '123456789 10' AS c1
+UNION ALL
+SELECT '12345678 9 10' AS c1
+UNION ALL
+SELECT '12345 678 9 10' AS c1
+)
+SELECT  explode(split(c1, ' ')) as col, regexp_extract(c1,'(\\d)+ ', 0) FROM dat
