@@ -16,3 +16,5 @@ SELECT
   split(c1, ' ')[0] c2 
 FROM dat
 ``` 
+
+[TO_DATE: DATETIME-PATTERN](https://spark.apache.org/docs/latest/sql-ref-datetime-pattern.html)
