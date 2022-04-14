@@ -18,3 +18,17 @@ FROM dat
 ``` 
 
 [TO_DATE: DATETIME-PATTERN](https://spark.apache.org/docs/latest/sql-ref-datetime-pattern.html)
+
+```
+# UDF Example
+# define function in python
+from pyspark.sql.types import LongType
+def squared_typed(s):
+  return s * s
+# register the function
+spark.udf.register("squaredWithPython", squared_typed, LongType())
+# create an example dataset
+spark.range(1, 20).createOrReplaceTempView("test")
+# test the function
+%sql select id, squaredWithPython(id) as id_squared from test
+```
