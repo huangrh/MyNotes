@@ -83,8 +83,9 @@
 ### Specify the type of request:
 - The -X or —-request option lets you specify the type of HTTP request method
 > curl -X POST https://httpbin.org/post
-> updating the value of param2 to be test 3 on the record id 
-curl -X 'PUT' -d '{"param1":"test1","param2":"test3"}' http://test.com/1
+> 
+- updating the value of param2 to be test 3 on the record id  
+> curl -X 'PUT' -d '{"param1":"test1","param2":"test3"}' http://test.com/1
 
 - You can also alter the method of the request to anything other, like PUT, DELETE, or PATCH. The HEAD method is one significant example, as it cannot be set using the -X option. The HEAD method is used to see if a document is available on the server without having to download it. Use the -I option to use the HEAD method
 > curl -I https://www.atatus.com/
@@ -93,7 +94,7 @@ curl -X 'PUT' -d '{"param1":"test1","param2":"test3"}' http://test.com/1
 - f : fail on http errors
 > curl https://www.atatus.com/404 -fsSo file.txt
 
-- With the -u option, you can specify the username and password:
+### With the -u option, you can specify the username and password:
 - pass in the credentials when making the request using the -u or -user option
 > curl -u atatus:@t@tus https://example.com/
 - alternatively
