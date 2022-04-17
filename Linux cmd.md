@@ -68,6 +68,7 @@
 > curl --data "firstname=atatus" https://httpbin.org/post
 > curl --data "email=test%40example.com" https://httpbin.org/post
 > curl --data-urlencode "email=test@example.com" --data-urlencode "name=atatus" https://httpbin.org/post
+> 
 - If the --data option is too long to type in on the terminal, save it to a file and submit it with @
 > curl --data @params.txt example.com
 - Use the -F (“form”) option if you want to upload files using a POST request.
@@ -82,7 +83,7 @@
 ### Specify the type of request:
 - The -X or —-request option lets you specify the type of HTTP request method
 > curl -X POST https://httpbin.org/post
-> # updating the value of param2 to be test 3 on the record id 
+> updating the value of param2 to be test 3 on the record id 
 curl -X 'PUT' -d '{"param1":"test1","param2":"test3"}' http://test.com/1
 
 - You can also alter the method of the request to anything other, like PUT, DELETE, or PATCH. The HEAD method is one significant example, as it cannot be set using the -X option. The HEAD method is used to see if a document is available on the server without having to download it. Use the -I option to use the HEAD method
