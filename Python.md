@@ -1,4 +1,5 @@
 # [how-to-run-javascript-from-python](https://www.geeksforgeeks.org/how-to-run-javascript-from-python/)
+# [PyMiniRacer - support ECMA 6](https://github.com/sqreen/PyMiniRacer)
 
 ```
 import js2py
