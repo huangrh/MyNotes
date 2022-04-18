@@ -1,5 +1,12 @@
 # [how-to-run-javascript-from-python](https://www.geeksforgeeks.org/how-to-run-javascript-from-python/)
 
+```
+import js2py
+js2py.eval_js(javascript code)
+js2py.translate_file(Javascript File, Python File)
+js2py.run_file(Javascript File)
+```
+
 # [python package](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 
 # Test if path exists
