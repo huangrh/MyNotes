@@ -1,3 +1,13 @@
+# [read ndjson in python](https://stackoverflow.com/questions/63501251/how-to-open-ndjson-file-in-python)
+
+```
+import ujson as json
+import pandas as pd
+
+records = map(json.loads, open('/path/to/records.ndjson'))
+df = pd.DataFrame.from_records(records)
+```
+
 # [how-to-run-javascript-from-python](https://www.geeksforgeeks.org/how-to-run-javascript-from-python/)
 # [PyMiniRacer - support ECMA 6](https://github.com/sqreen/PyMiniRacer)
 
