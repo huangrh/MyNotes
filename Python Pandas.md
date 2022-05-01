@@ -1,3 +1,27 @@
+# [pandas-parsing-json](https://github.com/ankitgoel1602/data-science/blob/master/json-data/pandas-parsing-json.ipynb)
+
+```
+# Read the JSON data
+import json
+import pandas as pd
+level1_json_data = pd.read_json('level_1.json')
+
+# As we saw above, we can not use read_json directly, lets see how we can convert it
+# Read the JSON data using json python module
+with open('multiple_levels.json','r') as f:
+    data = json.loads(f.read())
+    
+# Now many times we would like to add a string to each field we flattened out.
+# For dictionaries this function automatically appends the parent dictionary name
+# For lists we can use 'prefix'.
+# the meta data we had is basically the config_params for the problem and we can use meta_prefix for that.
+# other attributes are basically related to DBSCAN algorithm and we can use record_prefix to show that.
+multiple_level_data = pd.json_normalize(data, record_path=['Results'], \
+                    meta=['original_number_of_clusters','Scaler','family_min_samples_percentage'],
+                 meta_prefix='config_params_', record_prefix='dbscan_')
+```
+
+
 # Pandas options
 ```
 pd.set_option("display.max.columns", None)
