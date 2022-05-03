@@ -1,4 +1,4 @@
-# [](https://stackoverflow.com/questions/38711201/how-can-i-convert-array-to-string-in-hive-sql)
+# [conver array to string with group by](https://stackoverflow.com/questions/38711201/how-can-i-convert-array-to-string-in-hive-sql)
 ```
 select 
   actor, 
