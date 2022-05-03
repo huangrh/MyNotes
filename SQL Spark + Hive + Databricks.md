@@ -1,3 +1,12 @@
+# [](https://stackoverflow.com/questions/38711201/how-can-i-convert-array-to-string-in-hive-sql)
+```
+select 
+  actor, 
+  concat_ws(',',collect_set(date)) as grpdate 
+from actor_table 
+group by actor;
+```
+
 # [Apacke Hive UDF](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF#LanguageManualUDF-CreatingCustomUDFs)
 
 
