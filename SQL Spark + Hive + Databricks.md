@@ -10,7 +10,25 @@ from actor_table
 group by actor;
 ```
 
-# [Apacke Hive UDF](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF#LanguageManualUDF-CreatingCustomUDFs)
+## [Apacke Hive UDF](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF#LanguageManualUDF-CreatingCustomUDFs)
+## [pyspark udf decorate](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.functions.udf.html)
+
+```
+from pyspark.sql.types import IntegerType
+slen = udf(lambda s: len(s), IntegerType())
+@udf
+def to_upper(s):
+    if s is not None:
+        return s.upper()
+
+@udf(returnType=IntegerType())
+def add_one(x):
+    if x is not None:
+        return x + 1
+
+df = spark.createDataFrame([(1, "John Doe", 21)], ("id", "name", "age"))
+df.select(slen("name").alias("slen(name)"), to_upper("name"), add_one("age")).show()
+```
 
 
 ```
