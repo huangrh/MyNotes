@@ -1,5 +1,6 @@
 command mode: 
 -------------------------------
+```
 Enter			:	Switch to Edit Mode
 Ctrl+Alt+F		:	Find and Replace
 Ctrl+Shift+F	:	Format SQL code
@@ -23,20 +24,19 @@ B				:	Insert a cell below
 O				:	Toggle cell output
 Space			:	Scroll down
 Shift+Space		:	Scroll up
-H				      :	Toggle keyboard shortcuts menu
-Shift+M			  :	Merge with cell below
-Up/P/K			  :	Move to previous cell
-Down/N/J		  :	Move to next cell
+H				:	Toggle keyboard shortcuts menu
+Shift+M			:	Merge with cell below
+Up/P/K			:	Move to previous cell
+Down/N/J		:	Move to next cell
 Shift+Up/Down	:	Add adjacent cell to selection
-Ctrl+A			  :	Select all cells
+Ctrl+A			:	Select all cells
 Ctrl+Click		:	Select multiple cells
-L				      :	Toggle line numbers
+L				:	Toggle line numbers
 
 Edit Mode:
--------------------------------
 Ctrl+Shift+F	:	Format SQL code
 Shift+Enter		:	Run command and move to next cell
-Alt+Enter		  :	Run command and insert new cell below
+Alt+Enter		:	Run command and insert new cell below
 Ctrl+Enter		:	Run command
 Shift+Alt+Up	:	Run all above commands (exclusive)
 Shift+Alt+Down	:	Run all below commands (inclusive)
@@ -59,4 +59,4 @@ Ctrl+Shift+Z	:	Redo typing
 Ctrl+/			:	Toggle line comment
 Ctrl+Click		:	Select multiple cells
 
-
+```
