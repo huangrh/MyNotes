@@ -1,5 +1,8 @@
+
+## [Azure delta lake quick start with python](https://docs.microsoft.com/en-us/azure/databricks/_static/notebooks/delta/quickstart-python.html)
+
 # Regexp 
-> select regexp_extract('foo|the|bar', '(foo)\\|(.*?).(bar)', 0) 
+> select regexp_extract('foo|the|bar', '(foo)\\|(.*?).(bar)', 1) 
 
 # [conver array to string with group by](https://stackoverflow.com/questions/38711201/how-can-i-convert-array-to-string-in-hive-sql)
 ```
