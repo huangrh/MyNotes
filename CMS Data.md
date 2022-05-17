@@ -59,3 +59,5 @@ Healthcare providers can follow these key elements to address social determinant
 - Care. Use screening to identify patient SDOH challenges.  
 - Coordinate. Based on screening results, the healthcare provider alerts the clinician or care team of patients that may be high-risk based on SDOH factors (e.g., food scarcity, transportation challenges, income barriers).  
 - Connect. The healthcare provider reaches out to both the patient and the appropriate community resource to make a connection and help ensure needed services are accessed. An alert system should be in place to notify providers that a connection cannot be made.
+
+## [SDOH initiative reduces readmission penalties in one year](https://www.hfma.org/topics/finance-and-business-strategy/article/sdoh-initiative-reduces-readmission-penalties-in-one-year.html)
