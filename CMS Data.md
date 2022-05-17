@@ -52,3 +52,10 @@ HCPCS Codes
 
 SNOMED is clinically-based, documents whatever is needed for patient care and has better clinical coverage than ICD. It is used directly by healthcare providers during the process of care.
 
+## [The 4 C's with SDOH ](https://www.hfma.org/topics/finance-and-business-strategy/article/the-4-cs-of-social-determinants-of-health.html)
+Healthcare providers can follow these key elements to address social determinants of health (SDOH) that impact patient outcomes and costs, according to Nicole Ashley, COO of Wellopp. An important consideration is building partnerships with community resources and possible business partners to accomplish these goals.
+
+- Community. Hospitals, health systems, other providers and payers should coordinate to develop customized local lists of community resources based on specific population health needs.  
+- Care. Use screening to identify patient SDOH challenges.  
+- Coordinate. Based on screening results, the healthcare provider alerts the clinician or care team of patients that may be high-risk based on SDOH factors (e.g., food scarcity, transportation challenges, income barriers).  
+- Connect. The healthcare provider reaches out to both the patient and the appropriate community resource to make a connection and help ensure needed services are accessed. An alert system should be in place to notify providers that a connection cannot be made.
