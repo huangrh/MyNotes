@@ -63,3 +63,7 @@ Healthcare providers can follow these key elements to address social determinant
 ## [SDOH initiative reduces readmission penalties in one year](https://www.hfma.org/topics/finance-and-business-strategy/article/sdoh-initiative-reduces-readmission-penalties-in-one-year.html)
 
 ## [Fast Facts on U.S. Hospitals, 202](https://www.aha.org/statistics/fast-facts-us-hospitals)
+
+## [US total cost in healthcare](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/NationalHealthExpendData/NationalHealthAccountsHistorical)
+
+- U.S. health care spending grew 9.7 percent in 2020, reaching $4.1 trillion or $12,530 per person.  As a share of the nation's Gross Domestic Product, health spending accounted for 19.7 percent.
