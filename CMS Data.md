@@ -1,3 +1,11 @@
+## [BETOS Code Description ](https://resdac.org/sites/datadocumentation.resdac.org/files/BETOS%20Table.txt)  
+- Betos code mapping now is available in [the HCPCS File from CMS](https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/HCPCS-Quarterly-Update).  
+- [The HCPCS description file with mapping is available for download](https://www.cms.gov/files/zip/july-2022-alpha-numeric-hcpcs-file.zip).
+
+## [CHR - County Health Rankings Data](https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation)  
+- Download [CHR CSV Anlytic Data](https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2022.csv)   
+- rawvalue, numerator, denominator. [See the data dictionary](https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2022.xlsx)
+
 ## [Social Vulnerability - CDC/ATSDR SVI Data](https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html)
 
 ## [Socioeconomic - USDA Food Enviroment Atlas Data](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/)
