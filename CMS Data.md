@@ -1,3 +1,9 @@
+## [Social Vulnerability - CDC/ATSDR SVI Data](https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html)
+
+## [Socioeconomic - USDA Food Enviroment Atlas Data](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/)
+
+- download [the excel file](https://www.ers.usda.gov/webdocs/DataFiles/80526/FoodEnvironmentAtlas.xls?v=6889) and see 19 variable in the tab named 'Socieconomic'. 
+
 ## [Charlson Comorbidity Index: ICD-9 Update and ICD-10 Translation+ICD10 mapping](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6684052/)
 
 ## *[readmission measure resources, including planned admission](https://qualitynet.cms.gov/inpatient/measures/readmission/resources)*. Recently, AHRQ released new versions called the CCS-Refined (CCSR). While these versions undergo testing for use in the planned readmission algorithm, measures will use a YNHHSC/CORE-modified v2.0 of the AHRQ Healthcare Cost and Utilization Project (HCUP)’s beta version 2019.1 CCS for ICD-10-CM/PCS for measure calculation. The YNHHS/CORE-modified crosswalk between the AHRQ CCS diagnosis/procedure categories and ICD-10-CM/PCS codes can be downloaded [here, open in a new browser window](https://qualitynet.cms.gov/files/627d0572b1ccb90016b538fd?filename=YaleMod_CCS_PCS_CM_Map_v2022.xlsx).
