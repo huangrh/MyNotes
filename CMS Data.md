@@ -1,3 +1,5 @@
+## [medicare claims processing manual - ch18 - preventive and screening services](https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c18pdf.pdf)
+
 ## [BETOS Code Description ](https://resdac.org/sites/datadocumentation.resdac.org/files/BETOS%20Table.txt)  
 - Betos code mapping now is available in [the HCPCS File from CMS](https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/HCPCS-Quarterly-Update).  
 - [The HCPCS description file with mapping is available for download](https://www.cms.gov/files/zip/july-2022-alpha-numeric-hcpcs-file.zip).
