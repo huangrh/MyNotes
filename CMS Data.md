@@ -10,7 +10,7 @@
 
 ## [Socioeconomic - USDA Food Enviroment Atlas Data](https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/)
 
-- download [the excel file](https://www.ers.usda.gov/webdocs/DataFiles/80526/FoodEnvironmentAtlas.xls?v=6889) and see 19 variable in the tab named 'Socieconomic'. 
+- link to download [Food Environment Atlas Data Download](https://www.ers.usda.gov/webdocs/DataFiles/80526/FoodEnvironmentAtlas.xls?v=6889) and see 19 variable in the tab named 'Socieconomic'. 
 
 ## [Charlson Comorbidity Index: ICD-9 Update and ICD-10 Translation+ICD10 mapping](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6684052/)
 
