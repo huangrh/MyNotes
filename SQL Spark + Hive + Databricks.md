@@ -1,3 +1,15 @@
+## [restore a delta table to an ealier state](https://docs.databricks.com/delta/delta-utility.html#restore-a-delta-table-to-an-earlier-state)
+```
+RESTORE TABLE db.target_table TO VERSION AS OF <version>
+RESTORE TABLE delta.`/data/target/` TO TIMESTAMP AS OF <timestamp>
+```
+
+```
+select * from table_name version as of 0
+select * from table_name TIMESTAMP AS OF <timestamp>
+```
+
+
 ## detlta table
 
 - [delta-batch](https://docs.microsoft.com/en-us/azure/databricks/delta/delta-batch)
