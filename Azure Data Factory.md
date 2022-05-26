@@ -15,6 +15,9 @@ https://docs.microsoft.com/en-us/azure/data-factory/source-control
 ## Continuous Integration, Continuous Deployment (CI-CD) with Azure DevOps
 https://www.youtube.com/watch?v=jRgLSMlp28U&t=26s
 
+## ADF: transform data using databricks notebook
+https://docs.microsoft.com/en-us/azure/data-factory/transform-data-using-databricks-notebook
+
 
 
 
