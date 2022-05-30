@@ -11,4 +11,7 @@ https://www.youtube.com/watch?v=f_4dvWLrjnk&t=2s
 ## Build a Slicer Panel in Power BI and take it to the next level
 https://www.youtube.com/watch?v=xy9nmSQeUWg&list=PLv2BtOtLblH1IJqcqSuMTyvEi7W-laWti&index=6
 
+## Microsoft Power BI bookmark, selection, button
+https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks?tabs=powerbi-desktop
+
 
