@@ -14,4 +14,8 @@ https://www.youtube.com/watch?v=xy9nmSQeUWg&list=PLv2BtOtLblH1IJqcqSuMTyvEi7W-la
 ## Microsoft Power BI bookmark, selection, button
 https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks?tabs=powerbi-desktop
 
+## 
+https://www.youtube.com/watch?v=yJEAEHj617w   
+How to Create and Publish an App to Power BI Service  
+
 
