@@ -19,3 +19,6 @@ https://www.youtube.com/watch?v=yJEAEHj617w
 How to Create and Publish an App to Power BI Service  
 
 
+## Embed a report web part in SharePoint Online
+https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report-spo
+
