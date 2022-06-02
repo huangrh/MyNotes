@@ -14,9 +14,7 @@ https://docs.microsoft.com/en-us/azure/databricks/applications/mlflow/
 ```
 
 ```
-
+## [Databricks Runtime Mannual SQL Language manual](https://docs.microsoft.com/en-us/azure/databricks/spark/latest/spark-sql/language-manual/sql-ref-syntax-ddl-create-function)  
 ## [Databricks : Get started with Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/adls-gen2/)  
 https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/adls-gen2/azure-datalake-gen2-get-started
-
-## [Workspace Access Control - folder permission](https://docs.microsoft.com/en-us/azure/databricks/security/access-control/workspace-acl#--folder-permissions)
 
