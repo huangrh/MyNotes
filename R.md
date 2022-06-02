@@ -62,3 +62,33 @@ get_age = function(from, to) {
          age - 1, age)
 }
 ```
+
+# Get Query
+```
+#' Get Query
+#'
+#' Get Data From Databricks Delta Lake
+#'
+#' @export
+#'
+get_query <- function(sql, path=NULL, dsn='uat') {
+  if (!is.null(path) && file.exists(path)) {
+    dat = readRDS(path)
+  } else {
+    con  <- DBI::dbConnect(odbc::odbc(), dsn=dsn)
+    dat = DBI::dbGetQuery(con, statement=sql)
+    DBI::dbDisconnect(con)
+    
+    if (!is.null(path)) {
+      path_dir = dirname(path = path)
+      if (file.exists(path_dir)) {
+        file.create(path_dir, recursive= TRUE)
+      }
+      saveRDS(dat,file = path)
+    }
+  }
+
+  #
+  dat
+}
+```
