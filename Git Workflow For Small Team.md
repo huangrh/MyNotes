@@ -159,6 +159,25 @@ git commit --amend -m "New and correct message"
 > git config --global user.name "First Name Last Name"
 ```
 
+## Pull changes from a remote branch  
+- create a new branch
+> git branch branch-name
+
+- change environment to the new branch
+> git checkout branch-name
+- 
+> git fetch origin # fetch all the remote branch  
+> git fetch origin adf_publish  # fetch one branch
+> git branch -a # list all the branches available for checkout  
+> git checkout -b fix-failing-tests origin/fix-failing-tests   
+
+What this does is:      
+
+- it creates a new branch called fix-failing-tests  
+- it checkouts that branch  
+- it pulls changes from origin/fix-failing-tests to that branch  
+
+
 ## Ref:
 
 https://nvie.com/posts/a-successful-git-branching-model/
