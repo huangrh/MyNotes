@@ -9,3 +9,9 @@ https://docs.microsoft.com/en-us/azure/databricks/applications/mlflow/
 # [connect-databricks-excel-python-r](https://docs.microsoft.com/en-us/azure/databricks/scenarios/connect-databricks-excel-python-r)
 # [Download simba ODBC Driver for Apache Spark](https://downloads.datastax.com/#odbc-jdbc-drivers)
 
+## [Create database in Azure databricks using delta lake. ](https://docs.microsoft.com/en-us/azure/databricks/data/tables)
+
+```
+
+```
+
