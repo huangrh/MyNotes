@@ -18,3 +18,5 @@ https://docs.microsoft.com/en-us/azure/databricks/applications/mlflow/
 ## [Databricks : Get started with Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/adls-gen2/)  
 https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/adls-gen2/azure-datalake-gen2-get-started
 
+## [Workspace Access Control - folder permission](https://docs.microsoft.com/en-us/azure/databricks/security/access-control/workspace-acl#--folder-permissions)
+
