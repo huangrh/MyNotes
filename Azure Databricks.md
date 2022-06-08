@@ -18,3 +18,10 @@ https://docs.microsoft.com/en-us/azure/databricks/applications/mlflow/
 ## [Databricks : Get started with Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/adls-gen2/)  
 https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/adls-gen2/azure-datalake-gen2-get-started
 
+## [fileinfo ](https://stackoverflow.com/questions/69391541/databricks-fileinfo-java-lang-classcastexception-com-databricks-backend-daemon)
+```
+n = dbutils.fs.ls("dbfs:/mnt/...")
+display(n)
+df = pd.DataFrame(n)
+```
+
