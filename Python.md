@@ -1,6 +1,14 @@
 # [File Exists](https://www.pythontutorial.net/python-basics/python-check-if-file-exists/)
 
-Use os.path.exists() function or Path.is_file() method to check if a file exists
+Use os.path.exists() function or Path.is_file() method to check if a file exists   
+```
+from pathlib import Path
+path = Path(path_to_file)
+path.is_file()
+
+from os.path import exists as file_exists
+file_exists('readme.txt')
+```
 
 # [read ndjson in python](https://stackoverflow.com/questions/63501251/how-to-open-ndjson-file-in-python)
 
