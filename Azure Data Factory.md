@@ -6,6 +6,7 @@ storage account
 Blobs + New container called input
 upload file
 
+## [ADF from beginning to Pro](https://www.youtube.com/watch?v=DLmlFlQGQWo)
 
 Youtube: Global Parameters in Azure Data Factory | Azure Data Factory Tutorial 2021
 
