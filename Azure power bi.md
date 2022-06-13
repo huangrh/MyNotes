@@ -25,3 +25,5 @@ https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report
 ## Row Level Security   
 https://docs.microsoft.com/en-us/power-bi/enterprise/service-admin-rls  
 
+## [Youtube: Azure Power BI DAX](https://www.youtube.com/watch?v=QJw4HkagVWc)
+
