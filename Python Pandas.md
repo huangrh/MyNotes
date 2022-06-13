@@ -1,3 +1,12 @@
+## [Hash each value in a pandas data frame](https://stackoverflow.com/questions/30143911/hash-each-value-in-a-pandas-data-frame)  
+
+```
+import pandas as pd
+df = pd.DataFrame({'a':['asds','asdds','asdsadsdas', '123']})
+df["hash"] = pd.util.hash_array(df["a"].to_numpy())
+df["hash2"] = pd.util.hash_array(df["a"].to_numpy())
+```
+
 # [pandas-parsing-json](https://github.com/ankitgoel1602/data-science/blob/master/json-data/pandas-parsing-json.ipynb)
 
 ```
