@@ -7,6 +7,26 @@ df["hash"] = pd.util.hash_array(df["a"].to_numpy())
 df["hash2"] = pd.util.hash_array(df["a"].to_numpy())
 ```
 
+
+```
+from pyspark.sql.functions import udf, col
+from Crypto.Cipher import AES
+
+def encrypt(key, text):
+    obj = AES.new(key, AES.MODE_CFB, 'This is an IV456')
+    return obj.encrypt(text)
+    
+from functools import partial
+encrypt_with_key = partial(encrypt, secret_key)
+
+@pandas_udf(BinaryType())
+def pandas_udf_encrypt(clear_strings: pd.Series) -> pd.Series:
+    return clear_strings.apply(encrypt_with_key)
+
+df.withColumn('encrypted', pandas_udf_encrypt(clear_text_column)).show()
+
+```
+
 # [pandas-parsing-json](https://github.com/ankitgoel1602/data-science/blob/master/json-data/pandas-parsing-json.ipynb)
 
 ```
