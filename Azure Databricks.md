@@ -1,3 +1,11 @@
+## Pyspark : title case
+```
+upper
+lower
+initcap
+```
+
+
 https://docs.databricks.com/notebooks/notebooks-use.html#develop-notebooks
 
 
