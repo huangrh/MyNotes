@@ -12,6 +12,17 @@ df = spark.read.format("com.crealytics.spark.excel") \
 df1 = spark.read.format("com.crealytics.spark.excel").option("Header", "true").option('quote','"').option("escape", "\\").option("escape", '"').schema(schema).load(file.path)
 ```
 
+## List file recursive
+
+```
+def lsR(path):
+  return([fname for flist in [([fi] 
+                               if fi.isFile() 
+                               else lsR(fi.path)) 
+                              for fi in dbutils.fs.ls(path)] 
+          for fname in flist])
+files = lsR('/path/to/folder')
+```
 ## Pyspark : title case
 ```
 upper
