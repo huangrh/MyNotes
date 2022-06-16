@@ -9,6 +9,18 @@
 ## [CHR - County Health Rankings Data](https://www.countyhealthrankings.org/explore-health-rankings/rankings-data-documentation)  
 - Download [CHR CSV Anlytic Data](https://www.countyhealthrankings.org/sites/default/files/media/document/analytic_data2022.csv)   
 - rawvalue, numerator, denominator. [See the data dictionary](https://www.countyhealthrankings.org/sites/default/files/media/document/DataDictionary_2022.xlsx)
+- [preventable hospital stay](https://www.countyhealthrankings.org/explore-health-rankings/measures-data-sources/county-health-rankings-model/health-factors/clinical-care/quality-of-care/preventable-hospital-stays)  
+  - The numerator is the number of discharges for Medicare beneficiaries ages 18 years or older continuously enrolled in Medicare fee-for-service Part A and hospitalized for any of the following reasons:   
+    - diabetes with short or long-term complications, 
+    - uncontrolled diabetes without complications, 
+    - diabetes with lower-extremity amputation, 
+    - chronic obstructive pulmonary disease, 
+    - asthma, 
+    - hypertension, 
+    - heart failure, 
+    - dehydration, 
+    - bacterial pneumonia, 
+    - or urinary tract infection.
 
 ## [Social Vulnerability - CDC/ATSDR SVI Data](https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html)
 
