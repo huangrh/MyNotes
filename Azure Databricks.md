@@ -1,3 +1,13 @@
+## [Get Age in hive SQL](https://stackoverflow.com/questions/23384130/calculating-age-from-date-of-birth-using-hive)
+```hive
+   , (year(current_date) - year(den.patient_dob) 
+     + case when month(den.patient_dob) > month(current_date) then -1
+           when month(den.patient_dob) = month(current_date) and day(den.patient_dob) > day(current_date) then -1
+           else 0 
+       end) as age
+```
+
+
 ## [How to import OneDrive data into Databricks](https://www.cdata.com/kb/tech/onedrive-jdbc-azure-databricks.rst)  
 
 ## Schema
