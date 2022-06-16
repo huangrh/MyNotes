@@ -1,3 +1,6 @@
+## [Azure Data Factory Custom Email Notifications Tutorial through logic app](https://www.youtube.com/watch?v=zyqf8e-6u4w)
+
+
 adf
 sql server
 SQL database
