@@ -1,5 +1,6 @@
 ## [Azure Data Factory Custom Email Notifications Tutorial through logic app](https://www.youtube.com/watch?v=zyqf8e-6u4w)
 
+## [adf expression](https://docs.microsoft.com/en-us/azure/data-factory/parameterize-linked-services?tabs=data-factory)  
 
 adf
 sql server
