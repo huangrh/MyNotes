@@ -52,6 +52,8 @@ $ git push origin develop
  
 The --no-ff flag causes the merge to always create a new commit object, even if the merge could be performed with a fast-forward. This avoids losing information about the historical existence of a feature branch and groups together all commits that together added the feature.   
 
+# 
+
 
 # other   
 ```  
@@ -74,6 +76,25 @@ git checkout 'master@{1979-02-26 18:30:00}' # based on a date
 git checkout afe52          # checkout based on a hash  
 git checkout master         # go back to the most recent version   
 ```
+
+- [Git fetch remote branch](https://stackoverflow.com/questions/9537392/git-fetch-remote-branch)
+- 
+```
+# You need to create a local branch that tracks a remote branch. 
+# The following command will create a local branch named daves_branch, tracking the remote branch origin/daves_branch.
+# When you push your changes the remote branch will be updated.
+git checkout --track origin/daves_branch
+
+# OR fetch remote branch. 
+git fetch <remote> <rbranch>:<lbranch>  # r = remote, l = local, lbranch=local branch  
+git checkout <lbranch>
+
+# OR 
+git fetch --all  # fetch all branck
+git checkout myBranch 
+```
+# 6. Other   
+-  Untrack a specific file 
 
 ```
 # untrack a specific file  
