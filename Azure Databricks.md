@@ -1,3 +1,15 @@
+## [Create Global Temp View](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.createOrReplaceGlobalTempView.html#pyspark.sql.DataFrame.createOrReplaceGlobalTempView)
+```
+# create global temp view
+df.createOrReplaceGlobalTempView("people")
+df2 = df.filter(df.age > 3)
+df2.createOrReplaceGlobalTempView("people")
+df3 = spark.sql("select * from global_temp.people")
+sorted(df3.collect()) == sorted(df2.collect())  # True
+# Drop
+spark.catalog.dropGlobalTempView("people")    
+```
+
 ## [Get Age in hive SQL](https://stackoverflow.com/questions/23384130/calculating-age-from-date-of-birth-using-hive)
 ```hive
    , (year(current_date) - year(den.patient_dob) 
