@@ -40,6 +40,17 @@ df = spark.read.format("com.crealytics.spark.excel") \
 df1 = spark.read.format("com.crealytics.spark.excel").option("Header", "true").option('quote','"').option("escape", "\\").option("escape", '"').schema(schema).load(file.path)
 ```
 
+```
+# https://www.youtube.com/watch?v=pc8Kv-lRD8k
+aggregated
+   .write
+   .format("com.crealytics.spart.excel")
+   .option("header", true)
+   .option("dataAddress", "sheet1!A1")  # sheet name, can write to multiple sheets
+   .mode("overwrite")
+   .save("/mnt/myblob/output.xlsx")
+```
+
 ## List file recursive
 
 ```
