@@ -1,3 +1,5 @@
+## [change-the-source-of-power-bi-datasets-dynamically-using-power-query-parameters](https://radacad.com/change-the-source-of-power-bi-datasets-dynamically-using-power-query-parameters)
+
 ## [transpose-table-in-report-visual-in-power-bi-desktop](https://stackoverflow.com/questions/44053408/transpose-table-in-report-visual-in-power-bi-desktop)
 
 ## [Cross Report Drill Through](https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-cross-report-drill-through?tabs=powerbi-desktop)
