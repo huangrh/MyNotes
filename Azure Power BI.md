@@ -37,3 +37,6 @@ https://docs.microsoft.com/en-us/power-bi/enterprise/service-admin-rls
 ## [Upgrade Your REPORT DESIGN in Power BI | Complete Walkthrough From A to Z](https://www.youtube.com/watch?v=Lfzu74XDyco&t=4s)
 
 ## https://colorhunt.co/
+
+## https://coolors.co/palettes/trending  
+
