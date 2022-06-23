@@ -29,4 +29,7 @@
 
 - [DevOps Pipeline, ADF, Databricks... by Riz Ang](https://www.youtube.com/watch?v=DTQD3Fqfxbc&list=PL8mxdtDlQDd8ve2ZhdEIVAaeb1HpV47Af&index=2)
 
+## Reference:  
+- https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops
+
 
