@@ -1,3 +1,12 @@
+## [how to get the last item from a list in pyspark](https://stackoverflow.com/questions/40467936/how-do-i-get-the-last-item-from-a-list-using-pyspark)
+
+```
+# element_at
+# split
+from pyspark.sql.functions import element_at, split, col
+df.withColumn('Practice', element_at(split(col('source'), '_'),-1))
+```
+
 ## [Create Global Temp View](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.createOrReplaceGlobalTempView.html#pyspark.sql.DataFrame.createOrReplaceGlobalTempView)
 ```
 # create global temp view
