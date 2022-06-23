@@ -1,3 +1,13 @@
+## [pyspark case when](https://sparkbyexamples.com/pyspark/pyspark-when-otherwise/}
+```
+from pyspark.sql.functions import when
+df2 = df.withColumn("new_gender", when(df.gender == "M","Male")
+                                 .when(df.gender == "F","Female")
+                                 .when(df.gender.isNull() ,"")
+                                 .otherwise(df.gender))
+df2.show()
+```
+
 ## [how to get the last item from a list in pyspark](https://stackoverflow.com/questions/40467936/how-do-i-get-the-last-item-from-a-list-using-pyspark)
 
 ```
