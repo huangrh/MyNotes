@@ -1,3 +1,12 @@
+## Age
+```
+ , (year(current_date) - year(patient_dob) 
+     + case when month(patient_dob) > month(current_date) then -1
+           when month(patient_dob) = month(current_date) and day(patient_dob) > day(current_date) then -1
+           else 0 
+       end) as age
+```
+
 ## [pyspark case when](https://sparkbyexamples.com/pyspark/pyspark-when-otherwise/}
 ```
 from pyspark.sql.functions import when
