@@ -40,6 +40,7 @@ The role is straigtforward - '[e-mail] = userprincipalname()'
 ```
 
 ## [Youtube: Azure Power BI DAX](https://www.youtube.com/watch?v=QJw4HkagVWc)
+## https://docs.microsoft.com/en-us/dax/username-function-dax
 
 
 ## [Upgrade Your REPORT DESIGN in Power BI | Complete Walkthrough From A to Z](https://www.youtube.com/watch?v=Lfzu74XDyco&t=4s)
