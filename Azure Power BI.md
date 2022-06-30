@@ -35,6 +35,10 @@ https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report
 ## Row Level Security   
 https://docs.microsoft.com/en-us/power-bi/enterprise/service-admin-rls  
 
+```
+The role is straigtforward - '[e-mail] = userprincipalname()'
+```
+
 ## [Youtube: Azure Power BI DAX](https://www.youtube.com/watch?v=QJw4HkagVWc)
 
 
