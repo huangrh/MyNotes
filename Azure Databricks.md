@@ -84,6 +84,13 @@ df2 = df.withColumn("new_gender", when(df.gender == "M","Male")
 df2.show()
 ```
 
+## [how to split and explode into multiple row](https://www.geeksforgeeks.org/pyspark-split-multiple-array-columns-into-rows/#:~:text=To%20split%20multiple%20array%20column%20data%20into%20rows,values%20present%20in%20the%20array%20will%20be%20ignored.)
+
+```
+
+df2 = df.select(df.Name,explode(df.Courses_enrolled))
+```
+
 ## [how to get the last item from a list in pyspark](https://stackoverflow.com/questions/40467936/how-do-i-get-the-last-item-from-a-list-using-pyspark)
 
 ```
