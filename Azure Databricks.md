@@ -74,7 +74,7 @@ ax.set_ylabel(‘cost’)
        end) as age
 ```
 
-## [pyspark case when](https://sparkbyexamples.com/pyspark/pyspark-when-otherwise/}
+## [pyspark case when](https://sparkbyexamples.com/pyspark/pyspark-when-otherwise/)
 ```
 from pyspark.sql.functions import when
 df2 = df.withColumn("new_gender", when(df.gender == "M","Male")
