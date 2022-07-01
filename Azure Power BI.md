@@ -35,6 +35,27 @@ https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report
 ## Row Level Security   
 https://docs.microsoft.com/en-us/power-bi/enterprise/service-admin-rls  
 
+[youtube: Dynamic Row-level Security 🔐 - Based on Dimension Tables](https://www.youtube.com/watch?v=Vc_5Jo6DyH8)
+```
+var _restriction = 
+calculatetable(
+values(users[rls_production]),
+users[email]=userprinciapalname()
+)
+
+RLS_restriction = 
+switch(
+true(),
+_restriction = 'None', True(),
+[group] = _restriction, True() ,
+False()
+)
+
+return 
+
+rls_restriction
+```
+
 ```
 The role is straigtforward - '[e-mail] = userprincipalname()'
 ```
