@@ -1,3 +1,28 @@
+## [Apply a Function to Multiple Columns](https://www.delftstack.com/howto/python-pandas/pandas-apply-multiple-columns/)
+
+```
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame([
+                    [5,6,7,8],
+                    [1,9,12,14],
+                    [4,8,10,6]
+                    ],
+                  columns = ['a','b','c','d'])
+
+print("The original dataframe:")
+print(df)
+
+def func(x):
+    return x['a'] + x['b']
+
+df['e']  = df.apply(func, axis = 1)
+
+print("The new dataframe:")
+print(df)
+```
+
 ## [Hash each value in a pandas data frame](https://stackoverflow.com/questions/30143911/hash-each-value-in-a-pandas-data-frame)  
 
 ```
