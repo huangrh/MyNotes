@@ -60,7 +60,9 @@ rls_restriction
 The role is straigtforward - '[e-mail] = userprincipalname()'
 ```
 
-## [Youtube: Azure Power BI DAX](https://www.youtube.com/watch?v=QJw4HkagVWc)
+## [Youtube: Azure Power BI DAX](https://www.youtube.com/watch?v=QJw4HkagVWc)  
+## [Youtube: Row Level Security With Hierarchies](https://www.youtube.com/watch?v=oPwDkgPU9uc)
+
 ## https://docs.microsoft.com/en-us/dax/username-function-dax
 
 
