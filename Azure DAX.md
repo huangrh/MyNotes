@@ -15,6 +15,9 @@ Employees_table,
 # -------------------------------------
 # Add hierachical 
 Pathfull = PATH(Employee_ID, Manager_ID)
+
+# look up the value in the Employee_id_filed if email_address_field = "name@email.com"
+LOOKUPVALUE(Employee_id_field, email_address_field, "name@email.com")
 ```
 
 ## Reference
