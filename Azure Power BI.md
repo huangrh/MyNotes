@@ -60,8 +60,19 @@ rls_restriction
 The role is straigtforward - '[e-mail] = userprincipalname()'
 ```
 
-## [Youtube: Azure Power BI DAX](https://www.youtube.com/watch?v=QJw4HkagVWc)  
+
 ## [Youtube: Row Level Security With Hierarchies](https://www.youtube.com/watch?v=oPwDkgPU9uc)
+```
+VAR Current_user = lookupvalue(
+  Employees[Employee_ID],
+  Employees[User_Name], userprincipalname()
+)
+
+Restrictions = Pathcontains(Employeess[PathFull], Current_user)
+Return Restrictions
+```
+
+## [Youtube: Azure Power BI DAX](https://www.youtube.com/watch?v=QJw4HkagVWc)  
 
 ## https://docs.microsoft.com/en-us/dax/username-function-dax
 
