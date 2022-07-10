@@ -8,3 +8,5 @@
 
 4. [a-complete-guide-to-useeffect by React Developer](https://overreacted.io/a-complete-guide-to-useeffect/)
 
+5. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
