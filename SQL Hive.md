@@ -9,3 +9,17 @@
 TO_DATE(from_unixtime(unix_timestamp(CAST(OnsetDateKey AS STRING) ,  'yyyyMMdd')))
 
 ```
+
+
+```
+# Hive: Long to Wide
+select YEAR_LAST_SEEN, sum(group_map['key1']) Key01, sum(group_map['key2']) Key02
+from
+( 
+        select YEAR_LAST_SEEN, 
+        map(practice ,  UNIQUE_PATIENT) as group_map 
+        from dat
+ ) a 
+ group by a.YEAR_LAST_SEEN
+ order by year_last_seen
+```
