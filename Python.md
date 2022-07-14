@@ -1,3 +1,12 @@
+# [Get Age ](https://stackoverflow.com/questions/2217488/age-from-birthdate-in-python)
+```
+from datetime import date
+
+def calculate_age(born):
+    today = date.today()
+    return today.year - born.year - ((today.month, today.day) < (born.month, born.day))
+```
+
 # [File Exists](https://www.pythontutorial.net/python-basics/python-check-if-file-exists/)
 
 Use os.path.exists() function or Path.is_file() method to check if a file exists   
