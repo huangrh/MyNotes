@@ -23,3 +23,10 @@ from
  group by a.YEAR_LAST_SEEN
  order by year_last_seen
 ```
+
+
+# https://stackoverflow.com/questions/41758949/difference-between-translate-and-regexp-replace
+```
+spark.sql("SELECT TRANSLATE('ed-ba', 'abcde', '12345')").show()
+
+```
