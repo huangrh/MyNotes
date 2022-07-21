@@ -1,3 +1,20 @@
+## 
+
+```
+awv_code_desc = sc.broadcast({
+    'G0402': 'Initial Preventive Physical Examination',
+    'G0438': 'Initial Medicare AWV',
+    'G0439': 'Subsequent Medicare AWV'
+})
+
+@udf
+def get_awv_desc(x):
+    if x in awv_code_desc.value.keys():
+        return awv_code_desc.value[x]
+    else: 
+        return x
+```
+
 ## [create-mount-point-in-azure-databricks](https://bigdataprogrammers.com/create-mount-point-in-azure-databricks/)
 ## [](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/azure-storage)
 
