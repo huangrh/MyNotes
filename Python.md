@@ -26,6 +26,17 @@ from os.path import exists as file_exists
 file_exists('readme.txt')
 ```
 
+# [How to import local modules with Python](https://fortierq.github.io/python-import/)
+
+```
+from pathlib import Path
+import sys
+path_root = Path(__file__).parent
+# sys.path.append(str(path_root))
+# print(sys.path)
+print(path_root)
+```
+
 # [read ndjson in python](https://stackoverflow.com/questions/63501251/how-to-open-ndjson-file-in-python)
 
 ```
