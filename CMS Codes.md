@@ -1,3 +1,5 @@
+[HCUP-Chronic Condition Indicator](https://www.hcup-us.ahrq.gov/toolssoftware/chronic_icd10/chronic_icd10.jsp#download)  
+- Chronic, Acute, Not Applicable, Both Chronic and Acute. [download link](https://www.hcup-us.ahrq.gov/toolssoftware/chronic_icd10/CCI-ICD10CM-v2021-1.zip)  
 
 [CMS List of CPT/HCPCS Codes](https://www.cms.gov/Medicare/Fraud-and-Abuse/PhysicianSelfReferral?msclkid=915e55c3d13011ecb39f45d53e297bbe)
 
