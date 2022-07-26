@@ -1,3 +1,6 @@
+[CCWD - Chronic Condition Categories](https://www2.ccwdata.org/web/guest/condition-categories-chronic)    
+- [30 CCW Chronic Conditions (2017 forward) in pdf](https://www2.ccwdata.org/documents/10280/19139421/chr-chronic-condition-algorithms.pdf)
+
 [HCUP-Chronic Condition Indicator](https://www.hcup-us.ahrq.gov/toolssoftware/chronic_icd10/chronic_icd10.jsp#download)  
 - Chronic, Acute, Not Applicable, Both Chronic and Acute. [download link](https://www.hcup-us.ahrq.gov/toolssoftware/chronic_icd10/CCI-ICD10CM-v2021-1.zip)  
 
