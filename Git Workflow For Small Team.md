@@ -198,8 +198,16 @@ What this does is:
 - it checkouts that branch  
 - it pulls changes from origin/fix-failing-tests to that branch  
 
+## Push
+
+```
+git push <remote repo> <local branch name>:<remote branch name>
+```
 
 ## Ref:
+
+
+https://docs.microsoft.com/en-us/azure/devops/repos/git/pushing?view=azure-devops&tabs=git-command-line#tabpanel_1_git-command-line
 
 https://nvie.com/posts/a-successful-git-branching-model/
 
