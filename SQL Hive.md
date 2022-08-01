@@ -1,3 +1,19 @@
+
+```
+# GREATEST
+with data as (
+select NUll a , 1 b
+union all
+select 1 a, 2 b
+union all 
+select 2 a , 3 b
+)
+
+select a, b, greatest(a, b) c from data
+order by a is null, a desc
+```
+
+
 ```
 regexp_extract(session, '([^\-]+)$', 1)
 ```
