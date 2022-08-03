@@ -1,3 +1,11 @@
+```
+# create database
+-- CREATE SCHEMA IF NOT EXISTS cldw;
+# drop database
+-- DROP DATABASE IF EXISTS cldw CASCADE;
+
+```
+
 
 ```
 # GREATEST
