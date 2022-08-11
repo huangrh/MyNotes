@@ -10,3 +10,7 @@
 
 5. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
+https://www.freecodecamp.org/news/how-to-build-a-todo-application-using-reactjs-and-firebase/
+
+
+
