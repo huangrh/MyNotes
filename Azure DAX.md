@@ -22,3 +22,4 @@ LOOKUPVALUE(Employee_id_field, email_address_field, "name@email.com")
 
 ## Reference
 - [Data Analysis Expressions (DAX)](https://docs.microsoft.com/en-us/dax/switch-function-dax)
+- [https://www.sqlbi.com/articles/the-in-operator-in-dax/](https://www.sqlbi.com/articles/the-in-operator-in-dax/)
