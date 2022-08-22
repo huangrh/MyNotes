@@ -1,3 +1,12 @@
+# 
+```
+read.table(gzfile("/tmp/foo.csv.gz"))  
+# Or
+
+ibrary(R.utils)
+gunzip("file.gz", remove=FALSE)
+```
+
 # [Accessing REST API using R Programming](https://www.geeksforgeeks.org/accessing-rest-api-using-r-programming/#:~:text=REST%20API%20can%20be%20used%20with%20any%20language,format%20and%20then%20into%20a%20parsed%20data%20frame.?msclkid=fb77c5e9bc5f11ec839e8080511396e6)
 
 ### An API can only be considered RESTful when it meets the following conditions:
