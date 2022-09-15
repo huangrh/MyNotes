@@ -1,5 +1,7 @@
 ## Resources: 
 
+- https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-drillthrough
+
 - [Add hyperlinks (URLs) to a table or matrix](https://docs.microsoft.com/en-us/power-bi/create-reports/power-bi-hyperlinks-in-tables?tabs=powerbi-desktop)
 
 - [change-the-source-of-power-bi-datasets-dynamically-using-power-query-parameters](https://radacad.com/change-the-source-of-power-bi-datasets-dynamically-using-power-query-parameters)
