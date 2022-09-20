@@ -9,6 +9,7 @@
 - https://docs.microsoft.com/en-us/power-bi/admin/organizational-visuals (add outside visuals to organization with global administration)
 
 - https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-drillthrough
+- https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-drillthrough
 
 - [Add hyperlinks (URLs) to a table or matrix](https://docs.microsoft.com/en-us/power-bi/create-reports/power-bi-hyperlinks-in-tables?tabs=powerbi-desktop)
 
