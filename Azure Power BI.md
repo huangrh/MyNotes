@@ -1,5 +1,6 @@
 ## Resources: 
 
+- https://community.powerbi.com/t5/Desktop/Integrate-a-graph-in-a-table-column/m-p/650661
 
 - https://docs.microsoft.com/en-us/power-bi/admin/organizational-visuals (add outside visuals to organization with global administration)
 
