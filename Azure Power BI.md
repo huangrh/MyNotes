@@ -1,5 +1,7 @@
 ## Resources: 
 
+- [sparkline in a table ](https://powerbi.microsoft.com/en-us/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785231)
+
 - https://www.tutorialgateway.org/add-data-bars-to-table-in-power-bi/
 
 - https://community.powerbi.com/t5/Desktop/Integrate-a-graph-in-a-table-column/m-p/650661
