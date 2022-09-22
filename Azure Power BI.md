@@ -1,5 +1,7 @@
 ## Resources: 
 
+- [comet chart in R](https://gist.github.com/zanarmstrong/6c2855a34f504029847485c690692e75)
+
 - [Change how visuals interact in a Power BI report](https://learn.microsoft.com/en-us/power-bi/create-reports/service-reports-visual-interactions?tabs=powerbi-desktop)
 
 - [HierarchySlicer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380820?tab=Overview)
