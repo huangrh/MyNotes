@@ -1,5 +1,9 @@
 ## Resources: 
 
+- [Change how visuals interact in a Power BI report](https://learn.microsoft.com/en-us/power-bi/create-reports/service-reports-visual-interactions?tabs=powerbi-desktop)
+
+- [HierarchySlicer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380820?tab=Overview)
+
 - [sparkline in a table ](https://powerbi.microsoft.com/en-us/blog/power-bi-december-2021-feature-summary/#post-18168-_Toc89785231)
 
 - https://www.tutorialgateway.org/add-data-bars-to-table-in-power-bi/
