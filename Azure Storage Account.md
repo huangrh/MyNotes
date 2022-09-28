@@ -17,3 +17,5 @@ def initialize_storage_account(storage_account_name, storage_account_key):
 ```
 
 - [ADLS Gen2 - AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-blobs-copy?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json)
+
+- https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy-copy?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json
