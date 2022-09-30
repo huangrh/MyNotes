@@ -1,5 +1,11 @@
 ## Resources: 
 
+- [Concatenatex with distinct column](https://community.powerbi.com/t5/DAX-Commands-and-Tips/Concatenatex-with-Distinct-column-values/m-p/340244#M309)
+
+```
+Measures = CALCULATE(CONCATENATEX(DISTINCT(table_measure[measure]), (tablemeasure[measure]), ", "))
+```
+
 - [how to sort by column in power bi slider](https://community.powerbi.com/t5/Desktop/Sorting-the-Slicer/m-p/24570#M7951)
 
 - [comet chart in R](https://gist.github.com/zanarmstrong/6c2855a34f504029847485c690692e75)
