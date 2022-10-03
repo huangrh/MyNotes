@@ -2,7 +2,7 @@
 - https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Part-B-Drugs/McrPartBDrugAvgSalesPrice  
 	- https://www.cms.gov/files/zip/october-2022-asp-ndc-hcpcs-crosswalks.zip 
 - https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory  
-- - https://www.cms.gov/Medicare/Fraud-and-Abuse/PhysicianSelfReferral/index  
+	- https://www.cms.gov/Medicare/Fraud-and-Abuse/PhysicianSelfReferral/index  
 
 [CCWD - Chronic Condition Categories](https://www2.ccwdata.org/web/guest/condition-categories-chronic)    
 - [30 CCW Chronic Conditions (2017 forward) in pdf](https://www2.ccwdata.org/documents/10280/19139421/chr-chronic-condition-algorithms.pdf)
