@@ -244,6 +244,7 @@ dplyr::mutate(
 - NQF1550 - CJR
 - 
 # Elixhauser
+- Ref: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4812819/
 ```
 # 2021 update
 # https://www.hcup-us.ahrq.gov/toolssoftware/comorbidityicd10/comorbidity_icd10.jsp
