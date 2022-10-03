@@ -1,3 +1,24 @@
+## [quantile calculation](https://datagy.io/pandas-quantile/)
+```
+# Loading a Sample Pandas Dataframe
+import pandas as pd
+df = pd.DataFrame.from_dict({
+    'Student': ['Nik', 'Kate', 'Kevin', 'Evan', 'Jane', 'Kyra', 'Melissa'],
+    'English': [90, 95, 75, 93, 60, 85, 75],
+    'Chemistry': [95, 95, 75, 65, 50, 85, 100],
+    'Math': [100, 95, 50, 75, 90, 50, 80]
+})
+print(df.head())
+
+# Understanding the Pandas .quantile() method to calculate percentiles
+df.quantile(
+    q=0.5,                      # The percentile to calculate
+    axis=0,                     # The axis to calculate the percentile on
+    numeric_only=True,          # To calculate only for numeric columns
+    interpolation='linear'      # The type of interpolation to use when the quantile is between 2 values
+)
+```
+
 ## [Apply a Function to Multiple Columns](https://www.delftstack.com/howto/python-pandas/pandas-apply-multiple-columns/)
 
 ```
