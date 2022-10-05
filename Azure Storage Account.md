@@ -1,5 +1,6 @@
 
-## Reference:   
+## Reference:  
+- [R interface to Azure Storage Services](https://github.com/Azure/AzureStor)
 - [Manage blobs with Python v12 SDK](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python?tabs=environment-variable-windows)
 - [Use Python to manage directories and files in Azure Data Lake Storage Gen2(ADLS Gen2)](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-directory-file-acl-python)
 ```
