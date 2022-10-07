@@ -1,5 +1,7 @@
 ## Resources: 
 
+- GitHub: https://github.com/Microsoft/PowerBI-visuals-bulletchart
+
 - Linear Gauge by MAQ Software
 
 - [Concatenatex with distinct column](https://community.powerbi.com/t5/DAX-Commands-and-Tips/Concatenatex-with-Distinct-column-values/m-p/340244#M309)
