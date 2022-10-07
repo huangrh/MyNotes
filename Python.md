@@ -7,6 +7,14 @@ with open("grayimage.png", "rb") as img_file:
 print(b64_string)
 ```
 
+```
+import base64
+
+with open("grayimage.png", "rb") as img_file:
+    b64_string = base64.b64encode(img_file.read())
+print(b64_string.decode('utf-8'))
+```
+
 # Extract table from pdf to pandas dataframe    
 - [tabula-py installation](https://tabula-py.readthedocs.io/en/latest/getting_started.html#installation)  
 - [Extract and Convert Tables From PDF Files to Pandas Data frame](https://towardsdatascience.com/how-to-extract-and-convert-tables-from-pdf-files-to-pandas-dataframe-cb2e4c596fa8)    
