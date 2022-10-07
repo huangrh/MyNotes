@@ -1,3 +1,12 @@
+# [convert-image-to-base64-string-in-python](https://appdividend.com/2022/09/15/how-to-convert-image-to-base64-string-in-python/#:~:text=Python%20image%20to%20base64%20String%20To%20convert%20the,a%20string%20using%20Base64%20and%20returns%20that%20string.)
+```
+import base64
+
+with open("grayimage.png", "rb") as img_file:
+    b64_string = base64.b64encode(img_file.read())
+print(b64_string)
+```
+
 # Extract table from pdf to pandas dataframe    
 - [tabula-py installation](https://tabula-py.readthedocs.io/en/latest/getting_started.html#installation)  
 - [Extract and Convert Tables From PDF Files to Pandas Data frame](https://towardsdatascience.com/how-to-extract-and-convert-tables-from-pdf-files-to-pandas-dataframe-cb2e4c596fa8)    
