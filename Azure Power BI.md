@@ -1,5 +1,7 @@
 ## Resources: 
 
+- https://github.com/Microsoft/PowerBI-visuals-wordcloud
+
 - GitHub: https://github.com/Microsoft/PowerBI-visuals-bulletchart
 
 - Linear Gauge by MAQ Software
