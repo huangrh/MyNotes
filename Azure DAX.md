@@ -20,8 +20,12 @@ Pathfull = PATH(Employee_ID, Manager_ID)
 LOOKUPVALUE(Employee_id_field, email_address_field, "name@email.com")
 ```
 
-# https://dax.guide/calculatetable/
+
 
 ## Reference
 - [Data Analysis Expressions (DAX)](https://docs.microsoft.com/en-us/dax/switch-function-dax)
 - [https://www.sqlbi.com/articles/the-in-operator-in-dax/](https://www.sqlbi.com/articles/the-in-operator-in-dax/)
+
+## https://dax.guide/calculatetable/
+
+## [Dax Studio](https://dax.do/qH3yzC4dtmSXhd/)
