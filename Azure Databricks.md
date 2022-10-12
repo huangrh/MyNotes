@@ -1,3 +1,9 @@
+## rm directory
+https://docs.databricks.com/dev-tools/databricks-utils.html#file-system-utilities
+```
+# dbutils.fs.rm(dir: String, recurse: boolean = false): boolean -> Removes a file or directory
+dbutils.fs.rm('adl://azurelake.azuredatalakestore.net/landing/stageone/',True)
+```
 ## 
 
 ```
