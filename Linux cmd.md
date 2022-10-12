@@ -1,3 +1,17 @@
+
+# [sFTP Upload & Download](https://www.tecmint.com/sftp-upload-download-directory-in-linux/)
+```
+sftp tecmint@192.168.56.10
+sftp> ls
+sftp> pwd
+sftp> lpwd
+sftp> mkdir
+sftp> put -r folder-name
+sftp> get -r folder-name
+sftp> put -pr folder-name # to preserve the modification times ,  access times and modes from the original files transferred, use -p
+sftp> ? # to get help
+```
+
 ```
 # how to extract gz file gunzip
 > gzip –dk FileName.gz
