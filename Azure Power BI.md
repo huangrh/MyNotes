@@ -1,3 +1,6 @@
+## Power BI Visuals  
+- [Example: How to create a new visuals](https://learn.microsoft.com/en-us/power-bi/developer/visuals/create-bar-chart?tabs=CreateNewVisual)   
+
 ## Resources: 
 
 - https://github.com/Microsoft/PowerBI-visuals-wordcloud
