@@ -1,3 +1,8 @@
+# DAX Studio
+- https://daxstudio.org/
+- [How to install dax-studio on windows](https://blog.enterprisedna.co/how-to-install-dax-studio-tabular-editor-in-power-bi/)
+- 
+
 # Data Analysis Expressions (DAX)
 
 ```
