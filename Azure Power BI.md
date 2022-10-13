@@ -115,3 +115,6 @@ Return Restrictions
 
 - https://coolors.co/palettes/trending  
 
+# Power BI App Update
+https://powerbi.microsoft.com/en-us/blog/announcing-public-preview-of-multiple-audiences-for-power-bi-apps/
+
