@@ -1,3 +1,20 @@
+# [try-except](https://www.geeksforgeeks.org/try-except-else-and-finally-in-python/)
+```
+try:
+       # Some Code.... 
+
+except:
+       # optional block
+       # Handling of exception (if required)
+
+else:
+       # execute if no exception
+
+finally:
+      # Some code .....(always executed)
+
+```
+
 # [convert-image-to-base64-string-in-python](https://appdividend.com/2022/09/15/how-to-convert-image-to-base64-string-in-python/#:~:text=Python%20image%20to%20base64%20String%20To%20convert%20the,a%20string%20using%20Base64%20and%20returns%20that%20string.)
 ```
 import base64
