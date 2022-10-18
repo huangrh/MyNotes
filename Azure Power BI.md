@@ -40,6 +40,20 @@ Measures = CALCULATE(CONCATENATEX(DISTINCT(table_measure[measure]), (tablemeasur
 
 - [change-the-source-of-power-bi-datasets-dynamically-using-power-query-parameters](https://radacad.com/change-the-source-of-power-bi-datasets-dynamically-using-power-query-parameters)
 
+```
+// Source uat as 
+= Databricks.Catalogs(uat_hoster, uat_http, [Catalog=null, Database="cldw", EnableExperimentalFlagsV1_1_0=null])
+// Navigation to data_source table
+= Source{[Item="data_source",Schema="cldw",Catalog="hive_metastore"]}[Data]
+
+/////////////////////////////////////////////////////
+// Example 2: connect databricks
+// Source
+= Databricks.Catalogs(uat_host, uat_path, [Catalog=null, Database=null, EnableExperimentalFlagsV1_1_0=null])
+// Navigation
+= cldw_Schema{[Name="data_source",Kind="Table"]}[Data]
+```
+
 
 - https://docs.microsoft.com/en-us/powershell/power-bi/overview?view=powerbi-ps
 
