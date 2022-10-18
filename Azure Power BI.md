@@ -1,3 +1,7 @@
+## service-endorse-content#request-content-certification
+
+- https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-endorse-content#request-content-certification
+
 ## Power BI Visuals  
 - [Example: How to create a new visuals](https://learn.microsoft.com/en-us/power-bi/developer/visuals/create-bar-chart?tabs=CreateNewVisual)  
 - https://learn.microsoft.com/en-us/power-bi/developer/visuals/create-react-visual 
