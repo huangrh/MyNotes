@@ -89,6 +89,73 @@ rls_restriction
 ```
 
 ```
+// A more advanced example
+/////////////////////////////////////////////////////////////////
+// 1. Market
+var Market_Restriction = CALCULATETABLE(
+		VALUES(user[Market_RLS]),
+		user[user_email] = USERPRINCIPALNAME()
+	)
+
+var RLS_Market = SWITCH(
+		TRUE(),
+		CONTAINSROW(Market_Restriction, "None"), TRUE(),
+		CONTAINSROW(Market_Restriction, data_source[Market]), TRUE(),
+		FALSE()
+)
+
+//////////////////////////////////////////////////////////////////
+// 2. Region
+var Region_Restriction = CALCULATETABLE(
+		VALUES(user[Region_RLS]),
+		user[user_email] = USERPRINCIPALNAME()
+	)
+
+var RLS_Region = SWITCH(
+		TRUE(),
+		CONTAINSROW(Region_Restriction, "None"), TRUE(),
+		CONTAINSROW(Region_Restriction, data_source[Region]), TRUE(),
+		FALSE()
+)
+
+///////////////////////////////////////////////////////////////////
+// 3. Zone
+var Zone_Restriction = CALCULATETABLE(
+		VALUES(user[Zone_RLS]),
+		user[user_email] = USERPRINCIPALNAME()
+	)
+
+var RLS_Zone = SWITCH(
+		TRUE(),
+		CONTAINSROW(Zone_Restriction, "None"), TRUE(),
+		CONTAINSROW(Zone_Restriction, data_source[Zone]), TRUE(),
+		FALSE()
+)
+
+///////////////////////////////////////////////////////////////////
+// 4. Practice
+var Practice_Restriction = CALCULATETABLE(
+		VALUES(user[Practice_RLS]),
+		user[user_email] = USERPRINCIPALNAME()
+	)
+
+var RLS_Practice = SWITCH(
+		TRUE(),
+		CONTAINSROW(Practice_Restriction, "None"), TRUE(),
+		CONTAINSROW(Practice_Restriction, data_source[Practice]), TRUE(),
+		FALSE()
+)
+
+var RLS_Rrestriction = 
+RLS_Market &&
+RLS_Region && 
+RLS_Zone   && 
+RLS_Practice
+
+Return RLS_Rrestriction
+```
+
+```
 The role is straigtforward - '[e-mail] = userprincipalname()'
 ```
 
