@@ -6,6 +6,7 @@
 - [Example: How to create a new visuals](https://learn.microsoft.com/en-us/power-bi/developer/visuals/create-bar-chart?tabs=CreateNewVisual)  
 - https://learn.microsoft.com/en-us/power-bi/developer/visuals/create-react-visual 
 - https://learn.microsoft.com/en-us/power-bi/developer/visuals/environment-setup?tabs=windows
+- https://learn.microsoft.com/en-us/power-bi/developer/visuals/context-menu?tabs=EmptySpace
 
 ## Resources: 
 
