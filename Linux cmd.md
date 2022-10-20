@@ -1,5 +1,15 @@
 # convert .pem into a .ppk file
 # 
+- PEM files are also used for SSH. If you’ve ever run ssh-keygen to use ssh without a password, your ~/.ssh/id_rsa is a PEM file, just without the extension. [source](https://www.howtogeek.com/devops/what-is-a-pem-file-and-how-do-you-use-it/)
+
+```
+ssh -i keyfile.pem root@host
+ssh-add keyfile.pem
+
+```
+- you could also always simply append your primary public key to the instance’s ~/.ssh/authorized_keys 
+- SSH Key: Ed25519 vs RSA
+
 ```
 sudo puttygen ppkkey.ppk -O private-openssh -o pemkey.pem
 sudo puttygen pemKey.pem -o ppkKey.ppk -O private
