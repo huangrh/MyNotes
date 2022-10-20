@@ -1,3 +1,10 @@
+# convert .pem into a .ppk file
+# 
+```
+sudo puttygen ppkkey.ppk -O private-openssh -o pemkey.pem
+sudo puttygen pemKey.pem -o ppkKey.ppk -O private
+```
+
 
 # [sFTP Upload & Download](https://www.tecmint.com/sftp-upload-download-directory-in-linux/)
 ```
