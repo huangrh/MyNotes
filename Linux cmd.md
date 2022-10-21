@@ -18,7 +18,10 @@ sudo puttygen pemKey.pem -o ppkKey.ppk -O private
 
 # [sFTP Upload & Download](https://www.tecmint.com/sftp-upload-download-directory-in-linux/)
 ```
-sftp tecmint@192.168.56.10
+> sftp tecmint@192.168.56.10
+# priviate_key.pem is a OPENSSH Key.
+# a passphrase is required. 
+> sftp -i priviate_key.pem tecmint@192.168.56.10
 sftp> ls
 sftp> pwd
 sftp> lpwd
