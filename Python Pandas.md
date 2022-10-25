@@ -1,3 +1,10 @@
+## split string into multiple rows
+```
+# https://stackoverflow.com/questions/60674954/explode-r-dataframe
+df["Name"] = df["Name"].apply(lambda x: x.split(";"))
+df.explode("Name")
+```
+
 ## [quantile calculation](https://datagy.io/pandas-quantile/)
 ```
 # Loading a Sample Pandas Dataframe
