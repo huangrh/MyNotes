@@ -1,3 +1,17 @@
+# FHIR and Database
+- https://www.youtube.com/watch?v=c-I04rtBZLc&list=PLsR-zcO--dypUxuALrmuq70aM-VGX_ql1&index=26&t=734s
+- 
+
+# azure api for fhir
+
+https://www.youtube.com/watch?v=cggfZYZtUzE
+
+
+http://hl7.org/fhir/R4/administration-module.html
+
+https://github.com/nazrulworld/fhir.resources/blob/main/fhir/resources/encounter.py
+
+
 # FHIR Message: 
 ```
 # an example:
