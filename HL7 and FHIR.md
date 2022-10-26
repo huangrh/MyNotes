@@ -1,3 +1,8 @@
+# HL7 segment definitions
+- https://v2plus.hl7.org/2021Jan/segment-definitions.html
+- [CodeSystem: eventType](https://terminology.hl7.org/4.0.0/CodeSystem-v2-0003.html)
+
+
 # FHIR and Database
 - https://www.youtube.com/watch?v=c-I04rtBZLc&list=PLsR-zcO--dypUxuALrmuq70aM-VGX_ql1&index=26&t=734s
 - 
