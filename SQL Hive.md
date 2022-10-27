@@ -6,6 +6,10 @@
 
 ```
 
+```
+date_format(current_date,'yyyy-MM-01')
+```
+
 
 ```
 # GREATEST
