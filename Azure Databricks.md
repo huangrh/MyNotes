@@ -1,3 +1,26 @@
+## Defining custom schema for a dataframe
+- https://stackoverflow.com/questions/57901493/pyspark-defining-custom-schema-for-a-dataframe
+```
+table_schema = StructType([StructField('ID', StringType(), True),
+                     StructField('Name', StringType(), True),
+                     StructField('Tax_Percentage(%)', IntegerType(), False),
+                     StructField('Effective_From', TimestampType(), False),
+                     StructField('Effective_Upto', TimestampType(), True)])
+
+# CSV options
+infer_schema = "true"
+first_row_is_header = "true"
+delimiter = ","
+
+
+df = spark.read.format(file_type) \
+  #.option("inferSchema", infer_schema) \
+  .option("header", first_row_is_header) \
+  .option("sep", delimiter) \
+  #.option("schema", table_schema) \
+  .schema(table_schema) \
+  .load(file_location)
+```
 ## rm directory
 https://docs.databricks.com/dev-tools/databricks-utils.html#file-system-utilities
 ```
