@@ -1,3 +1,21 @@
+# strsplit and unnest
+- R: Split comma-separated strings in a column into separate rows
+```r
+a dplyr / tidyr combination:
+
+library(dplyr)
+library(tidyr)
+v %>% 
+  mutate(director = strsplit(as.character(director), ",")) %>%
+  unnest(director)
+```
+
+```python
+# equvilent explode In python
+df["Name"] = df["Name"].apply(lambda x: x.split(";"))
+df.explode("Name")
+```
+
 # 
 ```
 read.table(gzfile("/tmp/foo.csv.gz"))  
