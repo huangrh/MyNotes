@@ -6,10 +6,65 @@
 
 ```
 
+# 1. Date manipulation 
+
+- [date function example](https://sparkbyexamples.com/apache-hive/hive-date-and-timestamp-functions-examples/#:~:text=Hive%20Date%20and%20Timestamp%20functions%20are%20used%20to%20manipulate%20Date,dd%20HH%3Amm%3Ass%20.)
 ```
+# The ISO 8601 format YYYY-MM-DD (2022-11-01)
 date_format(current_date,'yyyy-MM-01')
+add_months("2022-01-01, 5, "yyyy-MM-dd") # return string '2022-05-01'
+last_day(string date)
+trunc(string date, string format)
+date_add(string startdate, tinyint/smallint/int days)
+date_add(timestamp startdate, tinyint/smallint/int days)
+date_add(date startdate, tinyint/smallint/int days)
+date_sub(string startdate, tinyint/smallint/int days)
+datediff(string enddate, string startdate)
+# string to date
+TO_DATE(from_unixtime(unix_timestamp(CAST(OnsetDateKey AS STRING) ,  'yyyyMMdd')))
 ```
 
+[TO_DATE: DATETIME-PATTERN](https://spark.apache.org/docs/latest/sql-ref-datetime-pattern.html)
+
+
+
+# 2. String manipulation 
+
+
+
+# Regexp 
+> select regexp_extract('foo|the|bar', '(foo)\\|(.*?).(bar)', 1) 
+```
+regexp_extract(session, '([^\-]+)$', 1)
+```
+
+```
+-- string manipulation: regexp_extract and split and explode  
+
+%sql
+WITH dat AS (
+SELECT '123456789 10' AS c1
+UNION ALL
+SELECT '12345678 9 10' AS c1
+UNION ALL
+SELECT '12345 678 9 10' AS c1
+)
+SELECT  
+  explode(split(c1, ' ')) as col, 
+  regexp_extract(c1,'(\\d)+ ', 0) c1, 
+  split(c1, ' ')[0] c2 
+FROM dat
+```
+
+# https://stackoverflow.com/questions/41758949/difference-between-translate-and-regexp-replace
+```
+spark.sql("SELECT TRANSLATE('ed-ba', 'abcde', '12345')").show()
+
+```
+
+
+
+# Other 
 
 ```
 # GREATEST
@@ -26,21 +81,19 @@ order by a is null, a desc
 ```
 
 
+# [convert array to string with group by](https://stackoverflow.com/questions/38711201/how-can-i-convert-array-to-string-in-hive-sql)
 ```
-regexp_extract(session, '([^\-]+)$', 1)
+select 
+  actor, 
+  concat_ws(',',collect_set(date)) as grpdate 
+from actor_table 
+group by actor;
 ```
-
 
 ```
 # Key words
 , concat_ws("|", sort_array(collect_set(FromDate))) From_Date
 , size(collect_set(FromDate)) size
-```
-
-```
-# string to date
-TO_DATE(from_unixtime(unix_timestamp(CAST(OnsetDateKey AS STRING) ,  'yyyyMMdd')))
-
 ```
 
 
@@ -57,14 +110,6 @@ from
  order by year_last_seen
 ```
 
-
-# https://stackoverflow.com/questions/41758949/difference-between-translate-and-regexp-replace
-```
-spark.sql("SELECT TRANSLATE('ed-ba', 'abcde', '12345')").show()
-
-```
-
-
 ## [restore a delta table to an ealier state](https://docs.databricks.com/delta/delta-utility.html#restore-a-delta-table-to-an-earlier-state)
 ```
 RESTORE TABLE db.target_table TO VERSION AS OF <version>
@@ -72,6 +117,7 @@ RESTORE TABLE delta.`/data/target/` TO TIMESTAMP AS OF <timestamp>
 ```
 
 ```
+## time travel
 select * from table_name version as of 0
 select * from table_name TIMESTAMP AS OF <timestamp>
 ```
@@ -157,17 +203,8 @@ Ref:
 
 ## [Azure delta lake quick start with python](https://docs.microsoft.com/en-us/azure/databricks/_static/notebooks/delta/quickstart-python.html)
 
-# Regexp 
-> select regexp_extract('foo|the|bar', '(foo)\\|(.*?).(bar)', 1) 
 
-# [conver array to string with group by](https://stackoverflow.com/questions/38711201/how-can-i-convert-array-to-string-in-hive-sql)
-```
-select 
-  actor, 
-  concat_ws(',',collect_set(date)) as grpdate 
-from actor_table 
-group by actor;
-```
+
 
 ## [Apacke Hive UDF](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF#LanguageManualUDF-CreatingCustomUDFs)
 ## [pyspark udf decorate](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.functions.udf.html)
@@ -194,28 +231,6 @@ df.select(slen("name").alias("slen(name)"), to_upper("name"), add_one("age")).sh
 https://docs.microsoft.com/en-us/azure/databricks/scenarios/connect-databricks-excel-python-r
 ```
 
-
-
-
-```
--- string manipulation: regexp_extract and split and explode  
-
-%sql
-WITH dat AS (
-SELECT '123456789 10' AS c1
-UNION ALL
-SELECT '12345678 9 10' AS c1
-UNION ALL
-SELECT '12345 678 9 10' AS c1
-)
-SELECT  
-  explode(split(c1, ' ')) as col, 
-  regexp_extract(c1,'(\\d)+ ', 0) c1, 
-  split(c1, ' ')[0] c2 
-FROM dat
-``` 
-
-[TO_DATE: DATETIME-PATTERN](https://spark.apache.org/docs/latest/sql-ref-datetime-pattern.html)
 
 [spark-sql/udf-python](https://docs.databricks.com/spark/latest/spark-sql/udf-python.html)  
 ```
