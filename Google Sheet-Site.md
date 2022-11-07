@@ -17,3 +17,15 @@ https://www.w3schools.com/googlesheets/google_sheets_countif.php
     ),
 "SELECT * WHERE Col2 <> '' AND Col1 >= '"&TEXT(TODAY(),"yyyy-mm-dd")&"'",0)
 ```
+
+```
+# Embedding google sheet without board. 
+<iframe 
+    src="https://drive.google.com/file/d/12kVkA3M6hGIVa0HhtsUfQnXEHigWm95w/preview" 
+    frameborder="0" 
+    style="overflow:hidden;height:100%;width:100%" 
+    height="100%" 
+    width="100%" 
+    allow="autoplay">
+</iframe>
+```
