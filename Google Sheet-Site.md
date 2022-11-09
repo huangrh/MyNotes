@@ -36,3 +36,7 @@ limit 6",
     allow="autoplay">
 </iframe>
 ```
+
+https://nathannagele.com/how-to-remove-choices-in-google-forms/
+
+
