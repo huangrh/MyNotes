@@ -16,6 +16,32 @@ def get_age(x):
 hcc_dat['age'] = hcc_dat.apply(get_age, axis = 1)
 ```
 
+```
+def get_icd10_list(icd10):
+    if icd10 is None:
+        return []
+    return icd10.split("|")
+hcc_dat['icd10list_current'] = hcc_dat['diag_current'].apply(get_icd10_list)
+
+# 
+# https://www.geeksforgeeks.org/partial-functions-python/
+from functools import partial
+he = HCCEngine(version = '24')
+def get_raf(row, col='icd10list_current'):
+    icd10 = row[col]
+    age   = row['age']
+    sex   = row['gender']
+    if not all([age, sex]):
+        return None
+    rp = he.profile(dx_lst=icd10, age=age, sex=sex, elig="CNA", orec="0", medicaid=False)
+    return rp['risk_score']    
+     
+hcc_dat['raf_current']         = hcc_dat.apply(partial(get_raf, col='icd10list_current') , axis = 1)
+hcc_dat['raf_past']            = hcc_dat.apply(partial(get_raf, col='icd10list_past') , axis = 1)
+hcc_dat['raf_current_chronic'] = hcc_dat.apply(partial(get_raf, col='icd10list_current_chronic') , axis = 1)
+hcc_dat['raf_past_chronic']    = hcc_dat.apply(partial(get_raf, col='icd10list_past_chronic') , axis = 1)
+```
+
 ## split string into multiple rows
 ```
 # https://stackoverflow.com/questions/60674954/explode-r-dataframe
