@@ -59,7 +59,7 @@ FROM dat
 # https://stackoverflow.com/questions/41758949/difference-between-translate-and-regexp-replace
 ```
 spark.sql("SELECT TRANSLATE('ed-ba', 'abcde', '12345')").show()
-
+spark.sql("SELECT TRANSLATE('hello', 'e', 'a')").show() # e TO a
 ```
 
 
