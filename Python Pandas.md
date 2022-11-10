@@ -1,3 +1,21 @@
+## Get Age
+
+```
+def get_age(x):
+    from datetime import datetime
+    from_service_year = current_year
+    to  = str(from_service_year) + '0201'
+    to  = datetime.strptime(to, '%Y%m%d')
+    dob = x['date_birth']
+    if dob is None: 
+        age = None
+    else:
+        age = to.year - dob.year - ((to.month, to.day) < (dob.month, dob.day))
+#     dob =datetime.strptime(dob, '%Y-%m-%d')
+    return age
+hcc_dat['age'] = hcc_dat.apply(get_age, axis = 1)
+```
+
 ## split string into multiple rows
 ```
 # https://stackoverflow.com/questions/60674954/explode-r-dataframe
