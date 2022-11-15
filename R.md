@@ -1,5 +1,5 @@
 # ggplot2
-- bar plot  
+- [bar plot  ](http://www.sthda.com/english/wiki/ggplot2-barplots-quick-start-guide-r-software-and-data-visualization)
 ```
 g = ggplot(hcc_raf, aes(x = month_only, y = oe, fill=year) ) + 
   geom_bar(stat="identity", color="black", position="dodge2")+
