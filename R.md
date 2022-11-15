@@ -1,3 +1,12 @@
+# ggplot2
+- bar plot  
+```
+g = ggplot(hcc_raf, aes(x = month_only, y = oe, fill=year) ) + 
+  geom_bar(stat="identity", color="black", position="dodge2")+
+  theme_minimal()
+g + scale_fill_manual(values=c('#999999','#E69F00'))
+```
+
 # strsplit and unnest
 - R: Split comma-separated strings in a column into separate rows
 ```r
