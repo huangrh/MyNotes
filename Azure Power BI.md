@@ -202,5 +202,12 @@ Return Restrictions
 - https://coolors.co/palettes/trending  
 
 # Power BI App Update
+
 https://powerbi.microsoft.com/en-us/blog/announcing-public-preview-of-multiple-audiences-for-power-bi-apps/
+
+# Power BI Licenses
+- Users with free licenses can use the Power BI service to connect to data and create reports and dashboards for their own use.  
+- They can't use the Power BI sharing or collaborating features with others, or publish content to other people's workspaces.   
+- However, Pro and PPU users can share content and collaborate with free users if the content is saved in workspaces hosted in **Premium capacity**.     
+https://learn.microsoft.com/en-us/power-bi/fundamentals/service-features-license-type
 
