@@ -1,6 +1,7 @@
 # copy file to adls gen2
-https://github.com/Azure/AzureRMR  
-https://mran.microsoft.com/web/packages/AzureStor/vignettes/intro.html
+https://github.com/Azure/AzureRMR    
+https://mran.microsoft.com/web/packages/AzureStor/vignettes/intro.html    
+https://github.com/yueguoguo/r-on-azure     
 
 
 # ggplot2
