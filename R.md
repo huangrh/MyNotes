@@ -1,8 +1,29 @@
 # copy file to adls gen2
 https://github.com/Azure/AzureRMR    
 https://mran.microsoft.com/web/packages/AzureStor/vignettes/intro.html    
-https://github.com/yueguoguo/r-on-azure     
-
+https://github.com/yueguoguo/r-on-azure   
+```r
+library(AzureRMR)
+require(AzureStor)
+# if (!exists('az')) {
+#   az <- create_azure_login()
+#   az$token$refresh()
+# }
+# az <- create_azure_login()
+az   = get_azure_login()
+az$token$refresh()
+token <- AzureRMR::get_azure_token("https://storage.azure.com", tenant="my tenant id", app=az$token$client$client_id)
+# 
+ad_endp_tok2 <- AzureStor::storage_endpoint("https://my_storage_name.dfs.core.windows.net/", token=token)
+# Set up container connection 
+cont <- AzureStor::storage_container(ad_endp_tok2, "my_container_name")
+# 
+AzureStor::list_storage_files(cont)
+# 
+src =  file.path("C:/O365/OneDrive/Azure_Landing", "src_file_name.csv")
+# 
+storage_upload(cont, src, "share/path/target_file_name.csv")
+```
 
 # ggplot2
 - [bar plot  ](http://www.sthda.com/english/wiki/ggplot2-barplots-quick-start-guide-r-software-and-data-visualization)
