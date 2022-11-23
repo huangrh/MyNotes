@@ -231,3 +231,10 @@ get_target <- function(x, sys_relative_target=0.06057088, direction = -1 ) {
 }
 
 ```
+
+
+# How to open a file to edit in Rstudio
+- https://stackoverflow.com/questions/23750513/how-do-i-open-a-script-file-in-rstudio-using-an-r-command
+```
+file.edit('test.R')
+```
