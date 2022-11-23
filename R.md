@@ -175,3 +175,59 @@ get_query <- function(sql, path=NULL, dsn='uat') {
 }
 
 ```
+
+# Get TArget
+
+```
+get_target <- function(x, sys_relative_target=0.06057088, direction = -1 ) {
+
+
+    # ==========================================================================
+    # direction = -1
+    df = x %>%
+      dplyr::mutate(
+        rate     = num/den,
+        # 95 percentile as the max rate
+        rate_max = direction*quantile(direction*rate, 0.95),
+        # the gap between the max and the rate adjusted by the measure direction
+        rate_gap = pmax(direction*(rate_max - rate), 0),
+      )
+
+    # system baseline rate and system target rate
+    sys_base_rate   = sum(df$num) / sum(df$den)
+    sys_target_rate = sys_base_rate * (sys_relative_target + 1)
+
+    # optimize function
+    fun <- function(scale=0.1) {
+      df2 <- df %>%
+        dplyr::mutate(
+          # Target rate is the original rate + rate_gap adjusted by a scale with the measure direction
+          target_rate = rate + rate_gap * scale * direction,
+          target_num  = den * target_rate
+        )
+      # ========================================================================
+      # total target numerator: sum(df2$den) * sys_target_rate
+      # fit the scale factor so the term of sum(df2$target_num) is close to <total target numerator>
+      #
+      out = (sum(df2$target_num) - sum(df2$den) * sys_target_rate)^2
+    }
+
+    # fit the scale
+    fit = optimise(fun, interval = c(0, 2))
+    scale = fit$minimum
+    print(fit)
+
+    #
+    out <- dplyr::mutate(
+      df,
+      target_rate          = rate + rate_gap * scale * direction,
+      target_num           = den  * target_rate,
+      relative_improve     = target_rate/rate - 1,
+      sys_base_rate        = sum(num)/sum(den),
+      sys_target_rate      = sum(target_num)/sum(den),
+      sys_relative_improve = sys_target_rate/sys_base_rate - 1
+    )
+
+}
+
+```
