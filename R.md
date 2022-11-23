@@ -1,7 +1,20 @@
 
-#
-https://stackoverflow.com/questions/17013612/how-to-minimize-a-function-over-one-input-parameter-in-r
+# Optimize 1-d function
+https://stackoverflow.com/questions/17013612/how-to-minimize-a-function-over-one-input-parameter-in-r  
+https://statisticsglobe.com/optimize-function-in-r/  
+```
+my_function <- function(x) {             # Create function
+  x^3 + 2 * x^2 - 10 * x
+}
 
+optimize(my_function,                    # Apply optimize
+         interval = c(- 1, 1))
+# $minimum
+# [1] 0.999959
+# 
+# $objective
+# [1] -6.999877
+```
 
 # copy file to adls gen2
 https://github.com/Azure/AzureRMR    
