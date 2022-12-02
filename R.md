@@ -1,3 +1,12 @@
+# https://bookdown.org/yihui/rmarkdown/html-document.html
+
+---
+title: Habits
+author: John Doe
+date: March 22, 2005
+output: html_document
+---
+
 
 # Optimize 1-d function
 https://stackoverflow.com/questions/17013612/how-to-minimize-a-function-over-one-input-parameter-in-r  
