@@ -1,3 +1,6 @@
+# HL7 - FHIR mapping
+- https://build.fhir.org/ig/HL7/v2-to-fhir/ConceptMap-segment-pv1-to-encounter.html
+- 
 # HL7 segment definitions
 - https://v2plus.hl7.org/2021Jan/segment-definitions.html
 - [CodeSystem: eventType](https://terminology.hl7.org/4.0.0/CodeSystem-v2-0003.html)
