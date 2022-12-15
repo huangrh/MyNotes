@@ -46,6 +46,12 @@ current_year = str(datetime.datetime.now().date().year)
 str(datetime.date.today().year)
 ```
 
+```
+# strptime() is another method available in DateTime which is used to format the time stamp which is in string format to date-time object.
+from datetime import datetime
+datetime.strptime(to, '%Y%m%d')
+```
+
 # [Get Age ](https://stackoverflow.com/questions/2217488/age-from-birthdate-in-python)
 ```
 from datetime import date
