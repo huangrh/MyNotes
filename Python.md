@@ -1,3 +1,14 @@
+# [List unpack with a * ](https://stackoverflow.com/questions/1720421/how-do-i-concatenate-two-lists-in-python/35631185#35631185)
+
+```
+>>> l1 = [1, 2, 3]
+>>> l2 = [4, 5, 6]
+>>> joined_list = [*l1, *l2]  # unpack both iterables in a list literal
+>>> print(joined_list)
+[1, 2, 3, 4, 5, 6]
+```
+
+
 # [try-except](https://www.geeksforgeeks.org/try-except-else-and-finally-in-python/)
 ```
 try:
