@@ -1,3 +1,11 @@
+# 
+```
+import datetime
+timestamp = 1339521878.04 
+value = datetime.datetime.fromtimestamp(timestamp)
+print(value.strftime('%Y-%m-%d %H:%M:%S'))
+```
+
 # [List unpack with a * ](https://stackoverflow.com/questions/1720421/how-do-i-concatenate-two-lists-in-python/35631185#35631185)
 
 ```
