@@ -21,7 +21,8 @@ upload file
 Youtube: Global Parameters in Azure Data Factory | Azure Data Factory Tutorial 2021
 
 ## ADF version control 
-https://docs.microsoft.com/en-us/azure/data-factory/source-control
+- https://docs.microsoft.com/en-us/azure/data-factory/source-control  
+- https://stackoverflow.com/questions/65817692/adf-publish-confusion-in-git-mode  
 
 ## Continuous Integration, Continuous Deployment (CI-CD) with Azure DevOps
 https://www.youtube.com/watch?v=jRgLSMlp28U&t=26s
