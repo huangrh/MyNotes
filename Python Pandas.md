@@ -209,5 +209,12 @@ df.groupby(['key1','key2'], as_index = False).apply(lambda g: pd.Series(dict(
 ## wide to long
 ## long to wide 
 
+# Encoding error 
+
+```
+# https://stackoverflow.com/questions/55076502/utf-8-codec-cant-decode-byte-0xb5-in-position-0-invalid-start-byte
+pd.read_csv(filename,encoding = 'unicode_escape')
+```
+
 
 
