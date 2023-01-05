@@ -1,3 +1,18 @@
+## Export Power BI report to PDF using Power Automate with filters applied
+- power bi report to pdf
+- https://learn.microsoft.com/en-us/power-automate/trigger-flow-powerbi-report  
+- https://wisedatadecisions.com/2021/01/18/filter-email-power-bi-report-pages-using-power-automate-excel/  
+- https://community.powerbi.com/t5/Service/Export-Power-BI-report-to-PDF-using-Power-Automate-with-filters/m-p/2885326
+	- The report MUST be backed by Premium capacity (not Premium per User capacity).
+- [How to use Power BI Rest API to export the Power BI Report in PDF format](https://www.bing.com/ck/a?!&&p=ddc45031b94257d8JmltdHM9MTY3Mjc5MDQwMCZpZ3VpZD0wYWYyMzMxYy05OTA3LTYxNWUtMzdhOS0yMjYxOTg3OTYwMGUmaW5zaWQ9NTQyOA&ptn=3&hsh=3&fclid=0af2331c-9907-615e-37a9-22619879600e&psq=power+bi+report+to+pdf&u=a1aHR0cHM6Ly9jb21tdW5pdHkucG93ZXJiaS5jb20vdDUvQ29tbXVuaXR5LUJsb2cvSG93LXRvLXVzZS1Qb3dlci1CSS1SZXN0LUFQSS10by1leHBvcnQtdGhlLVBvd2VyLUJJLVJlcG9ydC1pbi9iYS1wLzIxNzk3NDEjOn46dGV4dD0xJTIwU3RlcCUyMDElM0ElMjBFeGVjdXRlJTIwdGhlJTIwZmlyc3QlMjBSZXN0JTIwQVBJLHRoZSUyMFBERiUyMGZpbGUlMjBvZiUyMHRoZSUyMFBvd2VyJTIwQkklMjBSZXBvcnQu&ntb=1)
+	- This method cannot be run in Pro and PPU, it is only suitable for implementation in premium workspace
+	- https://learn.microsoft.com/en-us/rest/api/power-bi/reports/get-file-of-export-to-file-in-group  
+
+## Pareto Chart
+- https://community.powerbi.com/t5/Community-Blog/How-To-Make-A-Pareto-Chart-In-Power-BI-Step-By-Step-Tutorial/ba-p/2302774  
+
+- 
+
 ## service-endorse-content#request-content-certification
 
 - https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-endorse-content#request-content-certification
