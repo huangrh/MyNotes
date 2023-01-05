@@ -1,5 +1,6 @@
 ## Export Power BI report to PDF using Power Automate with filters applied
 - power bi report to pdf
+- https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-automate-power-bi-report-export
 - https://learn.microsoft.com/en-us/power-automate/trigger-flow-powerbi-report  
 - https://wisedatadecisions.com/2021/01/18/filter-email-power-bi-report-pages-using-power-automate-excel/  
 - https://community.powerbi.com/t5/Service/Export-Power-BI-report-to-PDF-using-Power-Automate-with-filters/m-p/2885326
