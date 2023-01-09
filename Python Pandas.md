@@ -18,6 +18,24 @@ pd.pivot(
 ).reset_index(drop=False)
 ```
 
+## Pivot wide to long
+```
+# https://stackoverflow.com/questions/36537945/reshape-wide-to-long-in-pandas
+# Setup
+df = pd.DataFrame({
+    'date' : ['05/03', '06/03', '07/03', '08/03'],
+    'AA' : [1, 4, 7, 5],
+    'BB' : [2, 5, 8, 7],
+    'CC' : [3, 6, 9, 1]
+}).set_index('date')
+
+# 
+df = df.reset_index()
+pd.melt(df, id_vars='date', value_vars=['AA', 'BB', 'CC'])
+# 
+df.melt(ignore_index=False).reset_index()
+```
+
 ## Get Age
 
 ```
