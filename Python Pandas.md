@@ -1,5 +1,12 @@
-## 
+## Read string into pandas
+```
+# https://stackoverflow.com/questions/22604564/create-pandas-dataframe-from-a-string
+import pandas as pd
+from io import StringIO
 
+df = pd.read_csv(StringIO("""measure,rate_period,Process,Scorecard
+ED Visits,Calendar Year,132,188"""),sep=',', header=0)
+```
 ## Pivot long to wide
 ```
 # https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe
