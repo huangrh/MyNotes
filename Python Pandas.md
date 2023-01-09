@@ -1,3 +1,5 @@
+## 
+
 ## Pivot long to wide
 ```
 # https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe
@@ -6,7 +8,7 @@ pd.pivot(
     index='foo',    # Column to use to make new frame’s index. If None, uses existing index.
     columns='bar',  # Column to use to make new frame’s columns.
     values='baz'    # Column(s) to use for populating new frame’s values.
-)
+).reset_index(drop=False)
 ```
 
 ## Get Age
