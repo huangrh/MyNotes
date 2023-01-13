@@ -2,8 +2,43 @@
 # create database
 -- CREATE SCHEMA IF NOT EXISTS cldw;
 # drop database
--- DROP DATABASE IF EXISTS cldw CASCADE;
+-- DROP DATABASE IF NOT EXISTS cldw CASCADE;
 
+```
+
+# Table manipulation  
+```
+# Renaming Table Name
+ALTER TABLE <current_table_name> 
+RENAME TO <new_table_name>;
+
+# Add column
+ALTER TABLE <table_name> 
+ADD COLUMNS (<col-name>  <data-type>  COMMENT ”, <col-name>  <data-type>  COMMENT ”, ….. )
+# Example : add contact
+ALTER TABLE customer 
+ADD COLUMNS ( contact BIGINT COMMENT ‘Store the customer contact number’);
+
+# Change Column
+ALTER TABLE <table_name> 
+CHANGE <column_name> <new_column_name> <new_data_type>;
+# Example
+ALTER TABLE customer 
+CHANGE demo_name customer_name STRING; 
+
+# Change column  
+# example: For example in our customer table, we have 2 attributes customer_name and contact. 
+# If we want to remove the contact attribute the query should be like as shown below.
+ALTER TABLE customer 
+REPLACE COLUMNS (
+customer_name STRING
+);
+```
+
+# Truncate table
+```
+ALTER TABLE mytable SET TBLPROPERTIES ('external.table.purge'='true');
+truncate table abc;
 ```
 
 # 1. Date manipulation 
