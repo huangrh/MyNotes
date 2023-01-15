@@ -31,7 +31,7 @@ df = pd.DataFrame({
 
 # 
 df = df.reset_index()
-pd.melt(df, id_vars='date', value_vars=['AA', 'BB', 'CC'])
+pd.melt(df, id_vars='date', value_vars=['AA', 'BB', 'CC'], value_name = 'value')
 # 
 df.melt(ignore_index=False).reset_index()
 ```
