@@ -1,3 +1,49 @@
+## Run a Databricks notebook from another notebook
+- https://docs.databricks.com/notebooks/notebook-workflows.html  
+- dbutils.notebook API
+  - run(path: String,  timeout_seconds: int, arguments: Map): String
+  - exit
+```
+# Example 1 - returning data through temporary views.
+# You can only return one string using dbutils.notebook.exit(), but since called notebooks reside in the same JVM, you can
+# return a name referencing data stored in a temporary view.
+
+## In callee notebook
+spark.range(5).toDF("value").createOrReplaceGlobalTempView("my_data")
+dbutils.notebook.exit("my_data")
+
+## In caller notebook
+returned_table = dbutils.notebook.run("LOCATION_OF_CALLEE_NOTEBOOK", 60)
+global_temp_db = spark.conf.get("spark.sql.globalTempDatabase")
+display(table(global_temp_db + "." + returned_table))
+
+# Example 2 - returning data through DBFS.
+# For larger datasets, you can write the results to DBFS and then return the DBFS path of the stored data.
+
+## In callee notebook
+dbutils.fs.rm("/tmp/results/my_data", recurse=True)
+spark.range(5).toDF("value").write.format("parquet").load("dbfs:/tmp/results/my_data")
+dbutils.notebook.exit("dbfs:/tmp/results/my_data")
+
+## In caller notebook
+returned_table = dbutils.notebook.run("LOCATION_OF_CALLEE_NOTEBOOK", 60)
+display(spark.read.format("parquet").load(returned_table))
+
+# Example 3 - returning JSON data.
+# To return multiple values, you can use standard JSON libraries to serialize and deserialize results.
+
+## In callee notebook
+import json
+dbutils.notebook.exit(json.dumps({
+  "status": "OK",
+  "table": "my_data"
+}))
+
+## In caller notebook
+result = dbutils.notebook.run("LOCATION_OF_CALLEE_NOTEBOOK", 60)
+print(json.loads(result))
+```
+
 ## Defining custom schema for a dataframe
 - https://stackoverflow.com/questions/57901493/pyspark-defining-custom-schema-for-a-dataframe
 ```
