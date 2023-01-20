@@ -231,7 +231,13 @@ df.groupby(['key1','key2'], as_index = False).apply(lambda g: pd.Series(dict(
 )))
 ```
 # merge / join
-
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html
+```
+df1.merge(df2, how='left', on='a')
+df1.merge(df2, how='cross')
+df1.merge(df2, left_on='lkey', right_on='rkey',
+          suffixes=('_left', '_right'))
+```
 # pivot  
 ## wide to long
 ## long to wide 
