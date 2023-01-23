@@ -18,6 +18,7 @@ https://github.com/microsoft/fhir-server/blob/main/docs/QuickstartDeployPortal.m
 https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/using-curl?tabs=CLI  
 
 
+
 # FHIR Message: 
 ```
 # an example:
