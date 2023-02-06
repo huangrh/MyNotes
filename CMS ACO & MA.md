@@ -4,7 +4,8 @@ Comprehensive ESRD Care Model
 
 
 # ACO Reach
-https://innovation.cms.gov/media/document/aco-reach-py2023-risk-adjustment
+https://innovation.cms.gov/media/document/aco-reach-py2023-risk-adjustment  
+https://innovation.cms.gov/innovation-models/aco-reach  
 
 
 # Ref: 
