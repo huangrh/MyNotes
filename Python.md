@@ -1,3 +1,16 @@
+# https://stackoverflow.com/questions/68937734/execute-multiple-notebooks-in-parallel-in-pyspark-databricks
+```
+from multiprocessing.pool import ThreadPool
+pool = ThreadPool(5)
+notebooks = ['dim_1', 'dim_2']
+pool.map(
+    lambda path: dbutils.notebook.run(
+        "/Test/Threading/"+path, 
+        timeout_seconds= 60, 
+        arguments={"input-data": path}),
+    notebooks)
+```
+
 # 
 ```
 # https://stackoverflow.com/questions/3694487/in-python-how-do-you-convert-seconds-since-epoch-to-a-datetime-object
