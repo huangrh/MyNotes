@@ -11,6 +11,8 @@ pool.map(
     notebooks)
     
 ```
+- https://stackoverflow.com/questions/68937734/execute-multiple-notebooks-in-parallel-in-pyspark-databricks
+
 
 ## Run a Databricks notebook from another notebook
 - https://docs.databricks.com/notebooks/notebook-workflows.html  
