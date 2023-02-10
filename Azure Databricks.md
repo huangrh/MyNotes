@@ -1,3 +1,17 @@
+## Run multiple notebook concurently
+```
+from multiprocessing.pool import ThreadPool
+pool = ThreadPool(5)
+notebooks = ['dim_1', 'dim_2']
+pool.map(
+    lambda path: dbutils.notebook.run(
+        "/Test/Threading/"+path, 
+        timeout_seconds= 60, 
+        arguments={"input-data": path}),
+    notebooks)
+    
+```
+
 ## Run a Databricks notebook from another notebook
 - https://docs.databricks.com/notebooks/notebook-workflows.html  
 - dbutils.notebook API
