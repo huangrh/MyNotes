@@ -1,4 +1,5 @@
 # https://stackoverflow.com/questions/68937734/execute-multiple-notebooks-in-parallel-in-pyspark-databricks
+
 ```
 from multiprocessing.pool import ThreadPool
 pool = ThreadPool(5)
@@ -10,6 +11,9 @@ pool.map(
         arguments={"input-data": path}),
     notebooks)
 ```
+
+- More: https://stackoverflow.com/questions/46045956/whats-the-difference-between-threadpool-vs-pool-in-the-multiprocessing-module
+- thread vs process
 
 # 
 ```
