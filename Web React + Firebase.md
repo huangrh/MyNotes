@@ -22,3 +22,4 @@ https://github.com/machadop1407/react-firebase-google-authentication
 
 https://www.youtube.com/watch?v=vDT7EnUpEoo  
 https://github.com/machadop1407/react-firebase-google-authentication  
+https://stackoverflow.com/questions/69892360/how-to-deploy-react-to-azure-web-app-using-the-azure-app-service-plugin-in-visua 
