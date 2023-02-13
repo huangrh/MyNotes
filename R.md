@@ -63,6 +63,21 @@ g = ggplot(hcc_raf, aes(x = month_only, y = oe, fill=year) ) +
 g + scale_fill_manual(values=c('#999999','#E69F00'))
 ```
 
+```
+# Add space between the panel so the overlap 
+# ref: https://stackoverflow.com/questions/3681647/ggplot-how-to-increase-spacing-between-faceted-plots
+facet_wrap(~measure, nrow = 2, scales="free") + theme_classic() + theme(panel.spacing.y = unit(2, "lines"))
+
+# Change spacing between facets on both axis
+p + theme(panel.spacing = unit(2, "lines"))
+
+# Change horizontal spacing between facets
+p + theme(panel.spacing.x = unit(2, "lines"))
+
+# Change vertical spacing between facets
+p + theme(panel.spacing.y = unit(2, "lines"))
+```
+
 # strsplit and unnest
 - R: Split comma-separated strings in a column into separate rows
 ```r
