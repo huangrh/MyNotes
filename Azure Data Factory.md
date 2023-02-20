@@ -40,5 +40,6 @@ https://www.youtube.com/watch?v=jRgLSMlp28U&t=26s
   - Create a parameter to be used in the Pipeline. Later you pass this parameter to the Databricks Notebook Activity. In the empty pipeline, select the Parameters tab, then select + New and name it as 'input'.
   - In the Activities toolbox, expand Databricks. Drag the Notebook activity from the Activities toolbox to the pipeline designer surface.
 
-
+## Connector: ADF & snowflake   
+- https://learn.microsoft.com/en-us/azure/data-factory/connector-snowflake?tabs=data-factory
 
