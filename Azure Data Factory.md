@@ -41,5 +41,6 @@ https://www.youtube.com/watch?v=jRgLSMlp28U&t=26s
   - In the Activities toolbox, expand Databricks. Drag the Notebook activity from the Activities toolbox to the pipeline designer surface.
 
 ## Connector: ADF & snowflake   
-- https://learn.microsoft.com/en-us/azure/data-factory/connector-snowflake?tabs=data-factory
+- https://learn.microsoft.com/en-us/azure/data-factory/connector-snowflake?tabs=data-factory  
+- https://learn.microsoft.com/en-us/azure/data-factory/connector-snowflake?tabs=data-factory  
 
