@@ -1,3 +1,7 @@
+### Provider NPI  
+- NPI has org_name, and address. 
+	- https://data.cms.gov/provider-data/search?theme=Doctors%20and%20clinicians
+
 #### nucc taxonomy code 
 - https://www.cms.gov/Medicare/Provider-Enrollment-and-Certification/MedicareProviderSupEnroll/Downloads/TaxonomyCrosswalk.pdf  
 - https://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40/csv-mainmenu-57  
