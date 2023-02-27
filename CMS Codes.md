@@ -1,25 +1,28 @@
-### Provider NPI  
-- NPI has org_name, and address. 
-	- https://data.cms.gov/provider-data/search?theme=Doctors%20and%20clinicians
+### Provider NPI    
+- NPI has org_name, and address.     
+	- https://data.cms.gov/provider-data/search?theme=Doctors%20and%20clinicians    
+- NPPES Full Replacement Monthly NPI File    
+	- https://download.cms.gov/nppes/NPI_Files.html      
+	- https://download.cms.gov/nppes/NPPES_Data_Dissemination_February_2023.zip      
 
-#### nucc taxonomy code 
+### nucc taxonomy code 
 - https://www.cms.gov/Medicare/Provider-Enrollment-and-Certification/MedicareProviderSupEnroll/Downloads/TaxonomyCrosswalk.pdf  
 - https://www.nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40/csv-mainmenu-57  
 
-####  Transitional Care Management services - Face to face Visit  
+###  Transitional Care Management services - Face to face Visit  
 - https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/Downloads/Transitional-Care-Management-Services-Fact-Sheet-ICN908628.pdf
 - see page 7 
 
-#### Medicare Advantage Prescription Drug Star Ratings
+### Medicare Advantage Prescription Drug Star Ratings
 - https://www.cms.gov/Medicare/Prescription-Drug-Coverage/PrescriptionDrugCovGenIn/PerformanceData
 
-#### Medicare Claim Process Mannual    
+### Medicare Claim Process Mannual    
 - https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Internet-Only-Manuals-IOMs-Items/CMS018912
 
-#### Mental Health Code
+### Mental Health Code
 - https://www.cms.gov/files/document/mln1986542-medicare-mental-health.pdf
 - 
-####  Part B Drugs:   
+###  Part B Drugs:   
 - https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Part-B-Drugs/McrPartBDrugAvgSalesPrice  
 	- https://www.cms.gov/files/zip/october-2022-asp-ndc-hcpcs-crosswalks.zip 
 - https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory  
