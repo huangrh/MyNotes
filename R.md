@@ -1,6 +1,21 @@
 # Snow Flake DSN Connection R odbc
 - https://hevodata.com/learn/snowflake-r/
-- 
+
+```
+# DSN-less ODBC Connections 
+conn <- DBI::dbConnect(
+  odbc::odbc(),
+  Driver = "SnowflakeDSIIDriver",
+  server = "myorganization-myaccount.snowflakecomputing.com",
+  uid = "Username", 
+  database = "My_Snowflake_Database_Name",
+  schema = "My_Snowflake_Schema",
+  warehouse = "My_Snowflake_Virtual_Warehouse",
+  role = "My_Snowflake_Role",
+  authenticator = "snowflake",
+  pwd = "Password"
+)
+```
 
 # https://github.com/Azure/AzureR
 
