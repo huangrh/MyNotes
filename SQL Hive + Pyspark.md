@@ -59,6 +59,15 @@ datediff(string enddate, string startdate)
 TO_DATE(from_unixtime(unix_timestamp(CAST(OnsetDateKey AS STRING) ,  'yyyyMMdd')))
 ```
 
+```
+-- Get Age
+, (year(current_date) - year(birth_date) 
+   +case when month(birth_date) > month(current_date) then -1
+         when month(birth_date) = month(current_date) and day(birth_date) > day(current_date) then -1
+         else 0 
+     end) as age
+```
+
 [TO_DATE: DATETIME-PATTERN](https://spark.apache.org/docs/latest/sql-ref-datetime-pattern.html)
 
 
