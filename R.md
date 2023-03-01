@@ -1,3 +1,7 @@
+# Snow Flake DSN Connection R odbc
+- https://hevodata.com/learn/snowflake-r/
+- 
+
 # https://github.com/Azure/AzureR
 
 # https://bookdown.org/yihui/rmarkdown/html-document.html
