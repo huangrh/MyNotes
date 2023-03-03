@@ -1,6 +1,7 @@
-# Snow Flake DSN Connection R odbc
-- https://hevodata.com/learn/snowflake-r/
-
+# Snow Flake DSN Connection R odbc  
+- https://hevodata.com/learn/snowflake-r/  
+- https://dbi.r-dbi.org/reference/dbgetquery  
+- 
 ```
 # DSN-less ODBC Connections 
 conn <- DBI::dbConnect(
