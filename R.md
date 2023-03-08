@@ -1,7 +1,8 @@
 # Snow Flake DSN Connection R odbc  
 - https://hevodata.com/learn/snowflake-r/  
 - https://dbi.r-dbi.org/reference/dbgetquery  
-- 
+- https://stackoverflow.com/questions/55161683/does-snowflake-support-ssl  
+- https://stackoverflow.com/questions/63453843/does-snowflake-support-ssl-using-odbc
 ```
 # DSN-less ODBC Connections 
 conn <- DBI::dbConnect(
