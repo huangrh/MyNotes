@@ -1,3 +1,6 @@
+### place of service code (POS)
+https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/PhysicianFeeSched/Downloads/Website-POS-database.pdf
+
 ### Provider NPI    
 - NPI has org_name, and address.     
 	- https://data.cms.gov/provider-data/search?theme=Doctors%20and%20clinicians    
