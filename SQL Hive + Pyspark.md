@@ -100,6 +100,12 @@ SELECT
 FROM dat
 ```
 
+
+```
+-- string replace
+REGEXP_REPLACE(mbi_number,"-","") mbi  # delete the '-'
+```
+
 # https://stackoverflow.com/questions/41758949/difference-between-translate-and-regexp-replace
 ```
 spark.sql("SELECT TRANSLATE('ed-ba', 'abcde', '12345')").show()
