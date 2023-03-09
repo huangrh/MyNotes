@@ -5,7 +5,7 @@
 
 - [Azure Data Lake Storage Gen2(ADLS2)](https://learn.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-storage?tabs=data-factory)
 - [sftp](https://learn.microsoft.com/en-us/azure/data-factory/connector-sftp?tabs=data-factory)
-
+- [snowflake](https://resources.snowflake.com/data-warehousing/snowflake-connector-for-azure-data-factory-adf)
 
 ## [Azure Data Factory Custom Email Notifications Tutorial through logic app](https://www.youtube.com/watch?v=zyqf8e-6u4w)
 
