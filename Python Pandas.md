@@ -188,6 +188,7 @@ multiple_level_data = pd.json_normalize(data, record_path=['Results'], \
 
 # Pandas options
 ```
+import pandas as pd  
 pd.set_option("display.max.columns", None)
 pd.set_option("display.precision", 2)
 
@@ -246,7 +247,52 @@ df1.merge(df2, left_on='lkey', right_on='rkey',
 
 ```
 # https://stackoverflow.com/questions/55076502/utf-8-codec-cant-decode-byte-0xb5-in-position-0-invalid-start-byte
+import pandas as pd  
 pd.read_csv(filename,encoding = 'unicode_escape')
+```
+
+# RAF
+```
+# 1. calculate age
+def get_age(x):
+    from datetime import datetime
+    from datetime import date
+    from_service_year = x['member_year']
+    to  = str(from_service_year) + '0201'
+    to  = datetime.strptime(to, '%Y%m%d')
+    dob = datetime.strptime(x['date_birth'], '%Y-%m-%d')
+    if dob is None: 
+        age = None
+    else:
+        age = to.year - dob.year - ((to.month, to.day) < (dob.month, dob.day))
+#     dob =datetime.strptime(dob, '%Y-%m-%d')
+    return age
+hcc_dat['age'] = hcc_dat.apply(get_age, axis = 1)
+hcc_dat.head(2) 
+
+# 2 
+def get_icd10_list(icd10):
+    if icd10 is None:
+        return []
+    return icd10.split("|")
+hcc_dat['icd10list_current'] = hcc_dat['diag_current'].apply(get_icd10_list)
+hcc_dat['icd10list_past'] = hcc_dat['diag_past'].apply(get_icd10_list)
+
+# 3. 
+from functools import partial
+from hccpy.hcc import HCCEngine
+he = HCCEngine(version = '24')
+def get_raf(row, col='icd10list_current'):
+    icd10 = row[col]
+    age   = row['age']
+    sex   = row['gender']
+    if not all([age, sex]):
+        return None
+    rp = he.profile(dx_lst=icd10, age=age, sex=sex, elig="CNA", orec="0", medicaid=False)
+    return rp['risk_score']    
+
+# 
+hcc_dat['raf_observed']         = hcc_dat.apply(partial(get_raf, col='icd10list_current') , axis = 1)
 ```
 
 
