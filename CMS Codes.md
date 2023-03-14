@@ -40,7 +40,7 @@ https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/PhysicianFeeSched/
 
 [CMS List of CPT/HCPCS Codes](https://www.cms.gov/Medicare/Fraud-and-Abuse/PhysicianSelfReferral?msclkid=915e55c3d13011ecb39f45d53e297bbe)  
 [CPT Code Category-I, II, III ](https://en.wikipedia.org/wiki/Current_Procedural_Terminology)  
-[CMS HCPCS QUARTERLY UPDATE](https://www.cms.gov/medicare/coding/hcpcsreleasecodesets/hcpcs-quarterly-update)  
+[CMS HCPCS QUARTERLY UPDATE-all HCPCS Level II updates](https://www.cms.gov/medicare/coding/hcpcsreleasecodesets/hcpcs-quarterly-update)  
 
 ICD-10 | CMS
 •	2022 Code Descriptions in Tabular Order - Updated 02/01/2022 (ZIP)  
