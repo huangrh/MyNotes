@@ -1,3 +1,8 @@
+## https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html
+```
+# https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html
+above_35 = titanic[titanic["Age"] > 35]
+```
 ## Read string into pandas
 ```
 # https://stackoverflow.com/questions/22604564/create-pandas-dataframe-from-a-string
