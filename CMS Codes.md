@@ -38,17 +38,20 @@ https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/PhysicianFeeSched/
 [HCUP-Chronic Condition Indicator](https://www.hcup-us.ahrq.gov/toolssoftware/chronic_icd10/chronic_icd10.jsp#download)  
 - Chronic, Acute, Not Applicable, Both Chronic and Acute. [download link](https://www.hcup-us.ahrq.gov/toolssoftware/chronic_icd10/CCI-ICD10CM-v2021-1.zip)  
 
-[CMS List of CPT/HCPCS Codes](https://www.cms.gov/Medicare/Fraud-and-Abuse/PhysicianSelfReferral?msclkid=915e55c3d13011ecb39f45d53e297bbe)
+[CMS List of CPT/HCPCS Codes](https://www.cms.gov/Medicare/Fraud-and-Abuse/PhysicianSelfReferral?msclkid=915e55c3d13011ecb39f45d53e297bbe)  
+[CPT Code Category-I, II, III ](https://en.wikipedia.org/wiki/Current_Procedural_Terminology)  
+[CMS HCPCS QUARTERLY UPDATE](https://www.cms.gov/medicare/coding/hcpcsreleasecodesets/hcpcs-quarterly-update)  
 
 ICD-10 | CMS
 •	2022 Code Descriptions in Tabular Order - Updated 02/01/2022 (ZIP)  
 •	2022 ICD-10-PCS Codes File - updated December 1, 2021 (ZIP)
 
+When medical coders and billers talk about HCPCS codes, they’re actually referring to HCPCS Level II codes.
 
-Release	Maintainer	Number of Codes	discharges	Release Frequency
-2022 ICD-10-CM codes	CMS	72621	October 1, 2021 - September 30, 2022	Yearly in December
+Release	             Maintainer	Number of Codes	discharges				Release Frequency
+2022 ICD-10-CM codes	CMS	72621		October 1, 2021 - September 30, 2022	Yearly in December
 2022 ICD-10-PCS codes	CMS	78227		
-2021 ICD-10-CM codes	CMS	72750	October 1, 2020 - September 30, 2021	
+2021 ICD-10-CM codes	CMS	72750		October 1, 2020 - September 30, 2021	
 2021 ICD-10-PCS codes	CMS	78138		
 HCPCS Level-1 (CPT-4th Revision – Category I)	American Medical Association (AMA)	>10,000		
 HCPCS Level-2	CMS	7545 in Release 2022		Quarterly
