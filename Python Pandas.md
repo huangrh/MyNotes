@@ -4,7 +4,7 @@ pd.read_csv(parse_dates=['date_col_name']) # parse to datetime type
 df['date_col_name'] = df['date_col_name'].dt.date
 # other option: see - https://stackoverflow.com/questions/16852911/how-do-i-convert-strings-in-a-pandas-data-frame-to-a-date-data-type
 pd.to_datetime(df) # parse str to datetime type
-
+df['date_col_name'] = pd.to_datetime(df['date_col_name'] ).dt.date  # str --> date  
 ```
 
 ## https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html
