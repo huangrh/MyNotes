@@ -1,3 +1,6 @@
+## DAX
+https://learn.microsoft.com/en-us/dax/dax-function-reference  
+
 ## Export Power BI report to PDF using Power Automate with filters applied
 - power bi report to pdf
 - https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-automate-power-bi-report-export
@@ -24,8 +27,12 @@
 - https://learn.microsoft.com/en-us/power-bi/developer/visuals/environment-setup?tabs=windows
 - https://learn.microsoft.com/en-us/power-bi/developer/visuals/context-menu?tabs=EmptySpace
 
-## Resources: 
 
+## Conditional Format  
+- [Conditional Formatting | ROW by ROW color scale in a MATRIX in PowerBI](https://www.youtube.com/watch?v=wTRrskQzAHk&t=937s)
+- https://community.powerbi.com/t5/Desktop/Matrix-conditional-format-Background-color-each-cell/m-p/1258851#M554084
+- 
+## Resources: 
 - https://github.com/Microsoft/PowerBI-visuals-wordcloud
 
 - GitHub: https://github.com/Microsoft/PowerBI-visuals-bulletchart
