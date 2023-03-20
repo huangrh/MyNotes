@@ -1,3 +1,11 @@
+```
+# Change file path format from windows to R
+winpath2r <- function() {
+    gsub("\\\\", "/", readClipboard())
+}
+```
+
+
 # Snow Flake DSN Connection R odbc  
 - https://hevodata.com/learn/snowflake-r/  
 - https://dbi.r-dbi.org/reference/dbgetquery  
