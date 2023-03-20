@@ -62,7 +62,35 @@ optimize(my_function,                    # Apply optimize
 # copy file to adls gen2
 https://github.com/Azure/AzureRMR    
 https://mran.microsoft.com/web/packages/AzureStor/vignettes/intro.html    
-https://github.com/yueguoguo/r-on-azure   
+https://github.com/yueguoguo/r-on-azure    
+
+```r
+# get azire storage containers  
+get_azure_cons <- function(az = NULL) {
+
+    if (is.null(az)) {
+        az <- create_azure_login()
+        az   = get_azure_login()
+    }
+
+    token <- AzureRMR::get_azure_token("https://storage.azure.com",
+                                       tenant="tenant id from Azure Active Directory Portal",
+                                       app=az$token$client$client_id)
+    #
+    cons <- list(
+        uat  = "stu Storage account",
+        prod = "stp Storage account",
+        qa   = "stq Storage account",
+        dev  = "std Storage account"
+    ) %>%
+        lapply(function(storage_act){
+            storage_endp = glue::glue("https://{storage_act}.dfs.core.windows.net/")
+            ad_endp_tok  = AzureStor::storage_endpoint(storage_endp, token=token)
+            con          = AzureStor::storage_container(ad_endp_tok, "my_container_name")
+        })
+}
+```
+
 ```r
 library(AzureRMR)
 require(AzureStor)
@@ -84,6 +112,7 @@ AzureStor::list_storage_files(cont)
 src =  file.path("C:/O365/OneDrive/Azure_Landing", "src_file_name.csv")
 # 
 storage_upload(cont, src, "share/path/target_file_name.csv")
+storage_download(con, src, dest) # container, src local file, dest storage file name  
 ```
 
 # ggplot2
