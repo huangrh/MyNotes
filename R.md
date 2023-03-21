@@ -71,7 +71,7 @@ get_azure_cons <- function(az = NULL) {
     if (is.null(az)) {
         az <- create_azure_login()
         az   = get_azure_login()
-    }
+    }  
 
     token <- AzureRMR::get_azure_token("https://storage.azure.com",
                                        tenant="tenant id from Azure Active Directory Portal",
@@ -88,7 +88,15 @@ get_azure_cons <- function(az = NULL) {
             ad_endp_tok  = AzureStor::storage_endpoint(storage_endp, token=token)
             con          = AzureStor::storage_container(ad_endp_tok, "my_container_name")
         })
-}
+}  
+
+storage_upload <- function(con, src, dest) {
+    AzureStor::storage_upload(con, src=src, dest=dest)
+}  
+
+storage_download <- function(con, src, dest ) {
+    AzureStor::storage_download(con, src=src, dest=dest)
+}  
 ```
 
 ```r
