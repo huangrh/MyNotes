@@ -1,3 +1,8 @@
+## How to geta list of table table   
+
+SELECT COUNT(*) FROM [database].INFORMATION_SCHEMA.TABLES
+
+
 ## Not in : One null value is enough to cause your query to return no results.
 - hive> select * from A where A.id not in (select id from B where id is not null);
 - NOT IN in the WHERE clause with uncorrelated subqueries is supported since Hive 0.13 which was released more than 3 years ago, on 21 April, 2014.
