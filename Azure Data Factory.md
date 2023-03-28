@@ -47,4 +47,5 @@ https://www.youtube.com/watch?v=jRgLSMlp28U&t=26s
 - Export Table  
 Direct copying data from Snowflake is only supported when Azure Blob Storage linked service "Authentication method" is set as SasUriAuthentication.
   - https://stackoverflow.com/questions/68550980/copy-data-from-azure-data-lake-to-snowflake-without-stage-using-azure-data-facto
+  - https://learn.microsoft.com/en-us/azure/data-factory/managed-virtual-network-private-endpoint
 
