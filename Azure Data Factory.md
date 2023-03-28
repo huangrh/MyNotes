@@ -44,4 +44,7 @@ https://www.youtube.com/watch?v=jRgLSMlp28U&t=26s
 ## Connector: ADF & snowflake   
 - https://learn.microsoft.com/en-us/azure/data-factory/connector-snowflake?tabs=data-factory  
 - https://learn.microsoft.com/en-us/azure/data-factory/connector-snowflake?tabs=data-factory  
+- Export Table  
+Direct copying data from Snowflake is only supported when Azure Blob Storage linked service "Authentication method" is set as SasUriAuthentication.
+  - https://stackoverflow.com/questions/68550980/copy-data-from-azure-data-lake-to-snowflake-without-stage-using-azure-data-facto
 
