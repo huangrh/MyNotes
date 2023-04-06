@@ -333,3 +333,9 @@ get_target <- function(x, sys_relative_target=0.06057088, direction = -1 ) {
 ```
 file.edit('test.R')
 ```
+# Replace NA with Last non-NA in a data frame 
+```
+# [57%](https://stackoverflow.com/questions/7735647/replacing-nas-with-latest-non-na-value)
+library(tidyr)
+fill(df, y, .direction = 'down')
+```
