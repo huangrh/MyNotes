@@ -1,4 +1,8 @@
 ```
+withColumn('source', coalesce(col('source'),(lit(source))))
+```
+
+```
 # create database
 -- CREATE SCHEMA IF NOT EXISTS cldw;
 # drop database
