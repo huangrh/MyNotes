@@ -11,6 +11,8 @@ winpath2r <- function() {
 - https://dbi.r-dbi.org/reference/dbgetquery  
 - https://stackoverflow.com/questions/55161683/does-snowflake-support-ssl  
 - https://stackoverflow.com/questions/63453843/does-snowflake-support-ssl-using-odbc
+- https://docs.snowflake.com/developer-guide/odbc/odbc-parameters
+	- snowflake ODBC use https, because in the document it says it use the port 443, which the port https uses.    
 
 
 
