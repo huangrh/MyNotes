@@ -1,3 +1,48 @@
+## Read and write data from Snowflake
+- https://learn.microsoft.com/en-us/azure/databricks/external-data/snowflake
+- https://learn.microsoft.com/en-us/azure/databricks/_extras/notebooks/source/snowflake-python.html
+- 
+```
+# Use dbutils secrets to get Snowflake credentials.
+user = dbutils.secrets.get("data-warehouse", "<snowflake-user>")
+password = dbutils.secrets.get("data-warehouse", "<snowflake-password>")
+ 
+options = {
+  "sfUrl": "<snowflake-url>",
+  "sfUser": user,
+  "sfPassword": password,
+  "sfDatabase": "<snowflake-database>",
+  "sfSchema": "<snowflake-schema>",
+  "sfWarehouse": "<snowflake-cluster>"
+}
+
+# Read the data written by the previous cell back.
+df = spark.read \
+  .format("snowflake") \
+  .options(**options) \
+  .option("dbtable", "table_name") \
+  .load()
+display(df)
+
+# Write the data to a Delta table
+df.write.format("delta").saveAsTable("sf_ingest_table")
+
+# Generate a simple dataset containing five values and write the dataset to Snowflake.
+spark.range(5).write \
+  .format("snowflake") \
+  .options(**options) \
+  .option("dbtable", "table_name") \
+  .save()
+```
+
+## Create Secrets Scope  
+- 38. Create Databricks Scope using Azure Key Vault and List secrets from Scope  
+- https://www.youtube.com/watch?v=2gMX98-RXPM
+- secrets/createScope  
+- dbutils.secrests.get("<scope name>", "<secrets name>")
+- https://docs.snowflake.com/en/user-guide/spark-connector-overview
+- The connector uses Scala 2.12.x or 2.13.x to perform these operations and uses the Snowflake JDBC driver to communicate with Snowflake.
+    
 ## Run multiple notebook concurently
 ```
 from multiprocessing.pool import ThreadPool
