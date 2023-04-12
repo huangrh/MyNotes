@@ -1,7 +1,34 @@
 ## Read and write data from Snowflake
 - https://learn.microsoft.com/en-us/azure/databricks/external-data/snowflake
 - https://learn.microsoft.com/en-us/azure/databricks/_extras/notebooks/source/snowflake-python.html
-- 
+
+
+```
+from pyspark.sql.types import FloatType, StringType
+from pyspark.sql.functions import col
+for index, row in tables_df.iterrows():
+    table_schema = row['TABLE_SCHEMA']
+    table_name   = row['TABLE_NAME']
+    print(index, table_schema, table_name)
+    df = spark.read \
+        .format("snowflake") \
+        .options(**options) \
+        .options(sfSchema=table_schema) \
+        .option("dbtable", table_name) \
+        .load() 
+
+    #find all decimal columns in your SparkDF
+    decimals_cols = [c for c in df.columns if 'Decimal' in str(df.schema[c].dataType)]
+    
+    #convert all decimals columns to floats
+    for col in decimals_cols:
+        # df = df.withColumn(col, df[col].cast(FloatType()))
+        df = df.withColumn(col, df[col].cast(StringType()))
+
+    file_full_name = '/dbfs/mnt/storage_container/' + 'LandingZone/' + table_schema + '/' + table_name + '.csv'
+    df.toPandas().to_csv(file_full_name, index = False, sep = ',')
+```
+
 ```
 # Use dbutils secrets to get Snowflake credentials.
 user = dbutils.secrets.get("data-warehouse", "<snowflake-user>")
@@ -38,11 +65,21 @@ spark.range(5).write \
 ## Create Secrets Scope  
 - 38. Create Databricks Scope using Azure Key Vault and List secrets from Scope  
 - https://www.youtube.com/watch?v=2gMX98-RXPM
-- secrets/createScope  
-- dbutils.secrests.get("<scope name>", "<secrets name>")
+- notebook_url + secrets/createScope  
+- dbutils.secrests.get("<scope name>", "<secrets name>") 
+- dbutils.secrets.listScope()  
+- dbutils.secrets.list(scope="scope-name")
+- 
 - https://docs.snowflake.com/en/user-guide/spark-connector-overview
 - The connector uses Scala 2.12.x or 2.13.x to perform these operations and uses the Snowflake JDBC driver to communicate with Snowflake.
-    
+
+```
+value = dbutils.secrets.get(scope="myScope", key="myKey")
+
+for char in value:
+    print(char, end=" ")
+```
+ 
 ## Run multiple notebook concurently
 ```
 from multiprocessing.pool import ThreadPool
