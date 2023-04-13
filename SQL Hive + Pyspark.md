@@ -1,3 +1,22 @@
+# https://stackoverflow.com/questions/64380125/how-to-optimize-the-pyspark-topandas-with-type-hints
+```
+from pyspark.sql.types import FloatType
+from pyspark.sql.functions import col
+
+#find all decimal columns in your SparkDF
+decimals_cols = [c for c in df.columns if 'Decimal' in str(df.schema[c].dataType)]
+
+#convert all decimals columns to floats
+for col in decimals_cols:
+    df = df.withColumn(col, df[col].cast(FloatType()))
+
+#Now you can easily convert Spark DF to Pandas DF without decimal errors
+pandas_df = df.toPandas() 
+
+#sometimes if you have spaces in the column names it will convert to lowercase 
+pandas_df.columns = pandas_df.columns.str.upper()
+```
+
 ```
 withColumn('source', coalesce(col('source'),(lit(source))))
 ```
