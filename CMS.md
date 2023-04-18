@@ -5,3 +5,7 @@ https://qpp.cms.gov/
 
 https://www.cms.gov/files/document/cclf-information-packet.pdf   
 https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/sharedsavingsprogram/program-guidance-and-specifications  
+
+https://qualitynet.cms.gov/ 
+https://qualitynet.cms.gov/inpatient/measures/readmission/methodology  
+
