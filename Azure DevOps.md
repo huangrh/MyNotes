@@ -1,3 +1,6 @@
+## Set up permission to create branches 
+https://learn.microsoft.com/en-us/azure/devops/repos/git/set-git-repository-permissions?view=azure-devops#git-repository
+
 ## [Azure DevOps Product Development Multiple Teams](https://www.dotnetcurry.com/devops/azure-product-development-multiple-teams)
 
 ## [Azure devops pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops)
