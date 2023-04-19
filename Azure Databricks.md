@@ -1,3 +1,69 @@
+## Read and Write
+
+```
+df.write.format("delta").
+df.write.format('parquet').mode("overwrite").save(target_file)
+```
+
+```
+# Load data
+for i,file in enumerate(csv_files):
+    # setup
+
+    files_loading.append(file.path)
+    file_prefix = [x for x in file.path.replace('dbfs:','').replace(lz_path,'').split('/') if x != ''][:-1]
+    file_postfix = re.sub('.*-{3,}(.+)','\\1',file.name).replace(".csv","")
+    file_postfix = re.sub('_{2,}','_',
+                          re.sub(r'\(|\)| |-', '_', 
+                                 file_postfix))
+    file_postfix = re.sub('^_|_$', '', file_postfix)
+    target_file    = rz_path + '/' + '/'.join(file_prefix) + '/' +file_postfix
+    external_table = ('_'.join(file_prefix) + '_' +file_postfix).lower()
+    source = "_".join(file_prefix)
+    print(str(i), external_table)
+    # target_file, external_table
+    # read the file
+    df1 = spark.read.format("csv").option("Header", "true").option('quote','"').option("escape", "\\").option("escape", '"').load(file.path)
+
+    # clean up the file header
+    rename_str = "df2 = df1." + '.'.join([f"""withColumnRenamed("{col}", "{name_clean(col)}")"""
+                                for col in df1.schema.fieldNames()])
+    exec(rename_str)
+    df3 = df2.withColumn("sessionid",lit(get_session_id()))
+    if 'source' in df3.columns:
+        df3 = df3.withColumn('source', coalesce(col('source'),(lit(source))))
+
+    print('shape: ',df2.count(), ",", len(df2.columns), '\n')
+    # save file to rawzone
+    df3.write.format('delta').option("overwriteSchema", "true").mode('overwrite').save(target_file)
+
+    # create a external table if not exists
+    query = f"""
+    CREATE TABLE IF NOT EXISTS rawzone.{external_table} 
+    USING DELTA 
+    LOCATION '{target_file}';
+    """
+    spark.sql(query)
+```
+
+## List file recursive
+
+```
+def lsR(path):
+  return([fname for flist in [([fi] 
+                               if fi.isFile() 
+                               else lsR(fi.path)) 
+                              for fi in dbutils.fs.ls(path)] 
+          for fname in flist])
+files = lsR('/path/to/folder')
+```
+
+## Exit 
+
+```
+path = dbutils.notebook.entry_point.getDbutils().notebook().getContext().notebookPath().get()
+dbutils.notebook.exit({"Run Finished: ": path})
+```
 ## Read and write data from Snowflake
 - https://learn.microsoft.com/en-us/azure/databricks/external-data/snowflake
 - https://learn.microsoft.com/en-us/azure/databricks/_extras/notebooks/source/snowflake-python.html
@@ -347,17 +413,7 @@ aggregated
    .save("/mnt/myblob/output.xlsx")
 ```
 
-## List file recursive
 
-```
-def lsR(path):
-  return([fname for flist in [([fi] 
-                               if fi.isFile() 
-                               else lsR(fi.path)) 
-                              for fi in dbutils.fs.ls(path)] 
-          for fname in flist])
-files = lsR('/path/to/folder')
-```
 ## Pyspark : title case
 ```
 upper
