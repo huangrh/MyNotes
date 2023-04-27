@@ -240,3 +240,14 @@ df = pd.DataFrame(
 )
 ```
 
+# https://stackoverflow.com/questions/993358/creating-a-range-of-dates-in-python
+```
+import pandas as pd
+from datetime import datetime
+
+pd.date_range(end = datetime.today(), periods = 100).to_pydatetime().tolist()
+
+#OR
+
+pd.date_range(start="2018-09-09",end="2020-02-02")
+```
