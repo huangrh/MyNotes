@@ -251,3 +251,15 @@ pd.date_range(end = datetime.today(), periods = 100).to_pydatetime().tolist()
 
 pd.date_range(start="2018-09-09",end="2020-02-02")
 ```
+
+# https://datagy.io/python-f-strings/
+```
+print(f'{"apple" : >30}') # Right align
+print(f'{"apple" : <30}') # Left align
+print(f'{"apple" : ^30}') # Center align
+print(f'Percentage format for number with two decimal places: {0.9124325345:.2%}') # Percent
+print(f'Fixed point format for number with three decimal places: {0.9124325345:.3f}')
+print(f'Currency format for large_number with two decimal places: ${126783.6457:.2f}')
+print(f'Currency format for large_number with two decimal places and comma seperators: ${126783.6457:,.2f}')
+print(f'Exponent format for number: {0.9124325345:e}')
+```
