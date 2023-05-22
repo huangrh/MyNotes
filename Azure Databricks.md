@@ -1,3 +1,9 @@
+## convert to R data frame  
+
+```
+SparkR::as.data.frame(SparkR::sql(query))
+
+```
 ## Read and Write
 
 ```
