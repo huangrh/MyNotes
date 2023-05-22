@@ -1,8 +1,8 @@
-## convert to R data frame  
+## convert between spark & R data frame  
 
 ```
 SparkR::as.data.frame(SparkR::sql(query))
-
+SparkR::createDataFrame(r_data_frame)
 ```
 ## Read and Write
 
