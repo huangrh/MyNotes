@@ -126,6 +126,16 @@ storage_download(con, src, dest) # container, src local file, dest storage file 
 ```
 
 # ggplot2
+- [how-to-put-labels-over-geom-bar-for-each-bar-in-r-with-ggplot2](https://stackoverflow.com/questions/12018499/how-to-put-labels-over-geom-bar-for-each-bar-in-r-with-ggplot2)
+
+```
+ggplot(data=dat, aes(x=Types, y=Number, fill=sample)) + 
+     geom_bar(position = 'dodge', stat='identity') +
+     geom_text(aes(label=Number), position=position_dodge(width=0.9), vjust=-0.25,
+     angle = 90)
+     
+```
+
 - [bar plot  ](http://www.sthda.com/english/wiki/ggplot2-barplots-quick-start-guide-r-software-and-data-visualization)
 ```
 g = ggplot(hcc_raf, aes(x = month_only, y = oe, fill=year) ) + 
