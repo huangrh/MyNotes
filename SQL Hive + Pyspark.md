@@ -71,6 +71,7 @@ truncate table abc;
 # The ISO 8601 format YYYY-MM-DD (2022-11-01)
 date_format(current_date,'yyyy-MM-01')
 add_months("2022-01-01, 5, "yyyy-MM-dd") # return string '2022-05-01'
+add_months(current_date(), -24)  # return the date 24 months before
 last_day(string date)
 trunc(string date, string format)
 date_add(string startdate, tinyint/smallint/int days)
