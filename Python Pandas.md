@@ -1,6 +1,6 @@
 ## How to loop through columns in a dataframe   
-- https://www.geeksforgeeks.org/loop-or-iterate-over-all-or-certain-columns-of-a-dataframe-in-python-pandas/
-``
+- https://www.geeksforgeeks.org/loop-or-iterate-over-all-or-certain-columns-of-a-dataframe-in-python-pandas/   
+```
 import pandas as pd
 # List of Tuples
 students = [('Ankit', 22, 'A'),
@@ -17,7 +17,7 @@ stu_df = pd.DataFrame(students, columns =['Name', 'Age', 'Section'],
 for (columnName, columnData) in stu_df.iteritems():
     print('Column Name : ', columnName)
     print('Column Contents : ', columnData.values)
-``
+```
 
 ## # https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
 ```
