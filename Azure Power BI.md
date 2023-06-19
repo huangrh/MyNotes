@@ -1,4 +1,5 @@
-## https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-power-bi-powerpoint-add-in-about
+## Add Power BI in PowerPoint
+https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-power-bi-powerpoint-add-in-about
 
 ## DAX
 https://learn.microsoft.com/en-us/dax/dax-function-reference  
