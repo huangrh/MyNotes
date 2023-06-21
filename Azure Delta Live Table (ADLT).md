@@ -1,3 +1,7 @@
+
+## Applying software development & DevOps best practices to Delta Live Table pipelines
+- https://www.databricks.com/blog/applying-software-development-devops-best-practices-delta-live-table-pipelines
+
 ## Ref:
 
 - https://docs.microsoft.com/en-us/azure/databricks/data-engineering/delta-live-tables/
