@@ -1,3 +1,8 @@
+### Office visit CPT/HCPCS Codes  
+  IF(CLM_LINE_HCPCS_CD 
+         RLIKE '99202|99203|99204|99205|99212|99213|99214|99215|99341|99342|99343|99344|99345|99347|99348|99349|99350|99386|99387|99396|99397|G0438|G0439'
+         , 1, 0) office_visit_flag
+
 ### ACO38  
 - https://nqfappservicesstorage.blob.core.windows.net/proddocs/30/Fall/2020/measures/2888/shared/2888.zip
 ### place of service code (POS)
