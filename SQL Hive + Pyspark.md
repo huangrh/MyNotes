@@ -86,6 +86,7 @@ TO_DATE(from_unixtime(unix_timestamp(CAST(OnsetDateKey AS STRING) ,  'yyyyMMdd')
 ```
  select
  CONCAT_WS('', 'Week', WEEKOFYEAR(appt.Appt_Time )) Week_Year
+-- below code to calculate the date of Sunday of the week. 
  ,  date_sub(appt.Appt_Time,pmod(datediff(to_date(appt.Appt_Time),'1900-01-07'),7)) Week_Year_Date
   , date_format(appt.Appt_Time , 'EE') Day_Week
 ```
