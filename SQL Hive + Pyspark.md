@@ -3,7 +3,7 @@
 from pyspark.sql.types import FloatType
 from pyspark.sql.functions import col
 
-#find all decimal columns in your SparkDF
+# find all decimal columns in your SparkDF
 decimals_cols = [c for c in df.columns if 'Decimal' in str(df.schema[c].dataType)]
 
 #convert all decimals columns to floats
@@ -81,6 +81,13 @@ date_sub(string startdate, tinyint/smallint/int days)
 datediff(string enddate, string startdate)
 # string to date
 TO_DATE(from_unixtime(unix_timestamp(CAST(OnsetDateKey AS STRING) ,  'yyyyMMdd')))
+```
+
+```
+ select
+ CONCAT_WS('', 'Week', WEEKOFYEAR(appt.Appt_Time )) Week_Year
+ ,  date_sub(appt.Appt_Time,pmod(datediff(to_date(appt.Appt_Time),'1900-01-07'),7)) Week_Year_Date
+  , date_format(appt.Appt_Time , 'EE') Day_Week
 ```
 
 ```
