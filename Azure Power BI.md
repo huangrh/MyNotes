@@ -1,3 +1,6 @@
+## Create Custom Navigation Tabs to your Power BI Reports EASILY using this trick // Power BI Guide
+- https://www.youtube.com/watch?v=O8jhZRXL4x8  
+
 ## Add Power BI in PowerPoint
 https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-power-bi-powerpoint-add-in-about
 
