@@ -1,5 +1,9 @@
 ## Create Custom Navigation Tabs to your Power BI Reports EASILY using this trick // Power BI Guide
-- https://www.youtube.com/watch?v=O8jhZRXL4x8  
+- https://www.youtube.com/watch?v=O8jhZRXL4x8
+- 
+## How to create a Export to Excel / CSV button in Power BI
+- https://www.youtube.com/watch?v=BnTipbooeP0
+- 
 ## Create page and bookmark navigators   
 https://learn.microsoft.com/en-us/power-bi/create-reports/button-navigators?tabs=powerbi-desktop
 
