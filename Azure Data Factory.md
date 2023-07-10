@@ -1,3 +1,8 @@
+# SFTP 
+- https://learn.microsoft.com/en-us/azure/data-factory/connector-sftp?tabs=data-factory 
+
+
+
 # ADF: sync between working branch and adf_publish branch
 - https://praveenkumarsreeram.com/2020/06/27/azure-data-factory-all-about-publish-branch-adf_publish/
 
