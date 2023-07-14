@@ -1,3 +1,6 @@
+## How to Create a Report Bookmark
+- https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks?tabs=powerbi-desktop
+- 
 ## Create Custom Navigation Tabs to your Power BI Reports EASILY using this trick // Power BI Guide
 - https://www.youtube.com/watch?v=O8jhZRXL4x8
 - 
