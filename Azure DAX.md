@@ -1,6 +1,9 @@
-# 
+
+# Pareto:  column chart - line and clusted. 
 ```
-# CPT = CALCULATE(COUNTA(fact_rcm[BILL_CODE]))
+// count
+# CPT = CALCULATE(COUNTA(Bill[CPT]))
+// %Pareto line 
 % Pareto = 
 
 VAR CPT_Count = [# CPT]
