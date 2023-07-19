@@ -1,5 +1,6 @@
 # 
 ```
+# CPT = CALCULATE(COUNTA(fact_rcm[BILL_CODE]))
 % Pareto = 
 
 VAR CPT_Count = [# CPT]
