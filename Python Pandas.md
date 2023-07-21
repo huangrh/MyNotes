@@ -256,6 +256,84 @@ https://stackoverflow.com/questions/20069009/pandas-get-topmost-n-records-within
 df.sort_values(['id', 'value'], axis=0).groupby('id').head(2)
 ```
 
+```
+# sort by column name
+df.sort_values(by = ['Name'])
+```
+
+
+```
+# https://www.geeksforgeeks.org/how-to-filter-rows-using-pandas-chaining/
+# Using pipe() method
+df2 = data.pipe(lambda x: x['Country'] == "India")
+
+# Chaining loc[] operator to filter rows
+df2 = data.loc[lambda x: x['ID'] <= 103].loc[lambda x: x['Age'] == 23]
+
+
+```
+
+
+```
+Select multiple rows and particular columns.
+Dataframe.loc[["row1", "row2"...], ["column1", "column2", "column3"...]]
+Dataframe.loc[[:, ["column1", "column2", "column3"]]
+
+
+# Using the operator .iloc[]
+# to select single row
+result = df.iloc[2]
+
+# Using the operator .iloc[]
+# to select multiple rows with
+# some particular columns
+result = df.iloc[[2, 3, 5], [0, 1]]
+
+# Using the operator .iloc[]
+# to select multiple rows
+result = df.iloc[[2, 3, 5]]
+
+# Using the operator .iloc[]
+# to select all the rows with
+# some particular columns
+result = df.iloc[:, [0, 1]]
+
+# Using mask and lambda function to filter
+df2 = data.mask(lambda x: x['Age'] <= 39)
+
+# select the rows with specific string
+# or character value in a particular column
+print(data[data.Name.str.contains('am')])
+
+# define the set of values
+lst=['Uk','Australia']
+ 
+# select the rows from specific set
+# of values in a particular column
+print(data[data.Country.isin(lst)])
+
+# subset
+# https://stackoverflow.com/questions/17071871/how-do-i-select-rows-from-a-dataframe-based-on-column-values
+some_value_list = ['a', 'b', 'b']
+df.loc[df['column_name'].isin(some_value_list)]
+
+# Filter rows use query function
+# https://www.geeksforgeeks.org/how-to-filter-rows-based-on-column-values-with-query-function-in-pandas/
+df.query("Age>13 and Name=='C'")
+
+# ==================================
+# Filter based on date
+# convert date column into date format
+df['date_added'] = pd.to_datetime(df['date_added'])
+# filter rows on the basis of date
+newdf = (df['date_added'] > '01-03-2020') & (df['date_added'] <= '31-12-2020')
+# locate rows and access them using .loc() function
+newdf = df.loc[newdf]
+# print dataframe
+print(newdf)
+```
+
+
 # Pandas Groupby + apply
 ```
 # setup
