@@ -19,3 +19,6 @@ https://qualitynet.cms.gov/inpatient/measures/readmission/methodology
 - -https://www.aapc.com/tools/rvu-calculator.aspx
 
 # https://www.ncqa.org/wp-content/uploads/2023-0706_Digital-Measurement-Midyear-Review-DISPLAY.pdf
+
+# Loinc codes  
+- https://loinc.org/downloads/
