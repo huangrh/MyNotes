@@ -1,5 +1,8 @@
-## HOW to drop columns if the columns is null. 
+## HOW to drop columns if the columns is null.   
+
 ```
+# https://www.geeksforgeeks.org/how-to-drop-one-or-multiple-columns-in-pandas-dataframe/
+# 
 for colname, col in df.iteritems(): 
     if all(col.isnull()) : 
         print(colname)
