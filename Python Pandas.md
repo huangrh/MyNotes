@@ -1,3 +1,11 @@
+## HOW to drop columns if the columns is null. 
+```
+for colname, col in df.iteritems(): 
+    if all(col.isnull()) : 
+        print(colname)
+        df.drop(colname, axis = 1, inplace = True)
+```
+
 ## How to loop through columns in a dataframe   
 - https://www.geeksforgeeks.org/loop-or-iterate-over-all-or-certain-columns-of-a-dataframe-in-python-pandas/   
 ```
