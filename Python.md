@@ -1,3 +1,11 @@
+# Repalce by matched part
+```
+ #  https://note.nkmk.me/en/python-str-replace-translate-re-sub/
+re.sub(r'.*(\d{4}_\d+).*', lambda m: m.group(1),file.split("/")[-1])
+
+```
+
+
 # https://stackoverflow.com/questions/68937734/execute-multiple-notebooks-in-parallel-in-pyspark-databricks
 
 ```
