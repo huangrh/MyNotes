@@ -8,3 +8,8 @@
 3. [Async JS Crash Course - Callbacks, Promises, Async Await](https://www.youtube.com/watch?v=PoRJizFvM7s&t=640s)
 4. [JavaScript Programming - Full Course](https://www.youtube.com/watch?v=jS4aFq5-91M)
 
+# firebase
+
+# NVM 
+- https://github.com/nvm-sh/nvm/blob/master/README.md   
+
