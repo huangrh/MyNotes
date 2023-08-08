@@ -1,3 +1,36 @@
+# SFTP. SCP
+# https://stackoverflow.com/questions/250283/how-to-scp-in-python
+```
+def createSSHClient():
+    import paramiko
+    client = paramiko.SSHClient()
+    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    client.connect('<IP Address>', username='<User Name>',password='' ,key_filename='<.PEM File path')
+    #  Setup sftp connection and transmit this script 
+    print ("copying")  
+    sftp = client.open_sftp()  
+    return sftp  
+
+with createSSHClient() as sftp:
+    sftp.put(<Source>, <Destination>)
+    # sftp.close()  
+
+# ------------------
+# option 2
+import paramiko
+from scp import SCPClient
+
+def createSSHClient(server, port, user, password):
+    client = paramiko.SSHClient()
+    client.load_system_host_keys()
+    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    client.connect(server, port, username='<User Name>',password='' ,key_filename='<.PEM File path')
+    return client
+
+ssh = createSSHClient(server, port, user, password)
+scp = SCPClient(ssh.get_transport())  
+```
+
 # Repalce by matched part
 ```
  #  https://note.nkmk.me/en/python-str-replace-translate-re-sub/
