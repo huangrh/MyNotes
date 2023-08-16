@@ -22,3 +22,7 @@ https://qualitynet.cms.gov/inpatient/measures/readmission/methodology
 
 # Loinc codes  
 - https://loinc.org/downloads/
+
+- # HCC Risk adjustment factor
+- https://www.cms.gov/medicare/health-plans/medicareadvtgspecratestats/risk-adjustors-items/cpt-hcpcs
+- 
