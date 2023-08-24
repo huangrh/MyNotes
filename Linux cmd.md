@@ -19,6 +19,12 @@ sudo puttygen pemKey.pem -o ppkKey.ppk -O private
 # [sFTP Upload & Download](https://www.tecmint.com/sftp-upload-download-directory-in-linux/)
 
 ```
+# https://phoenixnap.com/kb/sftp-commands
+> sftp -P 5000 tecmint@192.168.56.10
+
+```
+
+```
 scp -i /PATH/TO/PUBLICKEY -P 52222 /PATH/TO/SOURCEFILE user@ip:/path/
 ```
 
