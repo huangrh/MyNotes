@@ -1,3 +1,6 @@
+# Run a Databricks notebook with the Databricks Notebook Activity in Azure Data Factory
+- https://learn.microsoft.com/en-us/azure/data-factory/transform-data-using-databricks-notebook
+
 # SFTP 
 - https://learn.microsoft.com/en-us/azure/data-factory/connector-sftp?tabs=data-factory 
 
