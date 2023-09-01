@@ -41,7 +41,19 @@ for index, row in df.iterrows():
     print(row['c1'], row['c2'])
 ```
 
-## pandas date type
+## pandas Read CSV
+
+```
+# https://stackoverflow.com/questions/61264795/pandas-unicodedecodeerror-utf-8-codec-cant-decode-bytes-in-position-0-1-in
+data = pd.read_csv("COVID-19-geographic-disbtribution-worldwide.csv", encoding = 'unicode_escape', engine ='python')
+```
+
+```
+# https://stackoverflow.com/questions/55076502/utf-8-codec-cant-decode-byte-0xb5-in-position-0-invalid-start-byte
+import pandas as pd  
+pd.read_csv(filename,encoding = 'unicode_escape')
+```
+
 ```
 pd.read_csv(parse_dates=['date_col_name']) # parse to datetime type
 df['date_col_name'] = df['date_col_name'].dt.date
@@ -50,11 +62,6 @@ pd.to_datetime(df) # parse str to datetime type
 df['date_col_name'] = pd.to_datetime(df['date_col_name'] ).dt.date  # str --> date  
 ```
 
-## https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html
-```
-# https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html
-above_35 = titanic[titanic["Age"] > 35]
-```
 ## Read string into pandas
 ```
 # https://stackoverflow.com/questions/22604564/create-pandas-dataframe-from-a-string
@@ -64,6 +71,13 @@ from io import StringIO
 df = pd.read_csv(StringIO("""measure,rate_period,Process,Scorecard
 ED Visits,Calendar Year,132,188"""),sep=',', header=0)
 ```
+
+## https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html
+```
+# https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html
+above_35 = titanic[titanic["Age"] > 35]
+```
+
 ## Pivot long to wide
 ```
 # https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe
@@ -380,11 +394,7 @@ df1.merge(df2, left_on='lkey', right_on='rkey',
 
 # Encoding error 
 
-```
-# https://stackoverflow.com/questions/55076502/utf-8-codec-cant-decode-byte-0xb5-in-position-0-invalid-start-byte
-import pandas as pd  
-pd.read_csv(filename,encoding = 'unicode_escape')
-```
+
 
 # RAF
 ```
