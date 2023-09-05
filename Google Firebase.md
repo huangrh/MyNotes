@@ -1,3 +1,8 @@
+# Firebase limitations:    
+- Firebase free plan is limited to 50 Connections and 100 MB of storage.
+- 
+
+
 # Ref: 
 
 1. [Firebase – Introduction](https://www.geeksforgeeks.org/firebase-introduction/#:~:text=Firebase%20is%20a%20product%20of,use%20its%20features%20more%20efficiently)   
