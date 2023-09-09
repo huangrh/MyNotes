@@ -14,7 +14,8 @@
     -  The filter context, on the other hand, operates at the model level.
 
 - SUMMARIZECOLUMNS
-
+- https://www.geeksforgeeks.org/power-bi-values-function/
+- 
 # Pareto:  column chart - line and clusted. 
 ```
 // count
