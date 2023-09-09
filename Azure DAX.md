@@ -1,3 +1,8 @@
+# Dax function  
+
+- https://www.sqlbi.com/articles/introducing-calculate-in-dax/
+- 
+
 
 # Pareto:  column chart - line and clusted. 
 ```
