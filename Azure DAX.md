@@ -1,8 +1,19 @@
 # Dax function  
 
 - https://www.sqlbi.com/articles/introducing-calculate-in-dax/
-- 
+- https://www.sqlbi.com/articles/row-context-in-dax/
+    - calculated column: row by row
+    - iterator scan the table row by row
+        - iterator: sumx
+        - sum is same as sumx
+- https://www.sqlbi.com/articles/filter-context-in-dax/
+    - filter context: each cell of the matrix is evaluated ina a filter context
+    - the filter context is set for the entire formula, restricting the rows visible in the model.
+    - Developers have the option of creating their filter context too, by leveraging CALCULATE
+    -  The row context iterates a table. Therefore, during the iteration you can access the value of each column of only the iterated table.
+    -  The filter context, on the other hand, operates at the model level.
 
+- SUMMARIZECOLUMNS
 
 # Pareto:  column chart - line and clusted. 
 ```
