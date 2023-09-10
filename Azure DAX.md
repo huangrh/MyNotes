@@ -15,6 +15,7 @@
 
 - SUMMARIZECOLUMNS
 - https://www.geeksforgeeks.org/power-bi-values-function/
+- https://www.sqlbi.com/articles/understanding-context-transition-in-dax/
 - 
 # Pareto:  column chart - line and clusted. 
 ```
