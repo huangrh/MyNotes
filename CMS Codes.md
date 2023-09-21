@@ -10,7 +10,9 @@ CCM CPT Code: 99487: $94.68
 CCM CPT Code: 99489: $45.00  
 ```
 
-- CCM CPT codes 99487 and 99489 are often seen together and fall under complex CCM care. CCM CPT codes 99490 and 99439 are often seen together and are standard CCM care. CCM CPT codes 99491 and 99439 are seen in conjunction and cover standard CCM care.
+- CCM CPT codes 99487 and 99489 are often seen together and fall under complex CCM care.
+- CCM CPT codes 99490 and 99439 are often seen together and are standard CCM care.
+- CCM CPT codes 99491 and 99439 are seen in conjunction and cover standard CCM care.
 
 
 ### Office visit CPT/HCPCS Codes  
