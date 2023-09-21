@@ -1,16 +1,17 @@
 ### Chronic Care Management (CCM) and CPT Codes: 99490, 99439, 99487, 99489, 99491
 - https://timedochealth.com/2021/04/23/chronic-care-management-ccm-and-cpt-codes-99490-99439-99487-99489-99491/
-```
-- The national average for each CCM CPT code is as followed:  
 
+- The national average for each CCM CPT code is as followed:  
+```
 CCM CPT Code: 99490: $42.84  
 CCM CPT Code: 99491: $74.26  
 CCM CPT Code: 99439: $38.00  
 CCM CPT Code: 99487: $94.68  
 CCM CPT Code: 99489: $45.00  
+```
 
 - CCM CPT codes 99487 and 99489 are often seen together and fall under complex CCM care. CCM CPT codes 99490 and 99439 are often seen together and are standard CCM care. CCM CPT codes 99491 and 99439 are seen in conjunction and cover standard CCM care.
-```
+
 
 ### Office visit CPT/HCPCS Codes  
   IF(CLM_LINE_HCPCS_CD 
