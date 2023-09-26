@@ -269,11 +269,48 @@ DROP TABLE my_test;
 ```
 
 ```
+# https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-merge-into
 MERGE INTO db.target_table t
 USING db.source_upload s
 ON t.id = s.id
 WHEN MATCHED THEN UPDATE SET *
 WHEN NOT MATCHED THEN INSERT *
+
+# https://learn.microsoft.com/en-us/azure/databricks/delta/merge
+MERGE INTO people10m
+USING people10mupdates
+ON people10m.id = people10mupdates.id
+WHEN MATCHED THEN
+  UPDATE SET
+    id = people10mupdates.id,
+    firstName = people10mupdates.firstName,
+    middleName = people10mupdates.middleName,
+    lastName = people10mupdates.lastName,
+    gender = people10mupdates.gender,
+    birthDate = people10mupdates.birthDate,
+    ssn = people10mupdates.ssn,
+    salary = people10mupdates.salary
+WHEN NOT MATCHED
+  THEN INSERT (
+    id,
+    firstName,
+    middleName,
+    lastName,
+    gender,
+    birthDate,
+    ssn,
+    salary
+  )
+  VALUES (
+    people10mupdates.id,
+    people10mupdates.firstName,
+    people10mupdates.middleName,
+    people10mupdates.lastName,
+    people10mupdates.gender,
+    people10mupdates.birthDate,
+    people10mupdates.ssn,
+    people10mupdates.salary
+  )
 ```
 
 - If you specify *, this updates or inserts all columns in the target table. This assumes that the source table has the same columns as those in the target table, otherwise the query will throw an analysis error.
