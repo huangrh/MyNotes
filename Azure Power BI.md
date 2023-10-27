@@ -1,3 +1,6 @@
+## How-to-add-week-to-date-hierarchy-in-power-bi
+- https://www.thecoderscamp.com/how-to-add-week-to-date-hierarchy-in-power-bi/
+- 
 ## How to Create a Report Bookmark
 - https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks?tabs=powerbi-desktop
 - 
