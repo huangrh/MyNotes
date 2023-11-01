@@ -1,4 +1,9 @@
 ```
+library('httr')    
+content(GET('https://www.linkedin.com/in/lillyzhu'))
+```
+
+```
 # Change file path format from windows to R
 winpath2r <- function() {
     gsub("\\\\", "/", readClipboard())
