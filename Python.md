@@ -1,3 +1,12 @@
+
+
+
+```
+import requests
+response = requests.get('https://www.google.com')
+```
+
+
 # Extract files from an encrpyted zip file with python3
 - https://gist.github.com/colmcoughlan/db1384156b8efe6676c9a6cc47756933
 
