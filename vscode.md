@@ -1,6 +1,7 @@
+# VS Code Shortcut  
 VScode documentation.(https://code.visualstudio.com/docs/python/jupyter-support)
 
-Ctrl+S : Save  
+Ctrl+S : Save    
 ESC : Change the cell mode  
 A : Add a cell above  
 B : Add a cell below  
