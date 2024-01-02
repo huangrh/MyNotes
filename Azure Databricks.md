@@ -137,10 +137,12 @@ spark.range(5).write \
 ## Create Secrets Scope  
 - 38. Create Databricks Scope using Azure Key Vault and List secrets from Scope  
 - https://www.youtube.com/watch?v=2gMX98-RXPM
-- notebook_url + secrets/createScope  
+- notebook_url + secrets/createScope
+    - properties: DNS Name = Vailtu URL from properties in the Key Vault , Resource ID = Resource ID
+    - 
 - dbutils.secrests.get("<scope name>", "<secrets name>") 
-- dbutils.secrets.listScope()  
-- dbutils.secrets.list(scope="scope-name")
+- dbutils.secrets.listScope()  # list scope name
+- dbutils.secrets.list(scope="scope-name") # list the secret from Azure Key Vault. It will go to the Azure Key Vault, and list what are the secrets in the scope. 
 - 
 - https://docs.snowflake.com/en/user-guide/spark-connector-overview
 - The connector uses Scala 2.12.x or 2.13.x to perform these operations and uses the Snowflake JDBC driver to communicate with Snowflake.
