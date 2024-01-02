@@ -261,6 +261,20 @@ def get_awv_desc(x):
 ```
 
 ## [create-mount-point-in-azure-databricks](https://bigdataprogrammers.com/create-mount-point-in-azure-databricks/)
+```
+dbutils.fs.mount(
+  source = "wasbs://<container-name>@<storage-account-name>.blob.core.windows.net/<directory-name>",
+  mountPoint = "/mnt/<mount-name>",
+  extraConfigs = Map("<conf-key>" -> dbutils.secrets.get(
+                scope = "<scope-name>", 
+                key = "<key-name>")
+        )
+dbutils.fs.mount(
+  source = "wasbs://<container-name>@<storage-account-name>.blob.core.windows.net/",
+  mount_point = "/mnt/<mount-name>",
+  extra_configs = {"fs.azure.account.key.<storage-account-name>.blob.core.windows.net":"<key>"})
+```
+
 ## [](https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/azure-storage)
 
 ## [K Means Clustering using PySpark on Big Data](https://towardsdatascience.com/k-means-clustering-using-pyspark-on-big-data-6214beacdc8b)
