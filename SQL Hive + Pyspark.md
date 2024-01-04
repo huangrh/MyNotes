@@ -109,8 +109,13 @@ TO_DATE(from_unixtime(unix_timestamp(CAST(OnsetDateKey AS STRING) ,  'yyyyMMdd')
 
 
 # Regexp 
-> select regexp_extract('foo|the|bar', '(foo)\\|(.*?).(bar)', 1) 
+
 ```
+select regexp_extract('foo|the|bar', r'(foo)\\|(.*?).(bar)', 0)  # foo|the|bar
+select regexp_extract('foo|the|bar', r'(foo)\\|(.*?).(bar)', 1)  # foo
+select regexp_extract('foo|the|bar', r'(foo)\\|(.*?).(bar)', 2)  # the
+select regexp_extract('foo|the|bar', r'(foo)\\|(.*?).(bar)', 3)  # bar
+
 regexp_extract(session, '([^\-]+)$', 1)
 ```
 
