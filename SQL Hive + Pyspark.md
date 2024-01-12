@@ -1,3 +1,9 @@
+# Create function    
+- https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-sql-function   
+```
+
+```
+
 # https://stackoverflow.com/questions/64380125/how-to-optimize-the-pyspark-topandas-with-type-hints
 ```
 from pyspark.sql.types import FloatType
