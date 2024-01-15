@@ -12,9 +12,8 @@
 > git remote add  origin git@github.com:huangrh/mynotes.git  
 > git remote -v # check the remote address  
 
-## Git add more multiple account
-- https://code.tutsplus.com/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574t
-- 
+## Git add more multiple accounts
+- https://code.tutsplus.com/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574t  
 1. add ssh keys  
 2. edit ~/.ssh/config file  
 
