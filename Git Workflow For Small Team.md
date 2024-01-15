@@ -12,14 +12,35 @@
 > git remote add  origin git@github.com:huangrh/mynotes.git  
 > git remote -v # check the remote address  
 
-# 2. stage the change and Commit     
-> git add .  # stage all change    
-> git commit -am "commit message"    
+## Git add more multiple account
+- https://code.tutsplus.com/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574t
+- 
+1. add ssh keys  
+2. edit ~/.ssh/config file  
 
-# 3. git push origin master   
+C:\Users\huang\.ssh> cat config  
+# Default GitHub  
+Host github.com  
+  HostName github.com  
+  User git  
+  IdentityFile ~/.ssh/ed25519  
+ 
+# serena  
+Host github.com-serena  
+  HostName github.com  
+  User git  
+  IdentityFile ~/.ssh/serena_ed25519  
+4. git remote add origin git@github.com-serena......  
 
-# 4. collobarator      
-> git chechout -b new_branch  # change the name 'new-branch' to a meaningful name   
+
+# 2. stage the change and Commit      
+> git add .  # stage all change     
+> git commit -am "commit message"     
+
+# 3. git push origin master    
+
+# 4. collobarator       
+> git chechout -b new_branch  # change the name 'new-branch' to a meaningful name    
 > git pull origin master   
 > git add .   
 > git commit -am "meaningful commit message"   
