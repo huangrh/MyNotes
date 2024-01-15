@@ -15,8 +15,9 @@
 ## Git add more multiple accounts
 - https://code.tutsplus.com/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574t  
 1. add ssh keys  
-2. edit ~/.ssh/config file  
+2. edit ~/.ssh/config file
 
+```
 C:\Users\huang\.ssh> cat config  
 # Default GitHub  
 Host github.com  
@@ -28,8 +29,10 @@ Host github.com
 Host github.com-serena  
   HostName github.com  
   User git  
-  IdentityFile ~/.ssh/serena_ed25519  
-4. git remote add origin git@github.com-serena......  
+  IdentityFile ~/.ssh/serena_ed25519
+```
+
+3. git remote add origin git@github.com-serena......  
 
 
 # 2. stage the change and Commit      
