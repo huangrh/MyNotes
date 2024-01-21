@@ -1,5 +1,9 @@
-## https://www.youtube.com/watch?v=8SgHFXXdDBQ
-- Master Azure Databricks CI/CD in 2 Hours with Azure DevOps | Full End-to-End CI/CD Project in Azure
+## https://www.youtube.com/watch?v=8SgHFXXdDBQ  
+- Master Azure Databricks CI/CD in 2 Hours with Azure DevOps | Full End-to-End CI/CD Project in Azure  
+- https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-improvements  
+## Complete Azure Data Factory CI/CD Process (DEV/UAT/PROD) with Azure Pipelines  
+- https://www.youtube.com/watch?v=l-bBMelqifw
+- 
 
   
 ## https://medium.com/@vishwasacharya/how-to-set-up-a-ci-cd-pipeline-in-azure-devops-a-step-by-step-guide-9a6633422aa2
