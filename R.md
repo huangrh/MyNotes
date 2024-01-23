@@ -356,3 +356,25 @@ file.edit('test.R')
 library(tidyr)
 fill(df, y, .direction = 'down')
 ```
+# Rmarkdown render
+```
+# C:\App\R\R-4.2.3\bin\Rscript.exe
+# Sys.getenv("RSTUDIO_PANDOC")
+Sys.setenv(RSTUDIO_PANDOC="C:/App/RStudio/resources/app/bin/quarto/bin/tools")
+require(rmarkdown)
+input_file = file.path(
+    "C:/workspace/R/alpine/data-raw/Pipeline",
+    "Data_Upload_Daily_Run.Rmd"
+)
+output_dir = "C:/Alpine/OneDrive - Alpine Physician Partners/Alpine/Alpine_Analytics_Team/Prod/log"
+output_file = file.path(
+    glue::glue("upload_daily_run{format(Sys.time(), '%Y%m%d')}.html")
+); output_file
+rmarkdown::render(input = input_file, output_dir = output_dir, output_file = output_file)
+```
+
+# https://stackoverflow.com/questions/28432607/pandoc-version-1-12-3-or-higher-is-required-and-was-not-found-r-shiny
+```
+Sys.getenv("RSTUDIO_PANDOC")
+Sys.setenv(RSTUDIO_PANDOC="--- insert directory here ---")
+```
