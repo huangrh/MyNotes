@@ -16,6 +16,9 @@ create react app
 ## src/
 https://github.com/machadop1407/react-firebase-google-authentication
 ```
+# Firebase + React   
+
+https://www.youtube.com/playlist?list=PLl-K7zZEsYLlfMZ9isO6Hfnyw040N3uT5
 
 ## Reference
 
