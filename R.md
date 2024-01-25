@@ -1,3 +1,5 @@
+# https://stackoverflow.com/questions/2885660/how-to-send-an-email-with-attachment-from-r-in-windows
+
 ```
 library('httr')    
 content(GET('https://www.linkedin.com/in/lillyzhu'))
