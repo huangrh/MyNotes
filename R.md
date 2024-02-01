@@ -360,6 +360,8 @@ fill(df, y, .direction = 'down')
 ```
 # Rmarkdown render
 ```
+# How to run R script containing Rmd rendering from command line  
+# 
 # C:\App\R\R-4.2.3\bin\Rscript.exe
 # Sys.getenv("RSTUDIO_PANDOC")
 Sys.setenv(RSTUDIO_PANDOC="C:/App/RStudio/resources/app/bin/quarto/bin/tools")
