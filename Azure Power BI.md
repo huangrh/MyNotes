@@ -1,3 +1,6 @@
+## Power BI Service usage
+- https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-modern-usage-metrics
+
 ## How-to-add-week-to-date-hierarchy-in-power-bi
 - https://www.thecoderscamp.com/how-to-add-week-to-date-hierarchy-in-power-bi/
 - 
