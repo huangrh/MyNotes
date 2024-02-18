@@ -87,6 +87,7 @@ $ git checkout - # go back to previous branch or # this saves me.
 ```
 
 > git stash
+- https://www.freecodecamp.org/news/git-stash-commands/
 # when you are ready to restore a saved stash, git stash pop will apply the newest stash and clear it from your stash clipboard. 
 # stash is not bound to the branc where you created it. when you restore it, the chagnes witll e applied to your current HEAD branch, whichever this may be. 
 > git stash pop
