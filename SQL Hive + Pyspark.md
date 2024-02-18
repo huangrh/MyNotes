@@ -1,3 +1,6 @@
+# Hash  
+- https://docs.databricks.com/en/sql/language-manual/functions/sha2.html
+- 
 # Create function    
 - https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-sql-function   
 ```
