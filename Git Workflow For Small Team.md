@@ -241,7 +241,7 @@ What this does is:
 git push <remote repo> <local branch name>:<remote branch name>
 ```
 
-# git config  
+# 8 git config  
 
 - using includeIf to manage your git identidites  
 - https://medium.com/@mrjink/using-includeif-to-manage-your-git-identities-bcc99447b04b  
