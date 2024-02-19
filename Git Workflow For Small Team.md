@@ -125,8 +125,6 @@ git checkout <lbranch>
 git fetch --all  # fetch all branck
 git checkout myBranch 
 ```
-# Other   
--  Untrack a specific file 
 
 ```
 # untrack a specific file  
