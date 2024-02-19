@@ -97,25 +97,9 @@ The --no-ff flag causes the merge to always create a new commit object, even if 
 ```  
 # http://stackoverflow.com/questions/5772192/how-can-i-reconcile-detached-head-with-master-origin   
 $ git checkout - # go back to previous branch or # this saves me.  
-```  
-
 ```
 
-> git stash
-- https://www.freecodecamp.org/news/git-stash-commands/
-# when you are ready to restore a saved stash, git stash pop will apply the newest stash and clear it from your stash clipboard. 
-# stash is not bound to the branc where you created it. when you restore it, the chagnes witll e applied to your current HEAD branch, whichever this may be. 
-> git stash pop # apply the recorded changes of your latest stash on the current working branch as well as remvoe that stash from the stash stach.
-# or
-> git stash apply
-> git stash clear
-# delete a particlular stash
-> git stash drop stash@{2} 
-# 
-> git stash show
-> git stash list
-> git stash branch <new-branch-name> stash@{2}  # create a branch basing on stash revision  
-```
+
 
 ```  
 ### more about git checkout  
@@ -141,7 +125,7 @@ git checkout <lbranch>
 git fetch --all  # fetch all branck
 git checkout myBranch 
 ```
-# 6. Other   
+# Other   
 -  Untrack a specific file 
 
 ```
@@ -152,7 +136,25 @@ and for a single directory:
 > git rm --cached -r mydirectory  
 ```
 
+# 6. Git Stash  
+```    
+> git stash
+- https://www.freecodecamp.org/news/git-stash-commands/
+# when you are ready to restore a saved stash, git stash pop will apply the newest stash and clear it from your stash clipboard. 
+# stash is not bound to the branc where you created it. when you restore it, the chagnes witll e applied to your current HEAD branch, whichever this may be. 
+> git stash pop # apply the recorded changes of your latest stash on the current working branch as well as remvoe that stash from the stash stach.
+# or
+> git stash apply
+> git stash clear
+# delete a particlular stash
+> git stash drop stash@{2} 
+# 
+> git stash show
+> git stash list
+> git stash branch <new-branch-name> stash@{2}  # create a branch basing on stash revision  
+```
 
+# 7. Tracked vs untracked  
 
 [How can I make git show a list of the files that are being tracked?](https://stackoverflow.com/questions/15606955/how-can-i-make-git-show-a-list-of-the-files-that-are-being-tracked/15606998)
 ```
@@ -239,6 +241,28 @@ What this does is:
 
 ```
 git push <remote repo> <local branch name>:<remote branch name>
+```
+
+# git config  
+
+- using includeIf to manage your git identidites  
+- https://medium.com/@mrjink/using-includeif-to-manage-your-git-identities-bcc99447b04b  
+- https://git-scm.com/docs/git-config#_conditional_includes
+  
+```
+# (Part of) my ${HOME}\.gitconfig looks like this:
+[includeIf "gitdir:C:/SOURCE/PERSONAL/"]
+    path = .gitconfig-personal
+[includeIf "gitdir:C:/SOURCE/COMPANY1/"]
+    path = .gitconfig-company1
+[includeIf "gitdir:C:/SOURCE/COMPANY2/"]
+    path = .gitconfig-company2
+
+# Here’s my ${HOME}\.gitconfig-personal:
+[user]
+    name = Gillis J. de Nijs
+    email = gillis@home.tld
+
 ```
 
 ## Ref:
