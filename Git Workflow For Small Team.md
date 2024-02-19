@@ -32,6 +32,21 @@ Host github.com-serena
   IdentityFile ~/.ssh/serena_ed25519
 ```
 
+```
+# How to config two github ssh files under one computer account. 
+# Account 1
+Host github.com
+HostName github.com
+User git
+IdentifyFile ~/.ssh/id_rsa
+
+# Account 2
+Host github.com-emily
+HostName github.com
+User git
+IdentifyFile ~/.ssh/other_id_rsa
+```
+
 3. git remote add origin git@github.com-serena......  
 
 
@@ -137,18 +152,7 @@ and for a single directory:
 > git rm --cached -r mydirectory  
 ```
 
-```
-# How to config two github ssh files under one computer account. 
-# Account 1
-Host github.com
-HostName github.com
-IdentifyFile ~/.ssh/id_rsa
 
-# Account 2
-Host github.com
-HostName github.com-other
-IdentifyFile ~/.ssh/other_id_rsa
-```
 
 [How can I make git show a list of the files that are being tracked?](https://stackoverflow.com/questions/15606955/how-can-i-make-git-show-a-list-of-the-files-that-are-being-tracked/15606998)
 ```
