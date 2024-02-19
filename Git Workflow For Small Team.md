@@ -12,40 +12,7 @@
 > git remote add  origin git@github.com:huangrh/mynotes.git  
 > git remote -v # check the remote address  
 
-## Git add more multiple accounts
-- https://code.tutsplus.com/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574t  
-1. add ssh keys  
-2. edit ~/.ssh/config file
 
-```
-C:\Users\huang\.ssh> cat config  
-# Default GitHub  
-Host github.com  
-  HostName github.com  
-  User git  
-  IdentityFile ~/.ssh/ed25519  
- 
-# serena  
-Host github.com-serena  
-  HostName github.com  
-  User git  
-  IdentityFile ~/.ssh/serena_ed25519
-```
-
-```
-# How to config two github ssh files under one computer account. 
-# Account 1
-Host github.com
-HostName github.com
-User git
-IdentifyFile ~/.ssh/id_rsa
-
-# Account 2
-Host github.com-emily
-HostName github.com
-User git
-IdentifyFile ~/.ssh/other_id_rsa
-```
 
 3. git remote add origin git@github.com-serena......  
 
@@ -209,13 +176,12 @@ git reset --soft commit-hash
 ```
 # How to amend last commited message
 git commit --amend -m "New and correct message"
+git commit --amend -m “this fixes the previous oopsies”
+git commit --amend --no-edit # it will not change the message associaed with the commit because we have not used the -m flag.  
 ```
 
 
-```
-> git config --global user.email "your_email@example.com"
-> git config --global user.name "First Name Last Name"
-```
+
 
 ## Pull changes from a remote branch  
 - create a new branch
@@ -243,7 +209,43 @@ git push <remote repo> <local branch name>:<remote branch name>
 
 # 8 git config  
 
-- using includeIf to manage your git identidites  
+## Git add more multiple accounts
+- https://code.tutsplus.com/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574t  
+1. add ssh keys  
+2. edit ~/.ssh/config file
+
+```
+C:\Users\huang\.ssh> cat config  
+# Default GitHub  
+Host github.com  
+  HostName github.com  
+  User git  
+  IdentityFile ~/.ssh/ed25519  
+ 
+# serena  
+Host github.com-serena  
+  HostName github.com  
+  User git  
+  IdentityFile ~/.ssh/serena_ed25519
+```
+
+```
+# How to config two github ssh files under one computer account. 
+# Account 1
+Host github.com
+HostName github.com
+User git
+IdentifyFile ~/.ssh/id_rsa
+
+# Account 2
+Host github.com-emily
+HostName github.com
+User git
+IdentifyFile ~/.ssh/other_id_rsa
+```
+
+##  using includeIf to manage your git identidites    
+
 - https://medium.com/@mrjink/using-includeif-to-manage-your-git-identities-bcc99447b04b  
 - https://git-scm.com/docs/git-config#_conditional_includes
   
@@ -261,6 +263,12 @@ git push <remote repo> <local branch name>:<remote branch name>
     name = Gillis J. de Nijs
     email = gillis@home.tld
 
+```
+
+
+```
+> git config --global user.email "your_email@example.com"
+> git config --global user.name "First Name Last Name"
 ```
 
 ## Ref:
