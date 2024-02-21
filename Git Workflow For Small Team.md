@@ -270,7 +270,11 @@ IdentifyFile ~/.ssh/other_id_rsa
 > git config --global user.email "your_email@example.com"
 > git config --global user.name "First Name Last Name"
 ```
+# 9. gpg commit signature  
 
+- https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification
+
+- 
 ## Ref:
 
 
