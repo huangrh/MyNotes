@@ -9,3 +9,8 @@
 - robocopy <source> <destination> /mir /copyall  
 
 # https://winscp.net/eng/download.php 
+
+# Software Distribution and Building Platform for Windows
+- https://www.msys2.org/
+
+# https://www.geeksforgeeks.org/microsoft-azure/  
