@@ -1,3 +1,6 @@
+# open java download and install     
+- https://jdk.java.net/21/
+  
 # data structure and algorithms  
 https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/
 
