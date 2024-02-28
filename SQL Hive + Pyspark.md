@@ -109,6 +109,18 @@ TO_DATE(from_unixtime(unix_timestamp(CAST(OnsetDateKey AS STRING) ,  'yyyyMMdd')
      end) as age
 ```
 
+```
+%sql
+CREATE OR REPLACE FUNCTION cldw.get_age(birth_date STRING, to_date STRING)
+    RETURNS INT
+    RETURN 
+        (year(to_date) - year(birth_date) 
+      + case when  month(to_date) < month(birth_date)  then -1
+            when month(birth_date) = month(to_date) and day(to_date) < day(birth_date)  then -1
+            else 0 
+        end)
+```
+
 [TO_DATE: DATETIME-PATTERN](https://spark.apache.org/docs/latest/sql-ref-datetime-pattern.html)
 
 
