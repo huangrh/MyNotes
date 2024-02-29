@@ -1,6 +1,7 @@
 # https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html
 - https://stats.oarc.ucla.edu/r/dae/mixed-effects-cox-regression/
 - https://www.datacamp.com/tutorial/survival-analysis-R
+- https://bioconnector.github.io/workshops/r-survival.html
 - 
 # https://stackoverflow.com/questions/2885660/how-to-send-an-email-with-attachment-from-r-in-windows
 
