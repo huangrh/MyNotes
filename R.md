@@ -3,6 +3,8 @@
 - https://www.datacamp.com/tutorial/survival-analysis-R
 - https://bioconnector.github.io/workshops/r-survival.html
 - [mixed effecrts cox regression](https://stats.oarc.ucla.edu/r/dae/mixed-effects-cox-regression/#:~:text=Mixed%20effects%20cox%20regression%20models,both%20fixed%20and%20random%20effects.)
+- http://www.sthda.com/english/wiki/survival-analysis-basics  
+- http://www.sthda.com/english/wiki/cox-proportional-hazards-model  
 # https://stackoverflow.com/questions/2885660/how-to-send-an-email-with-attachment-from-r-in-windows
 
 ```
