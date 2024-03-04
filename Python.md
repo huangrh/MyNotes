@@ -86,14 +86,7 @@ pool.map(
 - More: https://stackoverflow.com/questions/46045956/whats-the-difference-between-threadpool-vs-pool-in-the-multiprocessing-module
 - thread vs process
 
-# 
-```
-# https://stackoverflow.com/questions/3694487/in-python-how-do-you-convert-seconds-since-epoch-to-a-datetime-object
-import datetime
-timestamp = 1339521878.04 
-value = datetime.datetime.fromtimestamp(timestamp)
-print(value.strftime('%Y-%m-%d %H:%M:%S'))
-```
+
 
 # [List unpack with a * ](https://stackoverflow.com/questions/1720421/how-do-i-concatenate-two-lists-in-python/35631185#35631185)
 
@@ -152,6 +145,15 @@ current_year = str(datetime.datetime.now().date().year)
 
 # or
 str(datetime.date.today().year)
+```
+
+# 
+```
+# https://stackoverflow.com/questions/3694487/in-python-how-do-you-convert-seconds-since-epoch-to-a-datetime-object
+import datetime
+timestamp = 1339521878.04 
+value = datetime.datetime.fromtimestamp(timestamp)
+print(value.strftime('%Y-%m-%d %H:%M:%S'))
 ```
 
 ```
