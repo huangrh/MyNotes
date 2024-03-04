@@ -160,6 +160,13 @@ from datetime import datetime
 datetime.strptime(to, '%Y%m%d')
 ```
 
+```
+string to date in python   
+>>> import datetime   
+>>> datetime.datetime.strptime('24052010', "%d%m%Y").date()    
+datetime.date(2010, 5, 24)   
+```
+
 # [Get Age ](https://stackoverflow.com/questions/2217488/age-from-birthdate-in-python)
 ```
 from datetime import date
