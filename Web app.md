@@ -1,6 +1,6 @@
 ## Auth  
 - https://authjs.dev/reference/nextjs
-
+- Auth with firebase+next: https://www.youtube.com/watch?v=lQftwBTCejE
 
 ## 
 
