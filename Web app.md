@@ -1,4 +1,5 @@
-##
+## Auth  
+- https://authjs.dev/reference/nextjs
 
 
 ## 
@@ -17,5 +18,10 @@ https://www.scholarhat.com/tutorial/azure/creating-web-app-tutorial-pricing
 # firebase   
 - https://firebase.google.com/docs/cli#macos  
 # NVM   
-- https://github.com/nvm-sh/nvm/blob/master/README.md    
+- https://github.com/nvm-sh/nvm/blob/master/README.md
+
+# API Test  
+- https://jsonplaceholder.typicode.com/  
+
+- 
 
