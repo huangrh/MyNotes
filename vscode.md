@@ -15,3 +15,7 @@ z : Undo the last change
 M : switch the cell type to Markdown  
 Y : switch the cell type to code  
 L : Enable/Disable line numbers  
+
+# VS Code extension  
+- Indent Rainbow
+- snippet creator  
