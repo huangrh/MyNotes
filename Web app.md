@@ -16,7 +16,10 @@ https://www.scholarhat.com/tutorial/azure/creating-web-app-tutorial-pricing
 4. [JavaScript Programming - Full Course](https://www.youtube.com/watch?v=jS4aFq5-91M)
 
 # firebase   
-- https://firebase.google.com/docs/cli#macos  
+- https://firebase.google.com/docs/cli#macos
+- npm i firebase  
+- npm i react-firebase-hooks
+- 
 # NVM   
 - https://github.com/nvm-sh/nvm/blob/master/README.md
 
