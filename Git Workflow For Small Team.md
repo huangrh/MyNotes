@@ -94,11 +94,15 @@ git checkout myBranch
 ```
 
 ```
-# untrack a specific file  
+# untrack a specific file
+# To stop tracking a file in Git, you can use the command git rm --cached <filename>.
+# This removes the file from the index, but it remains in your working directory.
+# You can then add the filename to the .gitignore file to prevent the file from being reintroduced in later commits. 
 > git rm --cached mylogfile.log    
 and for a single directory:  
 # untrack all file under a directory  
-> git rm --cached -r mydirectory  
+> git rm --cached -r mydirectory
+
 ```
 
 # 6. Git Stash  
