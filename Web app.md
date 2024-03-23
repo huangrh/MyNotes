@@ -4,6 +4,17 @@
 
 ## Next  
 - https://nextjs.org/docs/getting-started/project-structure
+```
+layout(.js .jsx .tsx)
+page(.js .jsx .tsx)
+loading(.js .jsx .tsx)
+not-found(.js .jsx .tsx)
+error(.js .jsx .tsx)
+global-error(.js .jsx .tsx)
+route(.js .jsx .tsx)
+template(.js .jsx .tsx)
+default(.js .jsx .tsx)
+```
 
 ## Azure web app
 https://www.scholarhat.com/tutorial/azure/creating-web-app-tutorial-pricing
