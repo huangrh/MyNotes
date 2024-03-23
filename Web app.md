@@ -3,7 +3,8 @@
 - Auth with firebase+next: https://www.youtube.com/watch?v=lQftwBTCejE
 
 ## Next  
-- https://nextjs.org/docs/getting-started/project-structure
+- Next.js 14 Complete Course 2024: https://www.youtube.com/watch?v=vCOSTG10Y4o  
+- https://nextjs.org/docs/getting-started/project-structure  
 ```
 layout(.js .jsx .tsx)
 page(.js .jsx .tsx)
