@@ -2,8 +2,8 @@
 - https://authjs.dev/reference/nextjs
 - Auth with firebase+next: https://www.youtube.com/watch?v=lQftwBTCejE
 
-## 
-
+## Next  
+- https://nextjs.org/docs/getting-started/project-structure
 
 ## Azure web app
 https://www.scholarhat.com/tutorial/azure/creating-web-app-tutorial-pricing
