@@ -1,6 +1,7 @@
 ## Auth  
 - https://authjs.dev/reference/nextjs
 - Auth with firebase+next: https://www.youtube.com/watch?v=lQftwBTCejE
+- https://firebase.google.com/docs/auth/web/firebaseui   
 
 ## Next  
 - Next.js 14 Complete Course 2024: https://www.youtube.com/watch?v=vCOSTG10Y4o  
