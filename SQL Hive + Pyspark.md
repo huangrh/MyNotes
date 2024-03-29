@@ -2,10 +2,10 @@
 - https://docs.databricks.com/en/sql/language-manual/functions/sha2.html
 - 
 # Create function    
-- https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-sql-function   
-```
+- https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-sql-function
 
-```
+- 
+
 
 # https://stackoverflow.com/questions/64380125/how-to-optimize-the-pyspark-topandas-with-type-hints
 ```
@@ -359,6 +359,63 @@ Ref:
 
 ## [Apacke Hive UDF](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF#LanguageManualUDF-CreatingCustomUDFs)
 ## [pyspark udf decorate](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.functions.udf.html)
+
+```
+# Define a function to clean up human names
+def clean_name(name):
+    # Remove leading and trailing white spaces
+    cleaned_name = name.strip()
+    
+    # Convert the name to title case
+    cleaned_name = cleaned_name.title()
+    
+    # Remove special characters and punctuation
+    special_chars = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+    cleaned_name = ''.join([char for char in cleaned_name if char not in special_chars])
+    
+    # Remove multiple spaces
+    cleaned_name = ' '.join(cleaned_name.split())
+    
+    # Return the cleaned name
+    return cleaned_name
+
+# Register the clean_name function as a SQL function
+spark.udf.register("clean_name", clean_name, "string")
+
+# Use the clean_name SQL function in your queries to clean the name column
+spark.sql("SELECT clean_name('jOhn/\. dOE') AS clean_name").display()
+
+
+```
+
+```
+# Define a function to clean the address
+def get_clean_address(address):
+    # Remove leading and trailing white spaces
+    cleaned_address = address.strip()
+    
+    # Convert the address to lowercase
+    cleaned_address = cleaned_address.lower()
+    
+    # Remove special characters and punctuation
+    special_chars = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+    cleaned_address = ''.join([char for char in cleaned_address if char not in special_chars])
+
+    # Remove multiple spaces
+    cleaned_address = ' '.join(cleaned_address.split())
+
+    # Remove numbers
+    # cleaned_address = ''.join([char for char in cleaned_address if not char.isdigit()])
+    
+    # Return the cleaned address
+    return cleaned_address
+
+# Register the clean_address function as a SQL function
+spark.udf.register("get_clean_address", get_clean_address, "string")
+
+# Use the clean_address SQL function in your queries to clean the address column
+spark.sql("SELECT get_clean_address('12 olive-dr.') AS clean_address").display()   
+```
 
 ```
 from pyspark.sql.types import IntegerType
