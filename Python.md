@@ -157,6 +157,25 @@ print(value.strftime('%Y-%m-%d %H:%M:%S'))
 ```
 
 ```
+# timestamp to datetime object
+import datetime
+#           1704067200
+timestamp = 1683625197
+dt_object = datetime.datetime.fromtimestamp(timestamp)
+int(dt_object.timestamp())
+
+# create datetime object 
+import datetime
+start_of_2024 = datetime.datetime(2024, 1, 1)
+timestamp = start_of_2024.timestamp()
+int(timestamp)
+
+#
+now = datetime.datetime.now()
+int(now.timestamp())
+```
+
+```
 # strptime() is another method available in DateTime which is used to format the time stamp which is in string format to date-time object.
 from datetime import datetime
 datetime.strptime(to, '%Y%m%d')
