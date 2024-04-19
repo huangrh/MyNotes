@@ -1,3 +1,12 @@
+# https://www.learnpytorch.io/00_pytorch_fundamentals/
+
+
+
+
+
+
+
+
 # How to setup RTX 3090 for Pytorch
 
 ## 1. Buy an RTX 3090 GPU powered computer.   
