@@ -15,7 +15,7 @@
 ## 2. Install cuda toolkit
 - Download and install the latest microsoft visual studio community edition (2019 is the current edition).   
 - Download and install CUDA Toolkit.  https://developer.nvidia.com/cuda-downloads  
-
+- https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local
 ## 3. install python and setup environment  
 (Link for windows 10 ) 
 - Download and install Python if you didn't do so  
@@ -23,8 +23,7 @@
 > python -m venv pyenv  # customize the name ‘pyenv’ as you like. 
 > pyenv\Scripts\activate
 ## 4. Install Pytorch
-
-> pip3 install torch==1.9.0+cu102 torchvision==0.10.0+cu102 torchaudio===0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+> pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 # use this reference: https://pytorch.org/get-started/locally/
 
