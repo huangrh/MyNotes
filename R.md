@@ -1,3 +1,9 @@
+# Read CSV
+```
+# https://readr.tidyverse.org
+readr::read_csv()
+```
+
 # https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html
 - https://stats.oarc.ucla.edu/r/dae/mixed-effects-cox-regression/
 - https://www.datacamp.com/tutorial/survival-analysis-R
