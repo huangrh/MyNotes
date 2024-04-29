@@ -2,7 +2,10 @@
 - https://goessner.net/articles/JsonPath/index.html#e2
 - https://jsonpath.com/
 - https://medium.com/@uzzaman.ahmed/introduction-to-pyspark-json-api-read-and-write-with-parameters-3cca3490e448
-- 
+```
+#Create data frame to read files from a folder
+dfReadFHIR_raw = spark.read.option("multiline","true").json(filePath)
+```
 # Hash  
 - https://docs.databricks.com/en/sql/language-manual/functions/sha2.html
 - 
