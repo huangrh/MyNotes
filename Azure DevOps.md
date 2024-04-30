@@ -1,3 +1,15 @@
+## Update the databrick secret
+```
+databricksSecret
+
+# create a secret from
+App Registrations/Databricks Deployment Prod/Certificate & Secrets/Client Serects/New client secret
+App Registrations/Databricks Deployment UAT/Certificate & Secrets/Client Serects/New client secret
+
+# Update variable databricksSecret in the DevOps/Library/Variable group
+
+```
+
 ## https://www.youtube.com/watch?v=8SgHFXXdDBQ  
 - Master Azure Databricks CI/CD in 2 Hours with Azure DevOps | Full End-to-End CI/CD Project in Azure  
 - https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-improvements
