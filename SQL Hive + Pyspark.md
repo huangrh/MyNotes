@@ -55,6 +55,14 @@ RENAME TO <new_table_name>;
 # Add column
 ALTER TABLE <table_name> 
 ADD COLUMNS (<col-name>  <data-type>  COMMENT ”, <col-name>  <data-type>  COMMENT ”, ….. )
+```
+ALTER TABLE HIE.EVENT_FACT
+ADD COLUMNS (
+        Clo1 int,
+        Col2 string,
+        col3 timestamp
+)
+```
 # Example : add contact
 ALTER TABLE customer 
 ADD COLUMNS ( contact BIGINT COMMENT ‘Store the customer contact number’);
