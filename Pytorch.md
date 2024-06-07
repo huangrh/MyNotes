@@ -1,7 +1,7 @@
 # https://www.learnpytorch.io/00_pytorch_fundamentals/
 - https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html  
 - https://www.geeksforgeeks.org/python-pytorch-backward-function/   # Backward   
-
+- https://pytorch.org/vision/stable/transforms.html
 
 
 
