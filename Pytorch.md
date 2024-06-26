@@ -25,7 +25,7 @@
 > pyenv\Scripts\activate
 > 
 ## 4. Install Pytorch
-> pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+> pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118   
 > pip install torchtext --index-url https://download.pytorch.org/whl/cu118
 
 
