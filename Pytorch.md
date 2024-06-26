@@ -40,3 +40,12 @@ torch.cuda.is_available()
 - fix graphvis module error when import fastbook
 > pip install graphviz pydot  pydotplus
 > dot -c # to register from the command line
+>
+
+## DILL_AVAILABLE not available  
+- https://github.com/pytorch/pytorch/pull/122616  
+```  
+import torch  
+torch.utils.data.datapipes.utils.common.DILL_AVAILABLE = torch.utils._import_utils.dill_available()  
+import torchdata  
+```
