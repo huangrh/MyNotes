@@ -1,3 +1,5 @@
+[Azure Logic Apps Tutorial](https://azurelessons.com/azure-logic-apps/)  
+
 [Connect Blob Storage & OneDrive via Azure Logic Apps](https://www.c-sharpcorner.com/article/automated-workflows-connect-blob-storage-onedrive-via-azure-logic-apps/)
 
 [Adam - Azure Logic Apps Tutorial](https://www.youtube.com/watch?v=ZvsOzji_8ow)
