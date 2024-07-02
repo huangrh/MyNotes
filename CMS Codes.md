@@ -1,3 +1,6 @@
+### Specialty code 
+https://www.cms.gov/Medicare/Provider-Enrollment-and-Certification/MedicareProviderSupEnroll/Downloads/taxonomy.pdf
+
 ### Chronic Care Management (CCM) and CPT Codes: 99490, 99439, 99487, 99489, 99491
 - https://timedochealth.com/2021/04/23/chronic-care-management-ccm-and-cpt-codes-99490-99439-99487-99489-99491/
 
