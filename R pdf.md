@@ -1,4 +1,9 @@
-
+update 2024
+- https://docs.ropensci.org/tabulapdf/index.html
+```
+2
+```
+- 
 ```
 library(tabulizer)
 
