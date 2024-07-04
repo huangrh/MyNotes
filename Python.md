@@ -63,9 +63,16 @@ scp = SCPClient(ssh.get_transport())
 
 # Repalce by matched part
 ```
- #  https://note.nkmk.me/en/python-str-replace-translate-re-sub/
-re.sub(r'.*(\d{4}_\d+).*', lambda m: m.group(1),file.split("/")[-1])
+#  https://note.nkmk.me/en/python-str-replace-translate-re-sub/
+# 
+re.sub(r'.*(\d{4}_\d+).*',   lambda m: m.group(1),   file.split("/")[-1])
 
+```
+
+```
+import re
+str = 'purple alice@google.com, blah monkey bob@abc.com blah dishwasher'
+print(re.sub(r'.*(google.com).*(@abc.com).*', r'\1_\2', str))
 ```
 
 
