@@ -272,6 +272,7 @@ LOCATION '/user/hive/warehouse/mydb.db/contacts';
 > CREATE TABLE student USING CSV LOCATION '/mnt/csv_files';
 
 -- load multiple csv file
+```
 
 ```
 from functools import reduce  
@@ -292,6 +293,7 @@ def load_csv(file):
 df = reduce(DataFrame.unionByName, [load_csv(file) for file in files])  
 ```
 
+```
 -- Specify table comment and properties
 > CREATE TABLE student (id INT, name STRING, age INT)
     COMMENT 'this is a comment'
