@@ -158,8 +158,16 @@ date_add(timestamp startdate, tinyint/smallint/int days)
 date_add(date startdate, tinyint/smallint/int days)
 date_sub(string startdate, tinyint/smallint/int days)
 datediff(string enddate, string startdate)
-# string to date
-TO_DATE(from_unixtime(unix_timestamp(CAST(OnsetDateKey AS STRING) ,  'yyyyMMdd')))
+```
+
+```
+-- string to date
+--
+TO_DATE(
+    from_unixtime(
+        unix_timestamp(CAST(OnsetDateKey AS STRING) ,  'yyyyMMdd')
+    )
+)
 ```
 
 ```
