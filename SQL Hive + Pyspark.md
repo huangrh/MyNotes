@@ -89,6 +89,10 @@ ALTER TABLE mytable SET TBLPROPERTIES ('external.table.purge'='true');
 truncate table abc;
 ```
 
+
+
+## [External table]()
+
 ```
 query = f"""
 CREATE TABLE IF NOT EXISTS {zone.lower()}.{external_table} 
@@ -99,7 +103,6 @@ print(query)
 spark.sql(query).display()
 ```
 
-## [External table]()
 ```
 CREATE EXTERNAL TABLE IF NOT EXISTS mydb.contacts (
   name         STRING ,
