@@ -272,23 +272,24 @@ LOCATION '/user/hive/warehouse/mydb.db/contacts';
 > CREATE TABLE student USING CSV LOCATION '/mnt/csv_files';
 
 -- load multiple csv file
+
 ```
-from functools import reduce
-from pyspark.sql import DataFrame
-def load_csv(file): 
-    import pyspark.sql.functions as F
-    batch = file.name.split("_")[-1].split(".")[0]
-    df = spark.read.format("csv").\
-            option("Header", "true").\
-            option("delimiter", "|").\
-            option("multipleLines", "true").\
-            option("quote", "'").\
-            option("escape", "\\").\
-            load(file.path).\
-            withColumn("batch",F.lit(batch))
+from functools import reduce  
+from pyspark.sql import DataFrame  
+def load_csv(file):   
+    import pyspark.sql.functions as F  
+    batch = file.name.split("_")[-1].split(".")[0]  
+    df = spark.read.format("csv").\  
+            option("Header", "true").\  
+            option("delimiter", "|").\  
+            option("multipleLines", "true").\  
+            option("quote", "'").\  
+            option("escape", "\\").\  
+            load(file.path).\  
+            withColumn("batch",F.lit(batch))  
     
-    return df
-df = reduce(DataFrame.unionByName, [load_csv(file) for file in files])
+    return df  
+df = reduce(DataFrame.unionByName, [load_csv(file) for file in files])  
 ```
 
 -- Specify table comment and properties
