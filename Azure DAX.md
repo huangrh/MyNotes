@@ -1,6 +1,9 @@
 # Dax function  
 
 - https://www.sqlbi.com/articles/introducing-calculate-in-dax/
+    - row context
+    - filter context
+    - context 
 - https://www.sqlbi.com/articles/row-context-in-dax/
     - calculated column: row by row
     - iterator scan the table row by row
