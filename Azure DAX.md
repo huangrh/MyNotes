@@ -1,3 +1,5 @@
+- https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view#update-model-measures-using-codelens
+
 # Dax function  
 
 - https://www.sqlbi.com/articles/introducing-calculate-in-dax/
