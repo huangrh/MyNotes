@@ -6,6 +6,36 @@
 #Create data frame to read files from a folder
 dfReadFHIR_raw = spark.read.option("multiline","true").json(filePath)
 ```
+
+```
+You can provide the `skipRows` option while reading.
+> spark.read.format("csv").option("skipRows", 4).load("<filepath>")
+```
+
+- [delta-batch](https://docs.microsoft.com/en-us/azure/databricks/delta/delta-batch)
+
+
+
+```
+-- load multiple csv file
+from functools import reduce  
+from pyspark.sql import DataFrame  
+def load_csv(file):   
+    import pyspark.sql.functions as F  
+    batch = file.name.split("_")[-1].split(".")[0]  
+    df = spark.read.format("csv").\  
+            option("Header", "true").\  
+            option("delimiter", "|").\  
+            option("multipleLines", "true").\  
+            option("quote", "'").\  
+            option("escape", "\\").\  
+            load(file.path).\  
+            withColumn("batch",F.lit(batch))  
+    
+    return df  
+df = reduce(DataFrame.unionByName, [load_csv(file) for file in files])  
+```
+
 # Hash  
 - https://docs.databricks.com/en/sql/language-manual/functions/sha2.html
 - 
@@ -326,29 +356,7 @@ select * from table_name TIMESTAMP AS OF <timestamp>
 
 ## detlta table
 
-- [delta-batch](https://docs.microsoft.com/en-us/azure/databricks/delta/delta-batch)
 
-
-
-```
--- load multiple csv file
-from functools import reduce  
-from pyspark.sql import DataFrame  
-def load_csv(file):   
-    import pyspark.sql.functions as F  
-    batch = file.name.split("_")[-1].split(".")[0]  
-    df = spark.read.format("csv").\  
-            option("Header", "true").\  
-            option("delimiter", "|").\  
-            option("multipleLines", "true").\  
-            option("quote", "'").\  
-            option("escape", "\\").\  
-            load(file.path).\  
-            withColumn("batch",F.lit(batch))  
-    
-    return df  
-df = reduce(DataFrame.unionByName, [load_csv(file) for file in files])  
-```
 
 
 
