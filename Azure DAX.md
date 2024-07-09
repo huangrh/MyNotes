@@ -1,4 +1,5 @@
 - https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view#update-model-measures-using-codelens
+- https://learn.microsoft.com/en-us/dax/statements-dax
 
 # Dax function  
 
