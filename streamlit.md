@@ -4,3 +4,4 @@
 3. push the docker image up in the Azure Containder Registry (ACR) and connnect it to a Web App
 4. 
 5. 
+# https://learn.microsoft.com/en-us/answers/questions/1470782/how-to-deploy-a-streamlit-application-on-azure-app
