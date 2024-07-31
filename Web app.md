@@ -19,7 +19,8 @@ default(.js .jsx .tsx)
 ```
 
 ## Azure web app
-https://www.scholarhat.com/tutorial/azure/creating-web-app-tutorial-pricing
+https://www.scholarhat.com/tutorial/azure/creating-web-app-tutorial-pricing 
+https://www.youtube.com/watch?v=5jOvVY1G62U  
 
 ## Resource: 
 
