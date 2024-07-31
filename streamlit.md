@@ -5,3 +5,7 @@
 4. 
 5. 
 # https://learn.microsoft.com/en-us/answers/questions/1470782/how-to-deploy-a-streamlit-application-on-azure-app
+
+# Azure App Service in 15 MINUTES | Web App Tutorial
+
+https://www.youtube.com/watch?v=5jOvVY1G62U
