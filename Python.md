@@ -1,5 +1,7 @@
 
+# Python on Azure 
 https://learn.microsoft.com/en-us/python/api/overview/azure/identity-readme?view=azure-python
+https://learn.microsoft.com/en-us/azure/developer/python/get-started?view=azure-python
 
 ```
 import geopandas as gpd
