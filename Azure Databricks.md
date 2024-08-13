@@ -1,3 +1,6 @@
+## NCC for SQL warhouse
+- https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/serverless-private-link
+
 ## databricks workflows ModuleNotFoundError: No module
 - from the pipeline click the 2nd tab called Tasks
 - add python package name into the dependent libraries. 
