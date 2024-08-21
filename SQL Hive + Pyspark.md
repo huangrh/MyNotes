@@ -1,3 +1,14 @@
+# Run Notebook and pass parameters  
+```
+# main notebook to run 2nd notebook and pass parameter to 2nd paramenters
+dbutils.notebook.run("path/to/2nd notebook",{"Data_Source_Group":"All Data Source"})
+# 2nd notebook: retrive parameters
+dbutils.widgets.text(name="Data_Source_Group", defaultValue="All Data Source", label="Enter Data Source Group")
+Data_Source_Group_Name = dbutils.widgets.get("Data_Source_Group")
+print(Data_Source_Group_Name)
+```
+
+
 # JSON Path
 - https://goessner.net/articles/JsonPath/index.html#e2
 - https://jsonpath.com/
