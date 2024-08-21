@@ -1,4 +1,6 @@
-# Run Notebook and pass parameters  
+# Run Notebook and pass parameters    
+- https://docs.databricks.com/en/dev-tools/databricks-utils.html#widgets-utility-dbutilswidgets
+- 
 ```
 # main notebook to run 2nd notebook and pass parameter to 2nd paramenters
 dbutils.notebook.run("path/to/2nd notebook",{"Data_Source_Group":"All Data Source"})
