@@ -1,3 +1,6 @@
+# Databricks workflow
+https://docs.databricks.com/en/notebooks/notebook-workflows.html
+
 ## NCC for SQL warhouse
 - https://learn.microsoft.com/en-us/azure/databricks/security/network/serverless-network-security/serverless-private-link
 
