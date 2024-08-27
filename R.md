@@ -7,6 +7,14 @@
 ```
 # https://readr.tidyverse.org
 readr::read_csv()
+# 
+# https://stackoverflow.com/questions/14383710/read-fixed-width-text-file
+x <- read.fwf(
+  file=url("http://www.cpc.ncep.noaa.gov/data/indices/wksst8110.for"),
+  skip=4,
+  widths=c(12, 7, 4, 9, 4, 9, 4, 9, 4))
+
+head(x)
 ```
 
 # https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html
