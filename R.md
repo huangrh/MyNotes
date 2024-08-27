@@ -9,6 +9,13 @@
 readr::read_csv()
 # 
 # https://stackoverflow.com/questions/14383710/read-fixed-width-text-file
+# readr::read_fwf IS TWO TIMES FASTER
+x <- readr::read_fwf(
+  file="http://www.cpc.ncep.noaa.gov/data/indices/wksst8110.for",   
+  skip=4,
+  readr::fwf_widths(c(12, 7, 4, 9, 4, 9, 4, 9, 4)))
+
+
 x <- read.fwf(
   file=url("http://www.cpc.ncep.noaa.gov/data/indices/wksst8110.for"),
   skip=4,
