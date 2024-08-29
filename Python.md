@@ -162,6 +162,17 @@ print(b64_string.decode('utf-8'))
 ```
 
 # Extract table from pdf to pandas dataframe    
+- updated 2024
+- !pip install tabula-py
+```
+import tabula.io as tabula
+
+# Read pdf into list of DataFrame
+dfs = tabula.read_pdf('CCLF_IP_508 (1).pdf', pages='all', encoding='cp1252')
+
+```
+
+- history  
 - [tabula-py installation](https://tabula-py.readthedocs.io/en/latest/getting_started.html#installation)  
 - [Extract and Convert Tables From PDF Files to Pandas Data frame](https://towardsdatascience.com/how-to-extract-and-convert-tables-from-pdf-files-to-pandas-dataframe-cb2e4c596fa8)    
 - [**Parse PDF Files While Retaining Structure with Tabula-py with Web-App](https://aegis4048.github.io/parse-pdf-files-while-retaining-structure-with-tabula-py)  
