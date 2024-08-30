@@ -85,9 +85,10 @@ scp = SCPClient(ssh.get_transport())
 # Repalce by matched part
 ```
 #  https://note.nkmk.me/en/python-str-replace-translate-re-sub/
-# 
-re.sub(r'.*(\d{4}_\d+).*',   lambda m: m.group(1),   file.split("/")[-1])
+#
+re.sub(r".*_(\d{4}-\d{2}-\d{2}).*",r"\1", file)  # this use is similar to gsub in R
 
+re.sub(r'.*(\d{4}_\d+).*',   lambda m: m.group(1),   file.split("/")[-1])
 ```
 
 ```
