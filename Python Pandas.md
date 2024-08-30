@@ -29,7 +29,7 @@ for (columnName, columnData) in stu_df.iteritems():
     print('Column Name : ', columnName)
     print('Column Contents : ', columnData.values)
 ```
-
+## How to loop through rows in a dataframe 
 ## # https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
 ```
 import pandas as pd
