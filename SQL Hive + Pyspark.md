@@ -1,5 +1,29 @@
 # https://stackoverflow.com/questions/41944689/pyspark-parse-fixed-width-text-file
+```
+x= '''    1 123121234 joe
+    2 234234234jill
+    3 345345345jane
+    4abcde12345jack'''
 
+schema = [
+          ("id",1,5),
+          ("ssn",6,10),
+          ("name",16,4)
+]
+          
+with open("personfixed.csv", "w") as f:
+  f.write(x)
+
+df = spark.read.text("personfixed.csv")
+df.show()
+
+df2 = df
+for colinfo in schema:
+  df2 = df2.withColumn(colinfo[0], df2.value.substr(colinfo[1],colinfo[2]))
+
+df2.show()
+
+```
 
 # Run Notebook and pass parameters    
 - https://docs.databricks.com/en/dev-tools/databricks-utils.html#widgets-utility-dbutilswidgets
