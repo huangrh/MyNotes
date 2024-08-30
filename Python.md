@@ -165,6 +165,7 @@ print(b64_string.decode('utf-8'))
 - updated 2024
 
 ```
+# [tabula-py installation and getting started](https://tabula-py.readthedocs.io/en/latest/getting_started.html#installation)
 # https://pypi.org/project/tabula-py/
 !pip install tabula-py
 import tabula
@@ -189,8 +190,7 @@ dfs = tabula.read_pdf('CCLF_IP_508 (1).pdf', pages='all', encoding='cp1252')
 
 ```
 
-- history  
-- [tabula-py installation](https://tabula-py.readthedocs.io/en/latest/getting_started.html#installation)  
+- history    
 - [Extract and Convert Tables From PDF Files to Pandas Data frame](https://towardsdatascience.com/how-to-extract-and-convert-tables-from-pdf-files-to-pandas-dataframe-cb2e4c596fa8)    
 - [**Parse PDF Files While Retaining Structure with Tabula-py with Web-App](https://aegis4048.github.io/parse-pdf-files-while-retaining-structure-with-tabula-py)  
 
