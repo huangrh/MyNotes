@@ -1,3 +1,6 @@
+# https://stackoverflow.com/questions/41944689/pyspark-parse-fixed-width-text-file
+
+
 # Run Notebook and pass parameters    
 - https://docs.databricks.com/en/dev-tools/databricks-utils.html#widgets-utility-dbutilswidgets
 - 
