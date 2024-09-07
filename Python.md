@@ -277,6 +277,48 @@ path_root = Path(__file__).parent
 print(path_root)
 ```
 
+# [python package](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+
+# Test if path exists
+```
+dat_path = "data/dat.pkl"
+#
+from pathlib import Path
+if Path(dat_path).exists(): 
+    print("read data from: ", dat_path)
+    dat = pd.read_pickle(dat_path)
+else:
+    query = f"SELECT * FROM `project_id`.dataset.table"
+    print("Download data query: ", query)
+    client = bigquery.Client(location = "US")
+    job = client = client.query(query)
+    dat = job.to_dataframe()
+    dat.to_pickle(dat_path)
+```
+
+# https://stackoverflow.com/questions/50876840/how-to-get-only-the-name-of-the-path-with-python
+```
+>>> from pathlib import Path
+>>> p = Path("/home/user/Downloads/repo/test.txt")
+>>> print(p.stem)
+test
+>>> print(p.name)
+test.txt
+>>> p.parent
+/home/user/Downloads/repo/
+>>> p.suffixs
+txt
+```
+
+# https://realpython.com/python-pathlib/  
+
+```
+>>> from pathlib import Path
+>>> Path.home()
+WindowsPath('C:/Users/philipp')
+```
+
+
 # [read ndjson in python](https://stackoverflow.com/questions/63501251/how-to-open-ndjson-file-in-python)
 
 ```
@@ -297,24 +339,7 @@ js2py.translate_file(Javascript File, Python File)
 js2py.run_file(Javascript File)
 ```
 
-# [python package](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 
-# Test if path exists
-```
-dat_path = "data/dat.pkl"
-#
-from pathlib import Path
-if Path(dat_path).exists(): 
-    print("read data from: ", dat_path)
-    dat = pd.read_pickle(dat_path)
-else:
-    query = f"SELECT * FROM `project_id`.dataset.table"
-    print("Download data query: ", query)
-    client = bigquery.Client(location = "US")
-    job = client = client.query(query)
-    dat = job.to_dataframe()
-    dat.to_pickle(dat_path)
-```
 
 ```
 # https://pandas.pydata.org/docs/user_guide/reshaping.html#reshaping-dummies
