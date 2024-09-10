@@ -7,7 +7,11 @@
 - https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html  
 - https://www.geeksforgeeks.org/python-pytorch-backward-function/   # Backward   
 - https://pytorch.org/vision/stable/transforms.html
-
+- https://stackoverflow.com/questions/64629702/pytorch-transform-totensor-changes-image  
+```
+torchvision.transforms toTensor:
+Converts a PIL Image or numpy.ndarray (H x W x C) in the range [0, 255] to a torch.FloatTensor of shape (C x H x W) in the range [0.0, 1.0]
+```
 
 
 
