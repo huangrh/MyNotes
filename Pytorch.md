@@ -1,7 +1,8 @@
 # Pytorch forward
 - https://stackoverflow.com/questions/55338756/why-there-are-different-output-between-model-forwardinput-and-modelinput
 ```
-If you dig into the code of nn.Module class you will see __call__ ultimately calls forward but internally handles the forward or backward hooks and manages some states that pytorch allows. 
+If you dig into the code of nn.Module class you will see __call__ ultimately calls forward
+but internally handles the forward or backward hooks and manages some states that pytorch allows. 
 ```
 
 # Hugging Face
