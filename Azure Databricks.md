@@ -1,3 +1,10 @@
+# Azure Blob File Storage System  - ABFFS
+## Access abfss:   
+dbutils.fs.ls("abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/<path-to-data>")   
+- https://learn.microsoft.com/en-us/azure/databricks/connect/storage/azure-storage
+- https://docs.databricks.com/en/connect/storage/azure-storage.html   
+
+- 
 # Databricks workflow
 https://docs.databricks.com/en/notebooks/notebook-workflows.html
 
