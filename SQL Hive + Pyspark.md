@@ -1,7 +1,9 @@
-# https://github.com/Azure/azure-cosmosdb-spark  
-
+# Cosmosdb
+## https://github.com/Azure/azure-cosmosdb-spark    
+## https://learn.microsoft.com/en-us/azure/databricks/scenarios/service-endpoint-cosmosdb  
 
 # https://stackoverflow.com/questions/41944689/pyspark-parse-fixed-width-text-file
+
 ```
 x= '''    1 123121234 joe
     2 234234234jill
