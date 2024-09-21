@@ -31,7 +31,7 @@ Converts a PIL Image or numpy.ndarray (H x W x C) in the range [0, 255] to a tor
 ## 2. Install cuda toolkit
 - Download and install the latest microsoft visual studio community edition (2019 is the current edition).   
 - https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local
-> nvcc --version
+> nvcc --version # cude-11-8
 > 
 ## 3. install python and setup environment  
 (Link for windows 10 ) 
@@ -41,8 +41,7 @@ Converts a PIL Image or numpy.ndarray (H x W x C) in the range [0, 255] to a tor
 > pyenv\Scripts\activate
 > 
 ## 4. Install Pytorch
-> pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118   
-> pip install torchtext --index-url https://download.pytorch.org/whl/cu118
+> pip3 install torch torchvision torchaudio  torchtext --index-url https://download.pytorch.org/whl/cu118   
 
 
 ## 5. Verify the installation    
