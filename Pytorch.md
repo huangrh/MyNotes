@@ -41,7 +41,9 @@ Converts a PIL Image or numpy.ndarray (H x W x C) in the range [0, 255] to a tor
 > pyenv\Scripts\activate
 > 
 ## 4. Install Pytorch
-> pip3 install torch torchvision torchaudio  torchtext --index-url https://download.pytorch.org/whl/cu118   
+> pip3 install torch torchvision torchaudio  torchtext --index-url https://download.pytorch.org/whl/cu118
+>
+> pip install matplotlib==3.8  #  3.4.3 >= matplotlib <= 3.8
 
 
 ## 5. Verify the installation    
