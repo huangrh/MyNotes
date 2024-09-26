@@ -31,23 +31,17 @@ response = requests.get('https://www.google.com')
 
 # Extract files from an encrpyted zip file with python3
 - https://gist.github.com/colmcoughlan/db1384156b8efe6676c9a6cc47756933
+- https://stackoverflow.com/questions/3451111/unzipping-files-in-python  
+- ZipFile.extractall(path=None, members=None, pwd=None)   
 ```
 from zipfile import ZipFile
 
-zip_file = 'test.zip'
+zip_file = '/path/to/test.zip'
 password = 'password'
 
-with ZipFile(zip_file) as zf:
-  zf.extractall(pwd=bytes(password,'utf-8'))
+with ZipFile(zip_file,'r') as zf:
+  zf.extractall(path='directory_to_extract_to', pwd=bytes(password,'utf-8'))
 ```
-
-- https://stackoverflow.com/questions/3451111/unzipping-files-in-python
-```
-import zipfile
-with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
-    zip_ref.extractall(directory_to_extract_to)
-```
-
 
 # SFTP. SCP
 - https://stackoverflow.com/questions/250283/how-to-scp-in-python
