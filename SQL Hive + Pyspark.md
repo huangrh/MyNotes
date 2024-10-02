@@ -1,7 +1,9 @@
 # Cosmosdb
-## https://github.com/Azure/azure-cosmosdb-spark    
-## https://learn.microsoft.com/en-us/azure/databricks/scenarios/service-endpoint-cosmosdb  
-
+- https://github.com/Azure/azure-cosmosdb-spark    
+- https://learn.microsoft.com/en-us/azure/databricks/scenarios/service-endpoint-cosmosdb  
+# Hive data type, cast
+- https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-datatypes
+- 
 # https://stackoverflow.com/questions/41944689/pyspark-parse-fixed-width-text-file
 
 ```
@@ -98,7 +100,7 @@ from pyspark.sql.functions import col
 # find all decimal columns in your SparkDF
 decimals_cols = [c for c in df.columns if 'Decimal' in str(df.schema[c].dataType)]
 
-#convert all decimals columns to floats
+# convert all decimals columns to floats
 for col in decimals_cols:
     df = df.withColumn(col, df[col].cast(FloatType()))
 
