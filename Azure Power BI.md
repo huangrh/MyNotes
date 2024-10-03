@@ -1,3 +1,6 @@
+## Embed a report web part in SharePoint Online  
+https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report-spo
+
 ## How to add reference line  
 - https://youtu.be/74mk6NL7o6o?si=775KCN2_YjyIizNU  
 
