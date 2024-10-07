@@ -4,6 +4,15 @@ https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-embed-repor
 ## How to add reference line  
 - https://youtu.be/74mk6NL7o6o?si=775KCN2_YjyIizNU  
 
+## Power BI Premiun Pricing   
+
+- https://www.saasworthy.com/product/microsoft-power-bi/pricing   
+- https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-troubleshooting-refresh-scenarios
+- 
+```
+Scheduled refresh time-out
+Scheduled refreshes for imported semantic models time out after two hours. This time-out is increased to five hours for semantic models in Premium workspaces. If you encounter this limit, consider reducing the size or complexity of your semantic model, or consider refactoring the large semantic model into multiple smaller semantic models.
+```
 ## Power BI Service usage
 - https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-modern-usage-metrics
 
