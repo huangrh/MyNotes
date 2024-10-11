@@ -158,7 +158,7 @@ spark.range(5).write \
     - properties: DNS Name = Vailtu URL from properties in the Key Vault ,
     - properties: Resource ID = Resource ID from properties in the Key Vault
 - dbutils.secrests.get("<scope name>", "<secrets name>") 
-- dbutils.secrets.listScope()  # list scope name
+- dbutils.secrets.listScopes()  # list scope name
 - dbutils.secrets.list(scope="scope-name") # list the secret from Azure Key Vault. It will go to the Azure Key Vault, and list what are the secrets in the scope. 
 - 
 - https://docs.snowflake.com/en/user-guide/spark-connector-overview
