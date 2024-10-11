@@ -2,6 +2,8 @@
 
 # https://learn.microsoft.com/en-us/azure/azure-maps/how-to-search-for-address  
 
+- https://learn.microsoft.com/en-us/rest/api/maps/search-v2/get-geocoding-batch?tabs=HTTP
+
 ```
 library(httr)
 library(jsonlite)
