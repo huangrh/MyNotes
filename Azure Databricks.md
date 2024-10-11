@@ -21,6 +21,7 @@ https://docs.databricks.com/en/notebooks/notebook-workflows.html
 SparkR::as.data.frame(SparkR::sql(query))
 SparkR::createDataFrame(r_data_frame)
 ```
+
 ## Read and Write
 
 ```
@@ -154,9 +155,12 @@ spark.range(5).write \
 ## Create Secrets Scope  
 - 38. Create Databricks Scope using Azure Key Vault and List secrets from Scope  
 - https://www.youtube.com/watch?v=2gMX98-RXPM
-- notebook_url + secrets/createScope
-    - properties: DNS Name = Vailtu URL from properties in the Key Vault ,
-    - properties: Resource ID = Resource ID from properties in the Key Vault
+- notebook_url + secrets/createScope (example below)
+- (from)https://adb-1279999333333333.6.azuredatabricks.net/?o=1279900022221111#notebook/2309313612374424/command/3439165058487049
+- (to)  https://adb-1279999333333333.6.azuredatabricks.net/?o=1279900022221111#secrets/createScope
+    - Scope Name: 
+    - properties: DNS Name    = properties/setting/Vault URI  in the Key Vault ,
+    - properties: Resource ID = properties/setting/Resource ID in the Key Vault
 - dbutils.secrests.get("<scope name>", "<secrets name>") 
 - dbutils.secrets.listScopes()  # list scope name
 - dbutils.secrets.list(scope="scope-name") # list the secret from Azure Key Vault. It will go to the Azure Key Vault, and list what are the secrets in the scope. 
@@ -170,6 +174,9 @@ value = dbutils.secrets.get(scope="myScope", key="myKey")
 for char in value:
     print(char, end=" ")
 ```
+
+- key valuts --> Secrets --> Generate/Import to create a secret
+- fill the fields: Name, Secret value
  
 ## Run multiple notebook concurently
 ```
