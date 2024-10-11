@@ -65,4 +65,22 @@ x = requests.get('https://w3schools.com')
 
 ```
 
+```
+# Example
+import requests
+json = {
+    "batchItems": [
+        {"query": "?query=14214 Cypress Hill dr. Chesterfield, MO 63017&limit=1"},
+        {"query": "?query=400 Broad St, Seattle, WA 98109&limit=3"},
+        {"query": "?query=One, Microsoft Way, Redmond, WA 98052&limit=3"},
+        {"query": "?query=350 5th Ave, New York, NY 10118&limit=1"},
+        {"query": "?query=Pike Pl, Seattle, WA 98101&lat=47.610970&lon=-122.342469&radius=1000"},
+        {"query": "?query=Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France&limit=1"}
+    ]
+}
+key = "use your subscription key"  
+sync_url = f"https://atlas.microsoft.com/search/address/batch/sync/json?api-version=1.0&subscription-key={key}"
+res = requests.post(sync_url,json=json)
+res.json()['batchItems'][0]['response']['results'][0]['position']
+
 
