@@ -80,9 +80,13 @@ json = {
         {"query": "?query=Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France&limit=1"}
     ]
 }
-key = "use your subscription key"  
-sync_url = f"https://atlas.microsoft.com/search/address/batch/sync/json?api-version=1.0&subscription-key={key}"
-res = requests.post(sync_url,json=json)
-res.json()['batchItems'][0]['response']['results'][0]['position']
+key = "use your subscription key"
+# https://learn.microsoft.com/en-us/rest/api/maps/search/post-search-address-batch?view=rest-maps-1.0&tabs=HTTP
+# sync_url: The number of batch items is limited to 100 for this API.
+sync_url  = f"https://atlas.microsoft.com/search/address/batch/sync/json?api-version=1.0&subscription-key={key}"
+# async_url:The number of batch items is limited to 10,000 for this API. 
+async_url = f"https://atlas.microsoft.com/search/address/batch/json?api-version=1.0&subscription-key={key}"  
+res = requests.post(sync_url,json=json)  
+res.json()['batchItems'][0]['response']['results'][0]['position']  
 
 
