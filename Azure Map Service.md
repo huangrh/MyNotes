@@ -1,4 +1,5 @@
-# https://stackoverflow.com/questions/67537458/creating-a-heatmap-on-r-using-leaflet-function-add-heatmap-or-addheatmap
+# Heat map on r using leaflet   
+- https://stackoverflow.com/questions/67537458/creating-a-heatmap-on-r-using-leaflet-function-add-heatmap-or-addheatmap
 
 # https://learn.microsoft.com/en-us/azure/azure-maps/how-to-search-for-address  
 
