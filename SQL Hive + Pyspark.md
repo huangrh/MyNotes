@@ -50,8 +50,12 @@ print(Data_Source_Group_Name)
 - https://jsonpath.com/
 - https://medium.com/@uzzaman.ahmed/introduction-to-pyspark-json-api-read-and-write-with-parameters-3cca3490e448
 ```
+# https://stackoverflow.com/questions/54210389/is-there-a-generic-way-to-read-the-multiline-json-in-spark-more-specifically-sp
 #Create data frame to read files from a folder
-dfReadFHIR_raw = spark.read.option("multiline","true").json(filePath)
+from pyspark.sql.functions import explode, col
+dfReadFHIR_raw = spark.read.option("multiline", "true").json(filePath)
+val df         = spark.read.option("multiline", "true").json("multi.json")
+val df2= df.withColumn("scores",explode(col("scores"))).select(col("_id.*"), col("class_id"),col("scores.*"),col("student_id"))
 ```
 
 ```
