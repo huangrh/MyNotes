@@ -1,3 +1,22 @@
+### https://www.mmitnetwork.com/what-are-hcpcs-codes/  
+```
+The Healthcare Common Procedure Coding System (HCPCS) is a collection of standardized codes used in medical billing to represent various medical procedures, services, products and supplies in claims to Medicare, Medicaid, and many third-party payers.
+
+HCPCS is divided into Level I and Level II.
+
+Level I consists of Current Procedural Terminology (CPT-4) codes, which are unique identification numbers (and accompanying descriptions) for all medical services and procedures provided by healthcare professionals. These codes are published annually by the American Medical Association.
+
+Level II HCPCS codes identify products, supplies, and services that are not included in the CPT codes, such as ambulance services, durable medical equipment, and medication administered in a physician’s office. Most pharmaceutical products managed under the medical benefit have HCPCS codes. These codes are published quarterly by CMS.
+What are the types of HCPCS Level II codes?
+
+All HCPCS Level II codes are five characters in length, beginning with a letter and followed by four digits. The letter (A through V) represents the code chapter. Some of the most common HCPCS Level II code types, or chapters, are:
+
+E-codes: Used to report all durable medical equipment
+G-codes: Used to report temporary procedures and professional services
+H-codes: Used to report rehabilitation services
+J-codes: Used to report all non-orally administered prescription medications and chemotherapy drugs
+```
+
 ### CMS Risk Adjustable CPT
 https://www.cms.gov/medicare/health-plans/medicareadvtgspecratestats/risk-adjustors-items/cpt-hcpcs 
 
