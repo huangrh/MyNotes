@@ -2,9 +2,10 @@
 - https://stackoverflow.com/questions/67537458/creating-a-heatmap-on-r-using-leaflet-function-add-heatmap-or-addheatmap
 - https://rpubs.com/nomarpicasso/1158007  
 
-# https://learn.microsoft.com/en-us/azure/azure-maps/how-to-search-for-address  
-
-- https://learn.microsoft.com/en-us/rest/api/maps/search-v2/get-geocoding-batch?tabs=HTTP
+### Request latitude and longitude for an address (geocoding) - Get    
+- https://learn.microsoft.com/en-us/azure/azure-maps/how-to-search-for-address    
+### Search - Get Geocoding Batch    
+- https://learn.microsoft.com/en-us/rest/api/maps/search-v2/get-geocoding-batch?tabs=HTTP  
 
 ```
 library(httr)
@@ -33,6 +34,11 @@ print(coordinates)
 # Search - Post Search Address Batch   
 - https://learn.microsoft.com/en-us/rest/api/maps/search/post-search-address-batch?view=rest-maps-1.0&tabs=HTTP  
 - https://learn.microsoft.com/en-us/rest/api/maps/search/post-search-address-batch?view=rest-maps-1.0&tabs=HTTP ******
+
+```
+POST https://atlas.microsoft.com/search/address/batch/sync/json?api-version=1.0&subscription-key={subscription-key}  
+```
+
 - https://www.geeksforgeeks.org/python-requests-post-request-with-headers-and-body/   
 ```
 import requests  
