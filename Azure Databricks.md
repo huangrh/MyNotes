@@ -161,17 +161,23 @@ spark.range(5).write \
     - Scope Name: 
     - properties: DNS Name    = properties/setting/Vault URI  in the Key Vault ,
     - properties: Resource ID = properties/setting/Resource ID in the Key Vault
+
+- dbutils.secrets.listScopes()  
+- dbutils.secrets.list(scope="scope-name") # list the secret from Azure Key Vault. It will go to the Azure Key Vault, and list what are the secrets in the scope.
 - dbutils.secrests.get("<scope name>", "<secrets name>") 
-- dbutils.secrets.listScopes()  # list scope name
-- dbutils.secrets.list(scope="scope-name") # list the secret from Azure Key Vault. It will go to the Azure Key Vault, and list what are the secrets in the scope. 
-- 
+# 
 - https://docs.snowflake.com/en/user-guide/spark-connector-overview
 - The connector uses Scala 2.12.x or 2.13.x to perform these operations and uses the Snowflake JDBC driver to communicate with Snowflake.
 
 ```
-value = dbutils.secrets.get(scope="myScope", key="myKey")
+# list scope name
+dbutils.secrets.listScopes()
+# List secret key
+dbutils.secrets.list('Scope Shared-Dev-Scus-001')
+# get the secret
+secret = dbutils.secrets.get(scope="myScope", key="myKey")
 
-for char in value:
+for char in secret:
     print(char, end=" ")
 ```
 
