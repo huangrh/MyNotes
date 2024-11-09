@@ -30,3 +30,5 @@ rmarkdown::render(input = input_file, output_dir = output_dir, output_file = out
 - https://www.msys2.org/
 
 # https://www.geeksforgeeks.org/microsoft-azure/  
+
+# https://winscp.net/eng/download.php # sftp client  
