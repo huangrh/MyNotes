@@ -292,6 +292,7 @@ else:
 
 # https://stackoverflow.com/questions/50876840/how-to-get-only-the-name-of-the-path-with-python
 ```
+# basename  
 >>> from pathlib import Path
 >>> p = Path("/home/user/Downloads/repo/test.txt")
 >>> print(p.stem)
