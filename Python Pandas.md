@@ -1,3 +1,11 @@
+## Excel
+```
+pip install openpyxl
+
+df = pd.read_excel(path,sheet_name = "npi_exclusion", na_values=["","NA", 'NULL','null'], keep_default_na=False, dtype=str)
+```
+
+
 ## HOW to drop columns if the columns is null.   
 
 ```
