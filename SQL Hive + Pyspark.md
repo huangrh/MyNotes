@@ -399,6 +399,17 @@ RESTORE TABLE delta.`/data/target/` TO TIMESTAMP AS OF <timestamp>
 ```
 
 ```
+VACUUM table_name [RETAIN num HOURS] [DRY RUN]
+ALTER TABLE table_name SET TBLPROPERTIES ('delta.deletedFileRetentionDuration' = '30 days');
+```
+
+```
+VACUUM table_name                   -- vacuum files not required by versions older than the default retention period
+VACUUM table_name RETAIN 100 HOURS  -- vacuum files not required by versions more than 100 hours old
+VACUUM table_name DRY RUN           -- do dry run to get the list of files to be deleted
+```
+
+```
 ## time travel
 select * from table_name version as of 0
 select * from table_name TIMESTAMP AS OF <timestamp>
