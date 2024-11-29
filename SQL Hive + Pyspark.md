@@ -1,3 +1,5 @@
+# https://www.databricks.com/sites/default/files/2024-11/delta-lake-the-definitive-guide-by-o-reilly.pdf  
+# 
 # Cosmosdb
 - https://github.com/Azure/azure-cosmosdb-spark    
 - https://learn.microsoft.com/en-us/azure/databricks/scenarios/service-endpoint-cosmosdb  
