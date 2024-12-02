@@ -5,6 +5,11 @@ pip install openpyxl
 df = pd.read_excel(path,sheet_name = "npi_exclusion", na_values=["","NA", 'NULL','null'], keep_default_na=False, dtype=str)
 ```
 
+```
+# https://stackoverflow.com/questions/17977540/pandas-looking-up-the-list-of-sheets-in-an-excel-file
+df = pandas.read_excel("/yourPath/FileName.xlsx", sheet_name=None);
+df.keys()
+```
 
 ## HOW to drop columns if the columns is null.   
 
