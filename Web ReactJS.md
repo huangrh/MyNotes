@@ -16,5 +16,8 @@
 
 https://www.freecodecamp.org/news/how-to-build-a-todo-application-using-reactjs-and-firebase/
 
+# 
+npm install -g npm@latest
+
 
 
