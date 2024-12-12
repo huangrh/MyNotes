@@ -94,7 +94,50 @@ df = reduce(DataFrame.unionByName, [load_csv(file) for file in files])
 - 
 # Create function    
 - https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-sql-function
+- https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/sql-ref-syntax-ddl-create-sql-function
+```
+—- Hello World-like functionality using Python UDFs
+> CREATE FUNCTION main.default.greet(s STRING)
+  RETURNS STRING
+  LANGUAGE PYTHON
+  AS $$
+    def greet(name):
+      return "Hello " + name + "!"
 
+    return greet(s) if s else None
+  $$
+
+—- Can import functions from std library and environment
+> CREATE FUNCTION main.default.isleapyear(year INT)
+  RETURNS BOOLEAN
+  LANGUAGE PYTHON
+  AS $$
+    import calendar
+    return calendar.isleap(year) if year else None
+  $$
+
+—- Must return the correct type. Otherwise will fail at runtime.
+> CREATE FUNCTION main.default.a_number()
+  RETURNS INTEGER
+  LANGUAGE PYTHON
+  AS $$
+    # does not work: return "10"
+    # does not work: return 3.14
+    return 10
+  $$
+
+—- Deal with exceptions.
+> CREATE FUNCTION main.default.custom_divide(n1 INT, n2 INT)
+  RETURNS FLOAT
+  LANGUAGE PYTHON
+  AS $$
+    try:
+      return n1/n2
+    except ZeroDivisionException:
+    # in case of 0, we can return NULL.
+    return None
+  $$
+```
 - 
 
 
