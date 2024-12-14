@@ -28,3 +28,7 @@ Wait for some seconds and visit the application URL. Congratulations! You have s
 # Azure App Service in 15 MINUTES | Web App Tutorial
 
 https://www.youtube.com/watch?v=5jOvVY1G62U
+
+# Deploy on Azure  
+- https://learn.microsoft.com/en-us/answers/questions/1470782/how-to-deploy-a-streamlit-application-on-azure-app  
+- https://benalexkeen.com/deploying-streamlit-applications-with-azure-app-services/
