@@ -1,3 +1,9 @@
+# Unity Catalog
+- https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/ 
+
+# App
+- https://www.databricks.com/blog/introducing-databricks-apps#:~:text=With%20Databricks%20Apps%2C%20data%20scientists,to%20quickly%20build%20flexible%20apps.  
+
 # Azure Blob File Storage System  - ABFFS
 ## Access abfss:   
 dbutils.fs.ls("abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/<path-to-data>")   
