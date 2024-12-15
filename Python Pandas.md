@@ -91,6 +91,7 @@ ED Visits,Calendar Year,132,188"""),sep=',', header=0)
 above_35 = titanic[titanic["Age"] > 35]
 ```
 
+# Reshape: https://pandas.pydata.org/docs/user_guide/reshaping.html
 ## Pivot long to wide
 ```
 # https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe
