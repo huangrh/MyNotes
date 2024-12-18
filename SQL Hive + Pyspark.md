@@ -554,6 +554,11 @@ Ref:
 ## [pyspark udf decorate](https://spark.apache.org/docs/3.1.1/api/python/reference/api/pyspark.sql.functions.udf.html)
 
 ```
+# This converts the input string characters into title case / proper case letters.
+SELECT InitCap(‘This is posted on BIGDATAnSQL blog’);
+```
+
+```
 # Define a function to clean up human names
 def clean_name(name):
     # Remove leading and trailing white spaces
