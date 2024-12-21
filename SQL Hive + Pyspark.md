@@ -538,7 +538,8 @@ WHEN NOT MATCHED
 ```
 # delete and append 
 spark.sql(f"DELETE FROM db.metric_result WHERE measure_id IN (SELECT DISTINCT measure_id FROM v_ma_star_measure)")
-spark.sql("SELECT * FROM v_ma_star_measure").write.format("delta").option("mergeSchema", "true").mode("append").save(metric_result_file)
+spark.sql("SELECT * FROM v_CCLF").write.format("delta").option("mergeSchema",     "true").mode("append"   ).save(target_file)
+spark.sql("SELECT * FROM v_cclf").write.format("delta").option("overwriteSchema", "true").mode("overwrite").save(target_file)
 ```
 Ref: 
 - [cwiki.apache.org: Merge](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DML#LanguageManualDML-Merge)
