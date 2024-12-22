@@ -156,6 +156,38 @@ with open("grayimage.png", "rb") as img_file:
 print(b64_string.decode('utf-8'))
 ```
 
+```
+# Image resize   
+from PIL import Image
+
+def resize_image(input_path, output_path, target_size):
+    """Resizes an image while maintaining aspect ratio."""
+
+    img = Image.open(input_path)
+    width, height = img.size
+
+    # Calculate new dimensions based on target size
+    if width > height:
+        new_width = target_size
+        new_height = int(height * target_size / width)
+    else:
+        new_height = target_size
+        new_width = int(width * target_size / height)
+
+    # Resize the image
+    img = img.resize((new_width, new_height), Image.LANCZOS)
+
+    # Save the resized image
+    img.save(output_path, "JPEG", quality=85)
+
+# Example usage
+input_image = "path/to/your/image.jpg"
+output_image = "path/to/resized_image.jpg"
+target_width = 800
+
+resize_image(input_image, output_image, target_width)
+```
+
 # Extract table from pdf to pandas dataframe    
 - updated 2024
 
