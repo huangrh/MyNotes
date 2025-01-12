@@ -454,5 +454,7 @@ def get_raf(row, col='icd10list_current'):
 hcc_dat['raf_observed']         = hcc_dat.apply(partial(get_raf, col='icd10list_current') , axis = 1)
 ```
 
-# https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html
+# Ref:  
+- https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html
+- https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html
 
