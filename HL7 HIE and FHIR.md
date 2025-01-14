@@ -2,6 +2,7 @@
 - https://build.fhir.org/ig/HL7/v2-to-fhir/ConceptMap-segment-pv1-to-encounter.html
 - 
 # HL7 segment definitions  
+- https://www.hl7.eu/refactored/seg.html  
 - https://v2plus.hl7.org/2021Jan/segment-definitions.html  
 - https://v2plus.hl7.org/2021Jan/segment-definition/MSH.html
 - [CodeSystem: eventType](https://terminology.hl7.org/4.0.0/CodeSystem-v2-0003.html)  
@@ -30,7 +31,7 @@ https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/using-curl?tabs=CLI
     <fullUrl value="urn:uuid:6080d4a7-5e05-45dc-96d5-f75329564d1f"/>
     <resource>
       <MessageHeader>
-			  <id value="cac8143e-6138-4f45-b086-bb8ebf976aae">
+        <id value="cac8143e-6138-4f45-b086-bb8ebf976aae">
         <!-- normal message header stuff -->
         <event>
           <system value="urn:ietf:rfc:3986"/>
