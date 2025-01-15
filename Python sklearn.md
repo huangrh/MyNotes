@@ -1,3 +1,61 @@
+# sklearn API
+## 1. estimators
+- fit
+- prodict
+- score
+## 2. transformers 
+### impute 
+- from sklearn.impute import SimpleImputer
+### preprocessing  
+- from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder, MinMaxScaler, StandardScaler, FunctionTransformer     
+- ordinal_encoder.categories_
+- cat_encoder.feature_names_in_
+- cat_encoder.get_feature_names_out()
+
+### Custom transformer  
+- from sklearn.base import BAseEstimator, TransformerMixin
+- from sklearn.utils.validation import check_array, check_is_fitted
+- from sklearn.utils.
+### tranforms API  
+- fit
+- transform
+- fir_transform
+## Predictors  
+- predict
+## Inspector 
+- imputer.strategy
+- imputer.statistics_
+
+## 3. pipelines  
+- from sklearn.compose import TransformedTargetRegressor, ColumnTransformer, make_column_selector, make_column_transformer
+- from sklearn.pipeline import Piepeline, make_pipeline
+## 4. model_selecttion  
+- from sklearn.model_selection import train_test_split
+- from sklearn.model_selection import StratifiedShuyffleSplit
+- from sklearn.model_selection import cross_val_score
+- from sklearn.model_selection import cross_val_predict  
+- from sklearn.model_selection import GridSearchCV
+- from sklearn.model_selection import RandomizedSearchCV
+- from sklearn.model_selection import StratifiedKFold
+- 
+## 5. metric   
+- from sklearn.metrics.pairwise import rbf_kernel
+- from sklearn.metrics import mean_squared_error
+- from sklearn.metrics import confusion_matrix
+- from sklearn.metrics import precision_score, recall_score, f1_score
+-   
+## 6. Model 
+- from sklearn.linear_model import LinearRegression, SGCClassifier, 
+- from sklearn.tree import DecisionTreeRegressor
+- from sklearn.ensemble import RandomForestRegressor
+
+## 7. Dataset 
+- from sklearn.datasets import fetch_openml
+
+## 8. other
+- from sklearn.base import clone
+- 
+
 # kmeans: https://data36.com/k-means-clustering-scikit-learn-python/
 
 
