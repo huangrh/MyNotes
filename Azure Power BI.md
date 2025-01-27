@@ -1,3 +1,6 @@
+## incremental-refresh-overview
+https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview  
+
 ## Embed a report web part in SharePoint Online  
 https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report-spo
 
