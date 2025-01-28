@@ -29,6 +29,7 @@
 ## 3. pipelines  
 - from sklearn.compose import TransformedTargetRegressor, ColumnTransformer, make_column_selector, make_column_transformer
 - from sklearn.pipeline import Piepeline, make_pipeline
+- 
 ## 4. model_selecttion  
 - from sklearn.model_selection import train_test_split
 - from sklearn.model_selection import StratifiedShuyffleSplit
@@ -43,11 +44,13 @@
 - from sklearn.metrics import mean_squared_error
 - from sklearn.metrics import confusion_matrix
 - from sklearn.metrics import precision_score, recall_score, f1_score
--   
+- from sklearn.metrics import average_precision_score, precision_recall_curve
 ## 6. Model 
-- from sklearn.linear_model import LinearRegression, SGCClassifier, 
+- from sklearn.linear_model import LinearRegression, SGDClassifier, 
 - from sklearn.tree import DecisionTreeRegressor
 - from sklearn.ensemble import RandomForestRegressor
+- from sklearn.dummy import DummyClassifier
+- from sklearn.ensemble import RandomForestClassifier  
 
 ## 7. Dataset 
 - from sklearn.datasets import fetch_openml
