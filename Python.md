@@ -16,63 +16,57 @@ initial_guess = [0.5, 0.5]
 # Solve the system of equations
 result = fsolve(equations, initial_guess)
 print("Solution:", result)
-In this example, fsolve finds the numerical solution to the system of nonlinear equations defined in the equations function. The initial guess for the solution is set to [0.5, 0.5], and the result is printed.
+
+In this example, fsolve finds the numerical solution to the system of nonlinear equations defined in the equations function.
+The initial guess for the solution is set to [0.5, 0.5], and the result is printed.
 
 Parameters
 
 The fsolve function has several parameters that can be adjusted to suit different scenarios:
 
 func: The function that defines the system of equations.
-
 x0: The initial guess for the roots.
-
 args: Extra arguments to pass to the function.
-
 fprime: A function to compute the Jacobian of func.
-
 full_output: If True, returns additional output information.
-
 col_deriv: Specifies whether the Jacobian function computes derivatives down the columns.
-
 xtol: The calculation will terminate if the relative error between two consecutive iterates is at most xtol.
-
 maxfev: The maximum number of calls to the function.
-
 band: Specifies the band structure of the Jacobian matrix.
-
 epsfcn: A suitable step length for the forward-difference approximation of the Jacobian.
-
 factor: Determines the initial step bound.
-
 diag: Scale factors for the variables.
+```
 
-Practical Examples
+```
+# Practical Examples
 
-Example 1: Finding the Root of a Single Equation
+## Example 1: Finding the Root of a Single Equation
 
 from math import cos
 import scipy.optimize
 
 def func(x):
-return x + 2 * cos(x)
+    return x + 2 * cos(x)
 
 root = scipy.optimize.fsolve(func, 0.2)
 print(root)
-In this example, fsolve is used to find the root of the equation ( x + 2 \cos(x) = 0 ) with a starting point of 0.2.
 
-Example 2: Solving a System of Equations
+# In this example, fsolve is used to find the root of the equation ( x + 2 \cos(x) = 0 ) with a starting point of 0.2.
+
+## Example 2: Solving a System of Equations
 
 from math import cos
 import scipy.optimize
 
 def func(x):
-return [x[1] * x[0] - x[1] - 6, x[0] * cos(x[1]) - 3]
+    return [x[1] * x[0] - x[1] - 6, x[0] * cos(x[1]) - 3]
 
 root = scipy.optimize.fsolve(func, [0, 2])
 print(root)
 Here, fsolve solves a system of equations with starting points 0 and 2.
 
-Tips for Effective Usage
+# Tips for Effective Usage
 
 Initial Guesses: The convergence of fsolve can be sensitive to the initial guess. Experiment with different initial guesses to ensure the algorithm converges to the desired solution.
 
