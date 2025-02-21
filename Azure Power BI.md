@@ -1,3 +1,6 @@
+## Fabric
+- https://learn.microsoft.com/en-us/fabric/enterprise/licenses  
+
 ## incremental-refresh-overview
 https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview  
 
