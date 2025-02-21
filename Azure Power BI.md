@@ -1,8 +1,11 @@
 ## incremental-refresh-overview
 https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview  
 
-## Embed a report web part in SharePoint Online  
-https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report-spo
+## Power BI Embedding
+- embed a report with react js:
+	- https://learn.microsoft.com/en-us/javascript/api/overview/powerbi/powerbi-client-react
+- Embed a report web part in SharePoint Online  
+	- https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report-spo
 
 ## How to add reference line  
 - https://youtu.be/74mk6NL7o6o?si=775KCN2_YjyIizNU  
