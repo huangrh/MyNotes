@@ -5,8 +5,10 @@ https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-over
 - embed a report with react js:
 	- https://learn.microsoft.com/en-us/javascript/api/overview/powerbi/powerbi-client-react
 - Embed a report web part in SharePoint Online  
-	- https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report-spo
-
+	- https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report-spo  
+- https://docs.microsoft.com/en-us/power-bi/developer/embedded/  
+- [Embed a report web part in SharePoint Online](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report-spo)  
+- 
 ## How to add reference line  
 - https://youtu.be/74mk6NL7o6o?si=775KCN2_YjyIizNU  
 
@@ -132,7 +134,7 @@ Measures = CALCULATE(CONCATENATEX(DISTINCT(table_measure[measure]), (tablemeasur
 
 - [Cross Report Drill Through](https://docs.microsoft.com/en-us/power-bi/create-reports/desktop-cross-report-drill-through?tabs=powerbi-desktop)
 
-- https://docs.microsoft.com/en-us/power-bi/developer/embedded/
+
 
 - https://docs.microsoft.com/en-us/power-bi/report-server/install-report-server
 
@@ -147,7 +149,7 @@ Measures = CALCULATE(CONCATENATEX(DISTINCT(table_measure[measure]), (tablemeasur
 - [How to Create and Publish an App to Power BI Service](https://www.youtube.com/watch?v=yJEAEHj617w)
 
 
-- [Embed a report web part in SharePoint Online](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-embed-report-spo)
+
 
 ###  [Row Level Security   ](https://docs.microsoft.com/en-us/power-bi/enterprise/service-admin-rls)
 
