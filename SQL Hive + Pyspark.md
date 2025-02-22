@@ -65,11 +65,11 @@ You can provide the `skipRows` option while reading.
 > spark.read.format("csv").option("skipRows", 4).load("<filepath>")
 ```
 
-- [delta-batch](https://docs.microsoft.com/en-us/azure/databricks/delta/delta-batch)
-
 ```
 df = spark.read.csv(path, header=True, inferSchema=True, sep="|")
 ```
+
+- [delta-batch](https://docs.microsoft.com/en-us/azure/databricks/delta/delta-batch)
 
 ```
 -- load multiple csv file
