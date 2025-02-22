@@ -67,7 +67,9 @@ You can provide the `skipRows` option while reading.
 
 - [delta-batch](https://docs.microsoft.com/en-us/azure/databricks/delta/delta-batch)
 
-
+```
+df = spark.read.csv(path, header=True, inferSchema=True, sep="|")
+```
 
 ```
 -- load multiple csv file
