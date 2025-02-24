@@ -1,3 +1,5 @@
+
+
 CMS MA Plan number
 - https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/monthly-enrollment-plan  
 
@@ -9,6 +11,8 @@ Comprehensive ESRD Care Model
 # ACO Reach
 https://innovation.cms.gov/media/document/aco-reach-py2023-risk-adjustment  
 https://innovation.cms.gov/innovation-models/aco-reach  
+- ACO Reach Provider Alignment  Report (Par, see Page37 - B.2.2)
+https://www.cms.gov/priorities/innovation/files/aco-reach-quality-msr-meth-py24.pdf  
 
 
 # Ref: 
