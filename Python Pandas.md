@@ -57,6 +57,14 @@ for index, row in df.iterrows():
 ## pandas Read CSV
 
 ```
+# read with utf-8 and utf-16
+try: 
+    df = pd.read_csv(file, dtype=str, encoding="utf-8", sep="|")
+except UnicodeDecodeError:
+    df = pd.read_csv(file, dtype=str, encoding="utf-16", sep="|")
+```
+
+```
 # https://stackoverflow.com/questions/61264795/pandas-unicodedecodeerror-utf-8-codec-cant-decode-bytes-in-position-0-1-in
 data = pd.read_csv("COVID-19-geographic-disbtribution-worldwide.csv", encoding = 'unicode_escape', engine ='python')
 ```
@@ -117,6 +125,18 @@ df = pd.DataFrame({
 # 
 df = df.reset_index()
 pd.melt(df, id_vars='date', value_vars=['AA', 'BB', 'CC'], value_name = 'value')
+
+```
+df = pd.melt(
+        frame=df,
+        id_vars=["id","name"],        # Columns to keep
+        value_vars=["var1", "var2"],  # Columns to unpivot
+        var_name='name',              # Name for the variable column
+        value_name='value',           # Name for the value column
+        col_level=None,               # If columns are a MultiIndex, this level will be melted
+        ignore_index=True             # If True, original index is ignored
+    )
+```
 # 
 df.melt(ignore_index=False).reset_index()
 ```
