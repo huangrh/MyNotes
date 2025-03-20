@@ -1,3 +1,12 @@
+# How to get current working dir/path  
+
+```
+import os
+from pathlib import Path
+cwd = os.getcwd().replace("/Workspace", '') + '/'
+str(cwd)
+```
+
 # Unity Catalog
 - https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/ 
 
@@ -205,7 +214,17 @@ pool.map(
 ```
 - https://stackoverflow.com/questions/68937734/execute-multiple-notebooks-in-parallel-in-pyspark-databricks
 
+## Get Workspace ID from python notebook
+- [how-to-get-workspace-name-inside-a-python-notebook-in-databricks](https://stackoverflow.com/questions/70932930/how-to-get-workspace-name-inside-a-python-notebook-in-databricks)
 
+```
+# get key
+keys = spark.conf.getAll
+display(keys)
+# list workspace ID
+spark.conf.get("spark.databricks.workspaceUrl")
+spark.conf.get("spark.databricks.workspaceUrl").split('.')[0]
+```
 ## Run a Databricks notebook from another notebook
 - https://docs.databricks.com/notebooks/notebook-workflows.html  
 - dbutils.notebook API
