@@ -230,6 +230,31 @@ spark.conf.get("spark.databricks.workspaceUrl").split('.')[0]
 - dbutils.notebook API
   - run(path: String,  timeout_seconds: int, arguments: Map): String
   - exit
+
+```
+# pass arguments
+# in the parent notebook
+path = cwd + '106_051_person_RAF'
+arguments_list = [
+    {"Data_Source_Group": 'All Data Source',         "Data_Source": "Data_Source_Name"},
+    {"Data_Source_Group": 'Claims',                  "Data_Source": "Data_Source_Name"}, 
+    {"Data_Source_Group": 'RCM',                     "Data_Source": "Data_Source_Name"}, 
+    {"Data_Source_Group": 'EMR',                     "Data_Source": "Data_Source_Name"}]
+for arguments in arguments_list:
+    print(arguments)
+    dbutils.notebook.run(path=path, timeout_seconds=-1, arguments=arguments)
+
+# in the child notebook
+#
+dbutils.widgets.text(name="Data_Source_Group", defaultValue="All Data Source", label="Enter Data Source Group")
+Data_Source_Group_Name = dbutils.widgets.get("Data_Source_Group")
+print(Data_Source_Group_Name)
+#
+dbutils.widgets.text(name = "Data_Source", defaultValue="Data_Source_Name", label="Enter Data Source")
+Data_Source_Name = dbutils.widgets.get("Data_Source")
+print(Data_Source_Name)
+```
+
 ```
 # Example 1 - returning data through temporary views.
 # You can only return one string using dbutils.notebook.exit(), but since called notebooks reside in the same JVM, you can
