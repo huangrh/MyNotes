@@ -1,6 +1,8 @@
 # send email through outlook
 ```
 # https://stackoverflow.com/questions/26811679/sending-email-in-r-via-outlook
+- https://www.seancarney.ca/2020/10/07/sending-email-from-outlook-in-r/
+
 library(RDCOMClient)
 ## init com api
 OutApp <- COMCreate("Outlook.Application")
@@ -16,6 +18,38 @@ outMail$Send()
 # outMail[["Attachments"]]$Add(path_to_attch_file)
 # SentOnBehalfOfName not working 
 # outMail[["SentOnBehalfOfName"]] = "yoursecondary@mail.com"
+```
+
+```
+# Send rmarkdown  
+- https://www.seancarney.ca/2020/10/10/advanced-email-in-r-embedding-images-and-markdown/
+# Knit the 'analysis' Markdown file into an HTML document, 
+# you'll need to change this to the name of your Markdown report.
+rmarkdown::render("analysis.Rmd", "html_document")
+
+# Load the readtext library
+require (readtext)
+
+# Read the HTML document into an object, the file name 
+# should match your .Rmd document above
+body <- readtext("analysis.htm")
+
+# Load the DCOM library
+require (RDCOMClient)
+
+# Open Outlook
+Outlook <- COMCreate("Outlook.Application")
+
+# Create a new message
+Email = Outlook$CreateItem(0)
+
+# Set the recipient, subject, and body
+Email[["to"]] = "recipient1@test.com; recipient2@test.com"
+Email[["subject"]] = "Quarterly Sales Report"
+Email[["htmlbody"]] = body$text
+
+# Send the message
+Email$Send()
 ```
 
 # Nonparametric Tests
