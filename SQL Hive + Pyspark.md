@@ -1,3 +1,9 @@
+
+
+# https://stackoverflow.com/questions/31385363/how-to-export-a-table-dataframe-in-pyspark-to-csv
+- sdf.repartition(1).write.csv("/path/to/csv/data.csv")
+
+
 # https://www.databricks.com/sites/default/files/2024-11/delta-lake-the-definitive-guide-by-o-reilly.pdf  
 # 
 # Cosmosdb
