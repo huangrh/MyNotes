@@ -18,6 +18,16 @@ DBI::dbDisconnect(con)
 ```
 
 ```
+# https://solutions.posit.co/connections/db/databases/microsoft-sql-server/
+con <- DBI::dbConnect(odbc::odbc(), 
+                      Driver = "SQL Server", 
+                      Server = "localhost\\SQLEXPRESS", 
+                      Database = "master", 
+                      Trusted_Connection = "True")
+```
+
+
+```
 library(DBI)
 # Create an ephemeral in-memory RSQLite database
 con <- DBI::dbConnect(RSQLite::SQLite(), dbname = ":memory:")
