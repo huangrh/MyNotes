@@ -1,3 +1,51 @@
+# ODBC
+```
+library(odbc)
+
+# Create a connection string
+conn_string <- "Driver={SQL Server};Server=your_server;Database=your_database;Uid=your_user;Pwd=your_password;"
+
+# Connect to the database
+con <- DBI::dbConnect(odbc::odbc(), DSN = "your_dsn", UID = "your_user", PWD = "your_password") # Replace with your DSN and credentials
+
+library(DBI)
+
+# Execute a query
+result <- DBI::dbGetQuery(con, "SELECT * FROM your_table")
+df <- dbGetQuery(con, "SELECT film_id, title, description FROM film WHERE release_year = 2006 AND rating = 'G'")
+# Using DBI with odbc
+DBI::dbDisconnect(con)
+```
+
+```
+library(DBI)
+# Create an ephemeral in-memory RSQLite database
+con <- DBI::dbConnect(RSQLite::SQLite(), dbname = ":memory:")
+
+# 
+dbWriteTable(con, "mtcars", mtcars)
+
+dbListTables(con)
+dbListFields(con, "mtcars")
+dbReadTable(con, "mtcars")
+
+# You can fetch all results:
+res <- dbSendQuery(con, "SELECT * FROM mtcars WHERE cyl = 4")
+dbFetch(res)
+dbClearResult(res)
+
+# Or a chunk at a time
+res <- dbSendQuery(con, "SELECT * FROM mtcars WHERE cyl = 4")
+while(!dbHasCompleted(res)){
+  chunk <- dbFetch(res, n = 5)
+  print(nrow(chunk))
+}
+dbClearResult(res)
+
+dbDisconnect(con)
+```
+
+
 # send email through outlook
 ```
 # https://stackoverflow.com/questions/26811679/sending-email-in-r-via-outlook
