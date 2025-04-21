@@ -1,3 +1,8 @@
+# H-Num
+- Ref: https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/ma-plan-directory
+- Medicare Advantage Contract Number
+- 
+
 # https://resdac.org/cms-data/variables/beneficiary-race-code-encounter
 
 https://qpp.cms.gov/
