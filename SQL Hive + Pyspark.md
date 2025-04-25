@@ -1,5 +1,10 @@
 
 
+# https://stackoverflow.com/questions/34077353/how-to-change-dataframe-column-names-in-pyspark  
+```
+df = df.select(col("colName").alias("col_newname"), col("col2").alias("col2_newname"))
+```
+
 # https://stackoverflow.com/questions/31385363/how-to-export-a-table-dataframe-in-pyspark-to-csv
 - sdf.repartition(1).write.csv("/path/to/csv/data.csv")
 
