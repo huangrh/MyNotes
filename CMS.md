@@ -1,5 +1,34 @@
-# https://www.csscoperations.com/internet/csscw3_files.nsf/F/CSSCNew_Enrollee_Job_Aid%20cameraready%20011413.pdf/$FILE/New_Enrollee_Job_Aid%20cameraready%20011413.pdf
-- new enrollee: risk_adjustment_factor_type_code: (E, ED, E1, E2, SE in field 47 of MMR file)
+# new enrollee
+-  https://www.csscoperations.com/internet/csscw3_files.nsf/F/CSSCNew_Enrollee_Job_Aid%20cameraready%20011413.pdf/$FILE/New_Enrollee_Job_Aid%20cameraready%20011413.pdf
+- new enrollee: risk_adjustment_factor_type_code: (E, ED, E1, E2, SE in field 47 of MMR file)  
+
+- https://1library.net/article/mmr-flat-file-layout-continued-service-claims-component.q0j7pl3z   
+```
+# 47 RA Factor Type Code 2 189-190
+Type of factors in use (see Fields 24-25):
+C = Community
+C1 = Community Post-Graft I (ESRD)
+C2 = Community Post-Graft II (ESRD)
+D = Dialysis (ESRD)
+
+E = New Enrollee
+ED = New Enrollee Dialysis (ESRD)
+E1 = New Enrollee Post-Graft I (ESRD)
+E2 = New Enrollee Post-Graft II (ESRD)
+G1 = Graft I (ESRD)
+G2 = Graft II (ESRD) I = Institutional
+I1 = Institutional Post-Graft I (ESRD)
+I2 = Institutional Post-Graft II (ESRD)
+
+# 48 Frailty Indicator 1 191-191
+Y = MCO-level Frailty Factor Included
+
+# 49 Original Reason for Entitlement Code (OREC) 1 192-192
+0 = Beneficiary insured due to age
+1 = Beneficiary insured due to disability
+2 = Beneficiary insured due to ESRD
+3 = Beneficiary insured due to disability and current ESRD
+```
 
 # H-Num
 - Ref: https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/ma-plan-directory
