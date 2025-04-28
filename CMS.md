@@ -1,3 +1,6 @@
+# https://www.csscoperations.com/internet/csscw3_files.nsf/F/CSSCNew_Enrollee_Job_Aid%20cameraready%20011413.pdf/$FILE/New_Enrollee_Job_Aid%20cameraready%20011413.pdf
+- new enrollee: risk_adjustment_factor_type_code: (E, ED, E1, E2, SE in field 47 of MMR file)
+
 # H-Num
 - Ref: https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/ma-plan-directory
 - Medicare Advantage Contract Number
