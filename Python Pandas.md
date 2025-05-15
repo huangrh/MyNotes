@@ -127,8 +127,10 @@ df = df.reset_index()
 pd.melt(df, id_vars='date', value_vars=['AA', 'BB', 'CC'], value_name = 'value')
 
 ```
-df = pd.melt(
-        frame=df,
+
+```
+df = pd.melt(  
+        frame=df,  
         id_vars=["id","name"],        # Columns to keep
         value_vars=["var1", "var2"],  # Columns to unpivot
         var_name='name',              # Name for the variable column
@@ -136,6 +138,8 @@ df = pd.melt(
         col_level=None,               # If columns are a MultiIndex, this level will be melted
         ignore_index=True             # If True, original index is ignored
     )
+```
+
 ```
 # 
 df.melt(ignore_index=False).reset_index()
