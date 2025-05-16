@@ -1,3 +1,18 @@
+## Read pdf to data frame
+
+```
+# pip install tabula.io
+import tabula.io as tabula
+import pandas as pd 
+
+# Read pdf into list of DataFrame
+file = "2025tables.pdf"
+dfs = tabula.read_pdf(file, pages='all', encoding='cp1252',  pandas_options={'header': None})
+dfs[0].head()
+df = pd.concat(dfs)
+df.head()
+```
+
 ## Excel
 ```
 pip install openpyxl
