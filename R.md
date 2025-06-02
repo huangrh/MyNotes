@@ -2,6 +2,11 @@
 - Rob J Hyndman   
 https://otexts.com/fpp3/bootstrap.html  
 
+I prefer to work with the patient level data if available. For example,  to estimate the distribution of HbA1c poor control measures with 5000 diabetes patients, we can randomly sample (with replacement) 5000 patients  and repeat the process 10, 000 times as Angelo mentioned (take some time, but can be parallel with a multiple cores computer). We can calculate the rate for each sampling and then derive the sampling distribution.  
+
+Yes, Time series monte carlo is more complicated. First the time series is transformed and decomposed into trend, seasonal and remainder components using STL. Then we obtain shuffled versions of the remainder component to get bootstrapped remainder series. Fortunately, there is an R package fpp3 and it is well documented in a book, available free online (https://otexts.com/fpp3/bootstrap.html).   
+
+
 # ODBC
 ```
 library(odbc)
