@@ -1,3 +1,7 @@
+# Time series forcast - bootstraping. Bootstrapping and bagging
+- Rob J Hyndman   
+https://otexts.com/fpp3/bootstrap.html  
+
 # ODBC
 ```
 library(odbc)
