@@ -18,6 +18,7 @@ z.extractall(dest)
 
 ```
 # download and unzip nppes npi data
+# https://download.cms.gov/nppes/NPI_Files.html  
 # 
 path = "https://download.cms.gov/nppes/NPPES_Deactivated_NPI_Report_051225_V2.zip"
 path = "https://download.cms.gov/nppes/NPPES_Data_Dissemination_May_2025_V2.zip"
