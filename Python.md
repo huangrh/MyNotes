@@ -16,6 +16,21 @@ z.extractall(dest)
 
 ```
 
+```
+# download and unzip nppes npi data
+# 
+path = "https://download.cms.gov/nppes/NPPES_Deactivated_NPI_Report_051225_V2.zip"
+path = "https://download.cms.gov/nppes/NPPES_Data_Dissemination_May_2025_V2.zip"
+import requests
+import zipfile
+import io
+r = requests.get(path)
+z = zipfile.ZipFile(io.BytesIO(r.content))
+dest = "/dbfs/mnt/aldataanalytics/share/common/nppes/"
+z.extractall(dest)
+dbutils.fs.ls("/mnt/aldataanalytics/share/common/nppes/")
+```
+
 # https://github.com/yubin-park/hccpy  
 
 
