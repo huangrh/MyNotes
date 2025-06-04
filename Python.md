@@ -1,3 +1,21 @@
+# Download zip and extractall with Python 
+```
+print("update")
+
+path = "https://www.cms.gov/files/zip/2024-medicare-risk-adjustment-eligible-cpt/hcpcs-codes.zip-0"
+path = "https://www.cms.gov/files/zip/2025-medicare-risk-adjustment-eligible-cpt/hcpcs-codes.zip"
+import requests
+import zipfile
+import io
+
+# zip_file_url = 'https://example.com/your_zip_file.zip'
+r = requests.get(path)
+z = zipfile.ZipFile(io.BytesIO(r.content))
+dest = "/dbfs/mnt/aldataanalytics/share/common/cpt_risk_adjustable/"
+z.extractall(dest)
+
+```
+
 # https://github.com/yubin-park/hccpy  
 
 
