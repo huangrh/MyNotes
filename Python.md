@@ -1,7 +1,8 @@
 # Download zip and extractall with Python 
 ```
 print("update")
-
+# CMS Risk Adjust Eligible CPT
+# https://www.cms.gov/medicare/health-plans/medicareadvtgspecratestats/risk-adjustors-items/cpt-hcpcs
 path = "https://www.cms.gov/files/zip/2024-medicare-risk-adjustment-eligible-cpt/hcpcs-codes.zip-0"
 path = "https://www.cms.gov/files/zip/2025-medicare-risk-adjustment-eligible-cpt/hcpcs-codes.zip"
 import requests
