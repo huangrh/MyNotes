@@ -1,4 +1,10 @@
+# pandas api on pyspark  
 
+- https://sparkbyexamples.com/pyspark/pandas-api-on-apache-spark-pyspark/
+- 
+```
+from pyspark import pandas as pd
+```
 
 # https://stackoverflow.com/questions/34077353/how-to-change-dataframe-column-names-in-pyspark  
 ```
