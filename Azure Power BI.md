@@ -1,3 +1,30 @@
+## Python - show table  
+- https://stackoverflow.com/questions/60076770/power-bi-dataframe-table-visualization
+- 
+```
+# dataset = pandas.DataFrame(Year, Quarter, Month, Day, LOB, # member)
+# dataset = dataset.drop_duplicates()
+
+# Paste or type your script code here:
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+dataset = pd.DataFrame(np.random.randn(10, 8), columns=list('abcdefgh'))
+#Round to two digits to print nicely
+vals = np.around(dataset.values, 2)
+#Normalize data to [0, 1] range for color mapping below
+normal = (dataset - dataset.min()) / (dataset.max() - dataset.min())
+
+fig = plt.figure()
+ax = fig.add_subplot(111)
+ax.axis('off')
+the_table=ax.table(cellText=vals, rowLabels=dataset.index, colLabels=dataset.columns, 
+                   loc='center', cellColours=plt.cm.RdYlGn(normal),animated=True)
+
+plt.show()
+```
+
 ## Fabric
 - https://learn.microsoft.com/en-us/fabric/enterprise/licenses  
 
