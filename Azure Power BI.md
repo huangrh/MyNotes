@@ -1,4 +1,37 @@
 ## Python - show table  
+
+```
+# Example 1
+# 
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Create DataFrame
+df = pd.DataFrame({
+'team': ['A', 'A', 'A', 'B', 'B', 'B', 'C', 'C', 'C'],
+'points': [18, 22, 19, 14, 14, 11, 20, 28, 30],
+'assists': [5, 7, 7, 9, 12, 9, 9, 4, 15]
+})
+
+# Add table
+table = plt.table(
+    cellText=df.values,
+    rowLabels=df.index,
+    colLabels=df.columns,
+    animated=True, 
+    cellLoc='center', 
+    loc='center',
+    bbox=(-0.1, -0.1, 1.1, 1.1)
+)
+table.auto_set_font_size(False)
+table.set_fontsize(24)
+# table.scale(1.5, 1.5)
+
+# Display final plot
+plt.show()
+```
+
 - https://stackoverflow.com/questions/60076770/power-bi-dataframe-table-visualization
 - 
 ```
