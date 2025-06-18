@@ -15,6 +15,7 @@ df = pd.DataFrame({
 })
 
 # Add table
+plt.axis('off')
 table = plt.table(
     cellText=df.values,
     rowLabels=df.index,
