@@ -57,7 +57,42 @@ $ git push origin develop
  
 The --no-ff flag causes the merge to always create a new commit object, even if the merge could be performed with a fast-forward. This avoids losing information about the historical existence of a feature branch and groups together all commits that together added the feature.   
 
-# 
+# Git diff 
+```
+# https://www.datacamp.com/tutorial/git-diff-guide
+Git Diff Command Reference
+Git diff offers a wide range of options to customize its output and behavior for specific situations. Here’s a comprehensive reference of the most commonly used parameters to enhance your differential analysis:
+
+Basic comparison options
+git diff - Compare working directory to staging area
+git diff --staged (or --cached) - Compare staging area to last commit
+git diff HEAD - Compare working directory to last commit
+git diff <commit> - Compare working directory to specific commit
+git diff <commit1> <commit2> - Compare two specific commits
+git diff <branch1> <branch2> - Compare two branches
+Path limiting
+git diff -- <path> - Limit comparison to specific file or directory
+git diff --stat - Show summary of changes (files changed, insertions, deletions), a very useful option for large diffs
+git diff --name-only - Show only names of changed files
+git diff --name-status - Show names and status (added, modified, deleted) of changed files
+Display control
+git diff -w (or --ignore-all-space) - Ignore whitespace changes
+git diff --ignore-space-change - Ignore changes in amount of whitespace
+git diff --color-words - Show word-level differences with color
+git diff --word-diff - Show word-level differences in a different format
+git diff -U<n> - Show n lines of context (default is 3)
+git diff --no-prefix - Don't show a/ and b/ prefixes in diff output
+Content filtering
+git diff --binary - Show changes to binary files
+git diff -S<string> - Look for changes that add or remove the specified string
+git diff -G<regex> - Look for changes that match the specified regex pattern
+git diff --pickaxe-all - When using -S or -G, show all changes in the file, not just matching ones
+Format options
+git diff --patch-with-stat - Show patch and stats summary
+git diff --compact-summary - Show stats summary in a compact format
+git diff --numstat - Show stats in a machine-friendly format
+git diff --summary - Show creation/deletion summary
+```
 
 
 # other   
