@@ -93,8 +93,12 @@ git diff --compact-summary - Show stats summary in a compact format
 git diff --numstat - Show stats in a machine-friendly format
 git diff --summary - Show creation/deletion summary
 ```
+# 7 git rebase 
+- https://www.geeksforgeeks.org/git/rebasing-of-branches-in-git/
 
-# -----------------------------------------------------------------------------------------------
+- 
+# ---------------------------------------------------------------
+
 # other   
 ```  
 # http://stackoverflow.com/questions/5772192/how-can-i-reconcile-detached-head-with-master-origin   
