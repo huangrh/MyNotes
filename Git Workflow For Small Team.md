@@ -95,8 +95,16 @@ git diff --summary - Show creation/deletion summary
 ```
 # 7 git rebase 
 - https://www.geeksforgeeks.org/git/rebasing-of-branches-in-git/
+```
+# rebase rewrites history by applying your changes directly to the target branch (usually master or main)
+# <feature-branch> is the branch with the changes you want to rebase.
+# <base-branch> is the branch you want to rebase your changes onto, typically main or master.
 
-- 
+git checkout <feature-branch>
+git rebase <base-branch>
+```
+
+
 # ---------------------------------------------------------------
 
 # other   
