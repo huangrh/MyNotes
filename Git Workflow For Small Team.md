@@ -57,7 +57,7 @@ $ git push origin develop
  
 The --no-ff flag causes the merge to always create a new commit object, even if the merge could be performed with a fast-forward. This avoids losing information about the historical existence of a feature branch and groups together all commits that together added the feature.   
 
-# Git diff 
+# 6. Git diff 
 ```
 # https://www.datacamp.com/tutorial/git-diff-guide
 Git Diff Command Reference
@@ -94,7 +94,7 @@ git diff --numstat - Show stats in a machine-friendly format
 git diff --summary - Show creation/deletion summary
 ```
 
-
+# -----------------------------------------------------------------------------------------------
 # other   
 ```  
 # http://stackoverflow.com/questions/5772192/how-can-i-reconcile-detached-head-with-master-origin   
