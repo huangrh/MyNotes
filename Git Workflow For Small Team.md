@@ -93,8 +93,10 @@ git diff --compact-summary - Show stats summary in a compact format
 git diff --numstat - Show stats in a machine-friendly format
 git diff --summary - Show creation/deletion summary
 ```
+
 # 7 git rebase 
 - https://www.geeksforgeeks.org/git/rebasing-of-branches-in-git/
+
 ```
 # rebase rewrites history by applying your changes directly to the target branch (usually master or main)
 # <feature-branch> is the branch with the changes you want to rebase.
@@ -105,54 +107,9 @@ git rebase <base-branch>
 ```
 
 
-# ---------------------------------------------------------------
-
-# other   
-```  
-# http://stackoverflow.com/questions/5772192/how-can-i-reconcile-detached-head-with-master-origin   
-$ git checkout - # go back to previous branch or # this saves me.  
-```
 
 
-
-```  
-### more about git checkout  
-git checkout @{14.days.ago} # Cloning an older version of github repo  
-git checkout 'master@{1979-02-26 18:30:00}' # based on a date  
-git checkout afe52          # checkout based on a hash  
-git checkout master         # go back to the most recent version   
-```
-
-- [Git fetch remote branch](https://stackoverflow.com/questions/9537392/git-fetch-remote-branch)
-- 
-```
-# You need to create a local branch that tracks a remote branch. 
-# The following command will create a local branch named daves_branch, tracking the remote branch origin/daves_branch.
-# When you push your changes the remote branch will be updated.
-git checkout --track origin/daves_branch
-
-# OR fetch remote branch. 
-git fetch <remote> <rbranch>:<lbranch>  # r = remote, l = local, lbranch=local branch  
-git checkout <lbranch>
-
-# OR 
-git fetch --all  # fetch all branck
-git checkout myBranch 
-```
-
-```
-# untrack a specific file
-# To stop tracking a file in Git, you can use the command git rm --cached <filename>.
-# This removes the file from the index, but it remains in your working directory.
-# You can then add the filename to the .gitignore file to prevent the file from being reintroduced in later commits. 
-> git rm --cached mylogfile.log    
-and for a single directory:  
-# untrack all file under a directory  
-> git rm --cached -r mydirectory
-
-```
-
-# 6. Git Stash  
+# 8. Git Stash  
 ```    
 > git stash
 - https://www.freecodecamp.org/news/git-stash-commands/
@@ -170,7 +127,7 @@ and for a single directory:
 > git stash branch <new-branch-name> stash@{2}  # create a branch basing on stash revision  
 ```
 
-# 7. Tracked vs untracked  
+# 9. Tracked vs untracked  
 
 [How can I make git show a list of the files that are being tracked?](https://stackoverflow.com/questions/15606955/how-can-i-make-git-show-a-list-of-the-files-that-are-being-tracked/15606998)
 ```
@@ -192,7 +149,7 @@ git ls-tree -r master --name-only
 If you want to go back to any commit you previously checked out (either 1, 2, or 3 etc steps) then you can take a look at git reflog
 > git reflog # 
 # Git only requires a network connection on fetch/push/pull operations.
-# git a dog
+# git a log
 git log --all --decorate --oneline --graph
 ```
 
@@ -252,13 +209,9 @@ What this does is:
 - it checkouts that branch  
 - it pulls changes from origin/fix-failing-tests to that branch  
 
-## Push
 
-```
-git push <remote repo> <local branch name>:<remote branch name>
-```
 
-# 8 git config  
+# 10 git config  
 
 ## Git add more multiple accounts
 - https://code.tutsplus.com/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574t  
@@ -321,11 +274,66 @@ IdentifyFile ~/.ssh/other_id_rsa
 > git config --global user.email "your_email@example.com"
 > git config --global user.name "First Name Last Name"
 ```
-# 9. gpg commit signature  
+# 11. gpg commit signature  
 
 - https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification
 
+
+# --------------------------------------------------------
+# --------------------------------------------------------
+# other   
+```  
+# http://stackoverflow.com/questions/5772192/how-can-i-reconcile-detached-head-with-master-origin   
+$ git checkout - # go back to previous branch or # this saves me.  
+```
+
+
+
+```  
+### more about git checkout  
+git checkout @{14.days.ago} # Cloning an older version of github repo  
+git checkout 'master@{1979-02-26 18:30:00}' # based on a date  
+git checkout afe52          # checkout based on a hash  
+git checkout master         # go back to the most recent version   
+```
+
+- [Git fetch remote branch](https://stackoverflow.com/questions/9537392/git-fetch-remote-branch)
 - 
+```
+# You need to create a local branch that tracks a remote branch. 
+# The following command will create a local branch named daves_branch, tracking the remote branch origin/daves_branch.
+# When you push your changes the remote branch will be updated.
+git checkout --track origin/daves_branch
+
+# OR fetch remote branch. 
+git fetch <remote> <rbranch>:<lbranch>  # r = remote, l = local, lbranch=local branch  
+git checkout <lbranch>
+
+# OR 
+git fetch --all  # fetch all branck
+git checkout myBranch 
+```
+
+```
+# untrack a specific file
+# To stop tracking a file in Git, you can use the command git rm --cached <filename>.
+# This removes the file from the index, but it remains in your working directory.
+# You can then add the filename to the .gitignore file to prevent the file from being reintroduced in later commits. 
+> git rm --cached mylogfile.log    
+and for a single directory:  
+# untrack all file under a directory  
+> git rm --cached -r mydirectory
+
+```
+
+
+## Push
+
+```
+git push <remote repo> <local branch name>:<remote branch name>
+```
+
+
 ## Ref:
 
 
