@@ -1,4 +1,4 @@
-# 1. setup    
+# 1. setup and config 
 - create a new repo on github and follow the direction to next step    
     - in private mode    
     - add collobrates      
@@ -15,6 +15,68 @@
 
 
 3. git remote add origin git@github.com-serena......  
+
+## Git add more multiple accounts
+- https://code.tutsplus.com/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574t  
+1. add ssh keys  
+2. edit ~/.ssh/config file
+
+```
+C:\Users\huang\.ssh> cat config  
+# Default GitHub  
+Host github.com  
+  HostName github.com  
+  User git  
+  IdentityFile ~/.ssh/ed25519  
+ 
+# serena  
+Host github.com-serena  
+  HostName github.com  
+  User git  
+  IdentityFile ~/.ssh/serena_ed25519
+```
+
+```
+# How to config two github ssh files under one computer account. 
+# Account 1
+Host github.com
+HostName github.com
+User git
+IdentifyFile ~/.ssh/id_rsa
+
+# Account 2
+Host github.com-emily
+HostName github.com
+User git
+IdentifyFile ~/.ssh/other_id_rsa
+```
+
+##  using includeIf to manage your git identidites    
+
+- https://medium.com/@mrjink/using-includeif-to-manage-your-git-identities-bcc99447b04b  
+- https://git-scm.com/docs/git-config#_conditional_includes
+  
+```
+# (Part of) my ${HOME}\.gitconfig looks like this:
+[includeIf "gitdir:C:/SOURCE/PERSONAL/"]
+    path = .gitconfig-personal
+[includeIf "gitdir:C:/SOURCE/COMPANY1/"]
+    path = .gitconfig-company1
+[includeIf "gitdir:C:/SOURCE/COMPANY2/"]
+    path = .gitconfig-company2
+
+# Here’s my ${HOME}\.gitconfig-personal:
+[user]
+    name = Gillis J. de Nijs
+    email = gillis@home.tld
+
+```
+
+
+```
+> git config --global user.email "your_email@example.com"
+> git config --global user.name "First Name Last Name"
+```
 
 
 # 2. stage the change and Commit      
@@ -211,69 +273,7 @@ What this does is:
 
 
 
-# 10 git config  
 
-## Git add more multiple accounts
-- https://code.tutsplus.com/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574t  
-1. add ssh keys  
-2. edit ~/.ssh/config file
-
-```
-C:\Users\huang\.ssh> cat config  
-# Default GitHub  
-Host github.com  
-  HostName github.com  
-  User git  
-  IdentityFile ~/.ssh/ed25519  
- 
-# serena  
-Host github.com-serena  
-  HostName github.com  
-  User git  
-  IdentityFile ~/.ssh/serena_ed25519
-```
-
-```
-# How to config two github ssh files under one computer account. 
-# Account 1
-Host github.com
-HostName github.com
-User git
-IdentifyFile ~/.ssh/id_rsa
-
-# Account 2
-Host github.com-emily
-HostName github.com
-User git
-IdentifyFile ~/.ssh/other_id_rsa
-```
-
-##  using includeIf to manage your git identidites    
-
-- https://medium.com/@mrjink/using-includeif-to-manage-your-git-identities-bcc99447b04b  
-- https://git-scm.com/docs/git-config#_conditional_includes
-  
-```
-# (Part of) my ${HOME}\.gitconfig looks like this:
-[includeIf "gitdir:C:/SOURCE/PERSONAL/"]
-    path = .gitconfig-personal
-[includeIf "gitdir:C:/SOURCE/COMPANY1/"]
-    path = .gitconfig-company1
-[includeIf "gitdir:C:/SOURCE/COMPANY2/"]
-    path = .gitconfig-company2
-
-# Here’s my ${HOME}\.gitconfig-personal:
-[user]
-    name = Gillis J. de Nijs
-    email = gillis@home.tld
-
-```
-
-
-```
-> git config --global user.email "your_email@example.com"
-> git config --global user.name "First Name Last Name"
-```
 # 11. gpg commit signature  
 
 - https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification
