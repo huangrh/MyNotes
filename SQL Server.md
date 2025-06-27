@@ -7,3 +7,11 @@
 -- In SQL Server, you can use the following query to list all the databases:
 SELECT name FROM master.sys.databases;
 ```
+
+# REGEXP_LIKE (Transact-SQL)
+```
+SELECT *
+FROM PRODUCTS
+WHERE REGEXP_LIKE (PRODUCT_NAME, '[AEIOU]{3,}');   
+```
+- https://learn.microsoft.com/en-us/sql/t-sql/functions/regexp-like-transact-sql?view=sql-server-ver17
