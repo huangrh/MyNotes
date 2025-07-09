@@ -351,6 +351,10 @@ dbutils.fs.mount(
                 scope = "<scope-name>", 
                 key = "<key-name>")
         )
+# How to find the key
+# from https://portal.azure.com/#home, click <Storage accounts> and find the storage account and click it.
+# click <Security + networking>/<Access keys>/show key1 and copy
+# 
 dbutils.fs.mount(
   source = "wasbs://<container-name>@<storage-account-name>.blob.core.windows.net/",
   mount_point = "/mnt/<mount-name>",
