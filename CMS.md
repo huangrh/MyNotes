@@ -55,6 +55,7 @@ https://qualitynet.cms.gov/inpatient/measures/readmission/methodology
 # CCLF
 - https://www.cms.gov/medicare/medicare-fee-for-service-payment/sharedsavingsprogram/program-guidance-and-specifications
 - [Claim and Claim Line Feed Information Packet v36 (PDF)](https://www.cms.gov/media/540186)
+- version 40 - https://www.cms.gov/files/document/cclf-information-packet.pdf
 
 # RVU
 - https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/PhysicianFeeSched/PFS-Relative-Value-Files
