@@ -1,3 +1,7 @@
+##  power bi format text box as date  
+- HOW TO ADD TODAY DATE ON A TEXT BOX    
+- https://community.fabric.microsoft.com/t5/Service/HOW-TO-ADD-TODAY-DATE-ON-A-TEXT-BOX/m-p/3201102#M194255    
+
 ## Python - show table  
 
 ```
