@@ -25,6 +25,9 @@ J-codes: Used to report all non-orally administered prescription medications and
 https://www.cms.gov/medicare/health-plans/medicareadvtgspecratestats/risk-adjustors-items/cpt-hcpcs 
 
 ### Specialty code 
+- 2025
+https://catalog.data.gov/dataset/medicare-provider-and-supplier-taxonomy-crosswalk-368b9
+- old 
 https://www.cms.gov/Medicare/Provider-Enrollment-and-Certification/MedicareProviderSupEnroll/Downloads/taxonomy.pdf
 
 ### Chronic Care Management (CCM) and CPT Codes: 99490, 99439, 99487, 99489, 99491
