@@ -1,3 +1,8 @@
+# H-Num + Plan beneficiay package (PBP) number: SNP Type, Organization Name. Contract number.
+- https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/monthly-enrollment-contract/plan/state/county
+- special needs plan (snp): CSNP, DSNP, ISNP, NonSNP
+- https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/special-needs-plan-snp-data
+- 
 # new enrollee
 -  https://www.csscoperations.com/internet/csscw3_files.nsf/F/CSSCNew_Enrollee_Job_Aid%20cameraready%20011413.pdf/$FILE/New_Enrollee_Job_Aid%20cameraready%20011413.pdf
 - new enrollee: risk_adjustment_factor_type_code: (E, ED, E1, E2, SE in field 47 of MMR file)  
