@@ -1,3 +1,19 @@
+# How to test whether a file uses CRLF or LF without modifying it?  
+- https://unix.stackexchange.com/questions/79702/how-to-test-whether-a-file-uses-crlf-or-lf-without-modifying-it
+```
+$ cat -A file
+hello$ # LF
+hello$
+
+$ cat -A file
+hello^M$ # CRLF
+hello
+
+# 
+^M represents CR and $ represents LF.
+```
+
+
 # Download zip and extractall with Python 
 ```
 print("update")
