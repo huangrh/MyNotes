@@ -1,3 +1,6 @@
+# Provider type - specialty - taxonomy  
+- https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/providers/documents/npi/NPI-Taxonomy-Crosswalk.pdf
+- 
 # CMS CCN HOSPITAL - Hospital General Information 
 - https://data.cms.gov/provider-data/dataset/xubh-q36u
 - 
