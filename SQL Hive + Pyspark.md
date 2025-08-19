@@ -12,6 +12,10 @@ SHOW TABLES IN hive_metastore.db_name
 DESCRIBE DETAIL hive_metastore.db_name.table_name
 # Drop table
 query = f"DROP TABLE IF EXISTS {uc_name}.{db_name}.{table}"
+# Create UC table
+CREATE TABLE IF NOT EXISTS uc_catalog.db_name.table_name
+USING DELTA 
+LOCATION 'abfss:/container_name@storage_account_name.dfs.core.windows.net/db_name/table_name';
 ```
 
 # What is the difference between ABFSS and WASBS in Azure storage?
