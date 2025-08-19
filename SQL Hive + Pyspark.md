@@ -1,3 +1,19 @@
+# unity catalog
+```
+# list table
+path = "abfss://container_name@storage_account_name.dfs.core.windows.net/"
+dbutils.fs.ls(path) 
+```
+
+```
+# list all table in a db
+SHOW TABLES IN hive_metastore.db_name
+# show the location 
+DESCRIBE DETAIL hive_metastore.db_name.table_name
+# Drop table
+query = f"DROP TABLE IF EXISTS {uc_name}.{db_name}.{table}"
+```
+
 # What is the difference between ABFSS and WASBS in Azure storage?
 - ABFSS
 - WASBS
