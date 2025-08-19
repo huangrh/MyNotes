@@ -1,3 +1,8 @@
+# What is the difference between ABFSS and WASBS in Azure storage?
+- ABFSS
+- WASBS
+https://stackoverflow.com/questions/60277545/what-is-the-difference-between-abfss-and-wasbs-in-azure-storage
+
 # pandas api on pyspark  
 
 - https://sparkbyexamples.com/pyspark/pandas-api-on-apache-spark-pyspark/
