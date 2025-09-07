@@ -1,4 +1,10 @@
 # unity catalog
+
+```
+workspace_id = dbutils.notebook.entry_point.getDbutils().notebook().getContext().workspaceId().get()
+print(workspace_id)
+```
+
 ```
 # list table
 path = "abfss://container_name@storage_account_name.dfs.core.windows.net/"
