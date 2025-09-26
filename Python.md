@@ -1,3 +1,15 @@
+# How to seprate words
+```
+import wordninja
+# Example string
+text = "helloworld"
+# Split the string into words
+split_words = wordninja.split(text)
+# Join with spaces
+result = ' '.join(split_words)
+print(result)  # Output: "hello world"
+
+```
 # How to test whether a file uses CRLF or LF without modifying it?  
 - https://unix.stackexchange.com/questions/79702/how-to-test-whether-a-file-uses-crlf-or-lf-without-modifying-it
 ```
