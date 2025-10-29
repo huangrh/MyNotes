@@ -28,9 +28,11 @@ Converts a PIL Image or numpy.ndarray (H x W x C) in the range [0, 255] to a tor
 
 ## 1. Buy an RTX 3090 GPU powered computer.   
 
-## 2. Install cuda toolkit
+## 2. Install cuda toolkit (no need to install with new version of PyTorch)
 - Download and install the latest microsoft visual studio community edition (2019 is the current edition).   
 - https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local
+  - Or.  cuda version and the pytorch version should match each other. 
+- https://developer.nvidia.com/cuda-toolkit-archive
 > nvcc --version # cude-11-8
 > 
 ## 3. install python and setup environment  
