@@ -115,6 +115,12 @@ above_35 = titanic[titanic["Age"] > 35]
 ```
 
 # Reshape: https://pandas.pydata.org/docs/user_guide/reshaping.html
+## Group by, apply and pivot
+```
+df_wide = df.groupby(['sk', 'HCC_Version'])['hcc'].apply(lambda x: '|'.join(sorted(set(x)))).reset_index()
+df_wide = df_wide.pivot(index='sk', columns='HCC_Version', values='hcc')
+df_wide = df_wide.reset_index(drop=False)
+```
 ## Pivot long to wide
 ```
 # https://stackoverflow.com/questions/47152691/how-can-i-pivot-a-dataframe
