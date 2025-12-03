@@ -450,15 +450,15 @@ df1.merge(df2, left_on='lkey', right_on='rkey',
 
 ```
 pd.merge(left, right,
-how='inner',
-on=None,
-left_on=None, right_on=None,
-left_index=False, right_index=False,
-sort=False,
-suffixes=('_x', '_y'),
-copy=True,
-indicator=False,
-validate=None)
+        how='inner', # 'left', 'right', 'outer', 'inner', 'cross'
+        on=None,
+        left_on=None, right_on=None,
+        left_index=False, right_index=False,
+        sort=False,
+        suffixes=('_x', '_y'),
+        copy=True,
+        indicator=False,
+        validate=None)
 ```
 
 ```
