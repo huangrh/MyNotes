@@ -447,6 +447,21 @@ df1.merge(df2, how='cross')
 df1.merge(df2, left_on='lkey', right_on='rkey',
           suffixes=('_left', '_right'))
 ```
+
+```
+pd.merge(left, right, how='inner', on=None, left_on=None, right_on=None, left_index=False, right_index=False, sort=False, suffixes=('_x', '_y'), copy=True, indicator=False, validate=None)
+```
+
+```
+import pandas as pd
+# Create two DataFrames
+df1 = pd.DataFrame({'key': ['A', 'B', 'C', 'D'], 'value': [1, 2, 3, 4]})
+df2 = pd.DataFrame({'key': ['B', 'D', 'E', 'F'], 'value': [5, 6, 7, 8]})
+# Perform an inner merge
+result = pd.merge(df1, df2, on='key', how='inner')
+print(result)
+```
+
 # pivot  
 ## wide to long
 ## long to wide 
