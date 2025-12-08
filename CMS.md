@@ -1,3 +1,12 @@
+# New_Enrollee_Job_Aid cameraready 011413.pdf 
+- https://www.csscoperations.com/internet/csscw3_files.nsf/F/CSSCNew_Enrollee_Job_Aid%20cameraready%20011413.pdf/$FILE/New_Enrollee_Job_Aid%20cameraready%20011413.pdf
+
+# MOR record type
+- https://www.cms.gov/files/document/informationontheimplementationofthe2025rxhccriskadjustmentmodelsandnormalizationfactorsg.pdf
+- L: Model version V24. 2023 ESRD (Dialysis and Functioning Graft) 
+- J: Model version V24 - 2020 CMS-HCC  
+- M: Model version V28 - 2024 CMS-HCC  
+
 # Provider type - specialty - taxonomy  
 - https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/providers/documents/npi/NPI-Taxonomy-Crosswalk.pdf
 - 
