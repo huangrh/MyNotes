@@ -8,7 +8,28 @@ Yes, Time series monte carlo is more complicated. First the time series is trans
 
 
 # ODBC
+
 ```
+# Load the libraries
+library(DBI)
+library(odbc)
+
+# Connection details
+SERVER_NAME <- "your_server_name" # e.g., "localhost" or "servername\\instancename"
+DATABASE_NAME <- "your_database_name"
+
+# Connection string for Windows Authentication
+conn_string <- paste0(
+  "Driver={ODBC Driver 17 for SQL Server};",
+  "Server=", SERVER_NAME, ";",
+  "Database=", DATABASE_NAME, ";",
+  "Trusted_Connection=True" # Uses the current Windows login
+)
+
+# Establish the connection
+con <- dbConnect(odbc::odbc(), .connection_string = conn_string)
+
+# Or 
 library(odbc)
 
 # Create a connection string
