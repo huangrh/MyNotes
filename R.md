@@ -232,8 +232,8 @@ https://github.com/yueguoguo/r-on-azure
 get_azure_cons <- function(az = NULL) {
 
     if (is.null(az)) {
-        az <- create_azure_login()
-        az   = get_azure_login()
+        az <- AzureRMR::create_azure_login()
+        az   = get_azure_login::get_azure_login()
     }  
 
     token <- AzureRMR::get_azure_token("https://storage.azure.com",
