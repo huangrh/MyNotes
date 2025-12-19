@@ -1,3 +1,8 @@
+# string to python. 
+# str to dict
+import ast 
+ast.literal_eval("{'k':'v'}")
+
 # How to seprate words
 ```
 import wordninja
