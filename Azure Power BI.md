@@ -1,3 +1,6 @@
+## Power BI dataset size limit 
+- https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-premium-large-models#enable-large-models  
+
 ##  power bi format text box as date  
 - HOW TO ADD TODAY DATE ON A TEXT BOX    
 - https://community.fabric.microsoft.com/t5/Service/HOW-TO-ADD-TODAY-DATE-ON-A-TEXT-BOX/m-p/3201102#M194255    
