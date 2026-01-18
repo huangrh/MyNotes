@@ -1,4 +1,5 @@
-
+# CMS MMR and MOR 
+- https://www.invene.com/blog/cms-mmr-file#cms-file-architecture-mmr-and-mor-file-relationship-2  
 
 CMS MA Plan number
 - https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/monthly-enrollment-plan  
