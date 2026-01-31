@@ -78,8 +78,9 @@ https://qualitynet.cms.gov/inpatient/measures/readmission/methodology
 - version 40 - https://www.cms.gov/files/document/cclf-information-packet.pdf
 
 # RVU
-- https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/PhysicianFeeSched/PFS-Relative-Value-Files
-- -https://www.aapc.com/tools/rvu-calculator.aspx
+- https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/PhysicianFeeSched/PFS-Relative-Value-Files  
+- -https://www.aapc.com/tools/rvu-calculator.aspx  
+- https://www.cms.gov/medicare/payment/fee-schedules/physician/pfs-relative-value-files  
 
 # https://www.ncqa.org/wp-content/uploads/2023-0706_Digital-Measurement-Midyear-Review-DISPLAY.pdf
 
