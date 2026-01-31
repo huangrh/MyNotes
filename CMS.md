@@ -12,7 +12,10 @@
 - 
 # CMS CCN HOSPITAL - Hospital General Information 
 - https://data.cms.gov/provider-data/dataset/xubh-q36u
-- 
+
+# CMS Quality net star ratings data + IQR etc. 
+- https://qualitynet.cms.gov/inpatient/public-reporting/overall-ratings/data-collection
+
 # H-Num + Plan beneficiay package (PBP) number: SNP Type, Organization Name. Contract number.
 - https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/monthly-enrollment-contract/plan/state/county
 - special needs plan (snp): CSNP, DSNP, ISNP, NonSNP
