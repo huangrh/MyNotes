@@ -1,3 +1,8 @@
+# MA 
+- https://www.kff.org/medicare/how-medicare-pays-medicare-advantage-plans-issues-and-policy-options/#06bea8de-754d-491c-aad8-9e8f1df31977
+# NPPES NPI
+- https://download.cms.gov/nppes/NPI_Files.html  
+
 # New_Enrollee_Job_Aid cameraready 011413.pdf 
 - https://www.csscoperations.com/internet/csscw3_files.nsf/F/CSSCNew_Enrollee_Job_Aid%20cameraready%20011413.pdf/$FILE/New_Enrollee_Job_Aid%20cameraready%20011413.pdf
 
