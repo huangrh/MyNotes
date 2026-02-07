@@ -224,3 +224,6 @@ ON
   svi.fips = tract.geo_id
 
 ```
+
+# understanding-the-bigquery-user-interface
+- https://optimizesmart.com/blog/understanding-the-bigquery-user-interface/
