@@ -32,6 +32,8 @@
 - https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/monthly-enrollment-contract/plan/state/county
 - special needs plan (snp): CSNP, DSNP, ISNP, NonSNP
 - https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/special-needs-plan-snp-data
+- In the CMS Monthly Enrollment by CPSC (Contract/Plan/State/County) files, the 3-digit "Plan ID" column represents the Plan Benefit Package (PBP) number. To uniquely identify a specific plan within the dataset, the 3-digit Plan ID must be combined with the Contract ID.
+- 
 # CMS Part C and D Plan 
 - https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/monthly-enrollment-contract 
 # new enrollee
