@@ -20,7 +20,10 @@
 
 # CMS Quality net star ratings data + IQR etc. 
 - https://qualitynet.cms.gov/inpatient/public-reporting/overall-ratings/data-collection
-
+  
+# SNP - special needs plans 
+- https://www.cms.gov/medicare/enrollment-renewal/special-needs-plans
+   
 # H-Num + Plan beneficiay package (PBP) number: SNP Type, Organization Name. Contract number.
 - https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/monthly-enrollment-contract/plan/state/county
 - special needs plan (snp): CSNP, DSNP, ISNP, NonSNP
