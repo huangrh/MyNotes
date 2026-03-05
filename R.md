@@ -147,6 +147,14 @@ Email$Send()
 - 
 # Read CSV
 ```
+library(readr)
+
+url <- "https://example.com/data.csv"
+df <- read_csv(url, col_types = cols(.default = "c"))  # read as character from a url 
+```
+
+
+```
 # https://readr.tidyverse.org
 readr::read_csv()
 # 
