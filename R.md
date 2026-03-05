@@ -195,6 +195,13 @@ winpath2r <- function() {
 }
 ```
 
+```
+# Remove everything EXCEPT letters and numbers:
+gsub("[^[:alnum:]]", "", x)
+# Remove everything EXCEPT letters, numbers, and spaces:
+gsub("[^[:alnum:] ]", "", x)
+```
+
 
 # Snow Flake DSN Connection R odbc  
 - https://hevodata.com/learn/snowflake-r/  
