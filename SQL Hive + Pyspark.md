@@ -1,3 +1,128 @@
+# HCC Trump Logic    
+
+```
+---- method 1. use case when exits
+WITH hcc_pairs AS (
+    SELECT
+        p.patient_id,
+        p.hcc_code,
+        CASE
+            WHEN EXISTS (
+                SELECT 1
+                FROM patient_hcc p2
+                JOIN hcc_hierarchy h
+                    ON p2.hcc_code = h.higher_hcc
+                WHERE p2.patient_id = p.patient_id
+                  AND p.hcc_code = h.lower_hcc
+            )
+            THEN 'Yes'   -- lower HCC exists AND patient's higher HCC also exists
+            ELSE 'No'    -- either a higher HCC does NOT exist, or this IS the higher HCC
+        END AS hcc_trumped
+    FROM patient_hcc p
+)
+SELECT *
+FROM hcc_pairs;
+``
+```
+
+
+```
+--- Method 2: use 
+---Also Return Which HCC Trumped It
+WITH trump_map AS (
+    SELECT
+        p.patient_id,
+        p.hcc_code AS lower_hcc,
+        h.higher_hcc
+    FROM patient_hcc p
+    INNER JOIN hcc_hierarchy h
+        ON p.hcc_code = h.lower_hcc
+    INNER JOIN patient_hcc p2
+        ON p.patient_id = p2.patient_id
+       AND p2.hcc_code = h.higher_hcc
+)
+SELECT
+    p.patient_id,
+    p.hcc_code,
+    CASE WHEN t.lower_hcc IS NULL THEN 'No' ELSE 'Yes' END AS hcc_trumped,
+    t.higher_hcc AS trumped_by
+FROM patient_hcc p
+LEFT JOIN trump_map t
+    ON p.patient_id = t.patient_id
+   AND p.hcc_code = t.lower_hcc;
+```
+
+```
+----
+--- Appointment aware
+---
+WITH 
+cms_hcc_hierarchy_map AS (
+    SELECT DISTINCT 
+    HCC
+    , EXPLODE(SPLIT(hcc_to_drop, ',')) AS hcc_to_drop
+    FROM delta.`/path/to/ref_hcc_hierarchy`
+    WHERE ver = "28"  
+)
+
+, patient_appt_suggestion AS (
+  SELECT DISTINCT Chart_ID
+  ,  HCC 
+  , Appointment_Date 
+  , State 
+  , State_Accepted
+  , Created_Year 
+  FROM v_suggestion  suggestion  
+  WHERE  Appointment_Date IS NOT NULL 
+)
+
+-- Step 2: Identify "Trumping" events where a Higher HCC exists 
+-- on or before the Lower HCC's appointment date
+, hcc_exclusion AS (
+  SELECT * 
+  FROM (
+        SELECT DISTINCT
+              patient_hcc_lower.Chart_ID
+            , patient_hcc_lower.HCC
+            , patient_hcc_lower.Appointment_Date
+            , patient_hcc_lower.Created_Year
+            , patient_hcc_higher.hcc  Higher_HCC
+            , patient_hcc_higher.appointment_date Higher_Appt_Date
+            , patient_hcc_higher.State_Accepted   Higher_State_Accepted
+            , ROW_NUMBER() OVER(
+                    PARTITION BY patient_hcc_lower.Chart_ID
+                                , patient_hcc_lower.HCC
+                                , patient_hcc_lower.Appointment_Date
+                                , patient_hcc_lower.Created_Year
+                    ORDER BY patient_hcc_higher.appointment_date 
+                    ) nrow
+        FROM       patient_appt_suggestion AS patient_hcc_lower  ----****
+        INNER JOIN cms_hcc_hierarchy_map   AS hierarchy_map 
+            ON TRIM(patient_hcc_lower.hcc) = TRIM(hierarchy_map.hcc_to_drop)  
+        INNER JOIN patient_appt_suggestion AS patient_hcc_higher ----****
+            ON  patient_hcc_higher.Created_Year = patient_hcc_lower.Created_Year
+            AND patient_hcc_higher.Chart_ID     = patient_hcc_lower.Chart_ID 
+            AND TRIM(patient_hcc_higher.hcc)          = TRIM(hierarchy_map.hcc)
+            -- CRITICAL: Higher HCC must be present on or before the Lower HCC date
+            AND patient_hcc_higher.appointment_date < patient_hcc_lower.appointment_date
+            AND patient_hcc_higher.State_Accepted = 1 ---UPPER(patient_hcc_higher.STATE) IN ("CLOSED", "CLOSED-CC")     
+  ) WHERE nrow = 1 
+)
+, all_tgz AS (
+  SELECT suggestion.*
+  , IF(hcc_exclusion.HCC IS NOT NULL, "Y", "N") HCC_Trumped_Flag 
+  , hcc_exclusion.Higher_HCC
+  , hcc_exclusion.Higher_Appt_Date
+  , hcc_exclusion.Higher_State_Accepted
+  FROM V_suggestion suggestion   
+  LEFT JOIN hcc_exclusion 
+      ON hcc_exclusion.chart_id          = suggestion.chart_id 
+      AND hcc_exclusion.HCC              = suggestion.HCC
+      AND hcc_exclusion.appointment_date = suggestion.appointment_date 
+      AND hcc_exclusion.created_year     = suggestion.created_year
+)  
+```
+
 # unity catalog
 
 ```
