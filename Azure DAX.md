@@ -1,3 +1,10 @@
+# Remove filter 
+```
+# Patient Total = CALCULATE([# Patient], REMOVEFILTERS(suggestion_latest[First_Visit_This_Year]))
+# Patient = CALCULATE(DISTINCTCOUNT(suggestion_latest[Chart_ID]))
+% Patient = DIVIDE([# Patient], [# Patient Total])
+```
+
 - https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view#update-model-measures-using-codelens
 - https://learn.microsoft.com/en-us/dax/statements-dax
 
