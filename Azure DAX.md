@@ -1,9 +1,33 @@
 # Remove filter 
 ```
-# Patient Total = CALCULATE([# Patient], REMOVEFILTERS(suggestion_latest[First_Visit_This_Year]))
-# Patient = CALCULATE(DISTINCTCOUNT(suggestion_latest[Chart_ID]))
+// 
+# Patient = CALCULATE(DISTINCTCOUNT(table_name[Chart_ID]))
+# Patient Total = CALCULATE([# Patient], REMOVEFILTERS(table_name[First_Visit_This_Year]))
 % Patient = DIVIDE([# Patient], [# Patient Total])
 ```
+
+```
+// If your table is suggestion_latest and you want to keep only the filter on Provider_ID:
+% Patient =
+[# Patient]
+    / CALCULATE(
+        [# Patient],
+        ALLEXCEPT(
+            suggestion_latest,
+            suggestion_latest[Provider_ID]
+        )
+      )
+```
+
+
+```
+// These two are the SAME:
+// Both return patient count ignoring every filter on suggestion_latest.  
+CALCULATE([# Patient], REMOVEFILTERS(suggestion_latest))
+CALCULATE([# Patient], ALL(suggestion_latest))
+```
+
+
 
 - https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view#update-model-measures-using-codelens
 - https://learn.microsoft.com/en-us/dax/statements-dax
