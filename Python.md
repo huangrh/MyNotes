@@ -51,6 +51,49 @@ z.extractall(dest)
 ```
 
 ```
+# unzip cclf files
+# 1. check if the file has been extracted and extract the file if not. 
+def extract_files(files): 
+    import zipfile
+    import pathlib  
+    for file in files:
+        if type(file) is not pathlib.PosixPath: 
+            file = pathlib.Path(file)
+        extract_path = file.parent/file.stem
+        if extract_path.exists():
+            print(extract_path)
+            print("File already exists")
+            continue
+        with zipfile.ZipFile(file, 'r') as zip_ref:
+            print("unzip to - ", extract_path)
+            zip_ref.extractall(extract_path)
+
+# 2 list the zip files that have not been extracted 
+def get_zip_files(path): 
+    import pathlib
+    def get_zip_path_name(file):
+        import pathlib
+        return (pathlib.Path(str(file).replace("dbfs:/", "/dbfs/"))).parent / pathlib.Path(str(file)).stem
+
+    files           = [file for file in pathlib.Path(path).rglob('*') if file.is_file()]
+    zip_files       = [file for file in files if file.name.endswith(".zip")]
+    zip_files_clean = [file for file in zip_files if not get_zip_path_name(file).exists()]
+    print(f"Found {len(files)} files in total")
+    print(f"Found {len(zip_files)} zip files")
+    print(f"Found {len(zip_files_clean)} files to unzip")
+    return zip_files_clean
+
+# 3 do the job  
+path = "/path/to/zip/files"
+zip_files = get_zip_files(path)
+while zip_files:
+    print("Unzipping files")
+    extract_files(zip_files)
+    zip_files = get_zip_files(path)
+```
+
+
+```
 # download and unzip nppes npi data
 # https://download.cms.gov/nppes/NPI_Files.html  
 # 
