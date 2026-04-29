@@ -182,6 +182,7 @@ Measures = CALCULATE(CONCATENATEX(DISTINCT(table_measure[measure]), (tablemeasur
 - https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-drillthrough
 
 - [Add hyperlinks (URLs) to a table or matrix](https://docs.microsoft.com/en-us/power-bi/create-reports/power-bi-hyperlinks-in-tables?tabs=powerbi-desktop)
+	- Visual/Cell Elements/Web URL. then add the url column as "What field should we base this on?"
 
 - [change-the-source-of-power-bi-datasets-dynamically-using-power-query-parameters](https://radacad.com/change-the-source-of-power-bi-datasets-dynamically-using-power-query-parameters)
 
