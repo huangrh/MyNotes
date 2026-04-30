@@ -21,6 +21,27 @@ df = pd.read_excel(path,sheet_name = "npi_exclusion", na_values=["","NA", 'NULL'
 ```
 
 ```
+df = pd.read_excel(
+    file,
+    sheet_name="RLS_user",
+    engine="openpyxl",
+        # Forces use of the OpenPyXL engine (required/recommended for .xlsx).
+        # Good choice if you want predictable Excel parsing.
+
+    keep_default_na=False,
+        # Disables pandas’ default NA recognition ('', 'NA', 'N/A', 'null', etc.).
+        # Without this, pandas would automatically turn many values into NaN.
+
+    na_filter=False,
+        # Completely disables NA detection.
+        # Empty cells stay as empty strings (""), not NaN.
+
+    dtype=str
+)
+
+```
+
+```
 # https://stackoverflow.com/questions/17977540/pandas-looking-up-the-list-of-sheets-in-an-excel-file
 df = pandas.read_excel("/yourPath/FileName.xlsx", sheet_name=None);
 df.keys()
