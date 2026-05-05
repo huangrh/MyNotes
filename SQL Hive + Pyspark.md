@@ -264,6 +264,17 @@ def load_csv(file):
 df = reduce(DataFrame.unionByName, [load_csv(file) for file in files])  
 ```
 
+```
+# This is better 
+from pyspark.sql import DataFrame 
+def union_dfs(dfs):
+    if not dfs:
+        raise ValueError("Empty list")
+    if len(dfs) == 1:
+        return dfs[0]
+    return reduce(lambda a, b: a.unionByName(b, allowMissingColumns=True), dfs)
+```
+
 # Hash  
 - https://docs.databricks.com/en/sql/language-manual/functions/sha2.html
 - 
