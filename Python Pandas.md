@@ -238,6 +238,19 @@ df["Name"] = df["Name"].apply(lambda x: x.split(";"))
 df.explode("Name")
 ```
 
+```
+import pandas as pd
+hcc_dat_long = hcc_dat.explode("raf28_details").reset_index()
+# hcc_dat_long['raf28_detail_key'] = hcc_dat_long['raf28_details'].apply(lambda x: x.split(":")[0] if isinstance(x, str) else None)
+# hcc_dat_long['raf28_detail_value'] = hcc_dat_long['raf28_details'].apply(lambda x: x.split(":")[1] if isinstance(x, str) else None)
+hcc_dat_long[['hcc28','raf28_value']] = hcc_dat_long['raf28_details'].apply(
+    lambda x: 
+    pd.Series(x.split(":")) if isinstance(x, str) 
+    else None)
+# hcc_dat_long['year'] = 'Y' + hcc_dat_long['year'] 
+hcc_dat_long[hcc_dat_long['sk'].isin(["ABEL|PULIDO|19530207"])][["sk", "year","year_ref","raf28_details", 'hcc28', 'raf28_value', "Month", "start_date", "end_date"]]
+```
+
 ## [quantile calculation](https://datagy.io/pandas-quantile/)
 ```
 # Loading a Sample Pandas Dataframe
