@@ -19,7 +19,7 @@ https://www.cms.gov/priorities/innovation/files/aco-reach-quality-msr-meth-py24.
 # Ref: 
 - https://www.cms.gov/medicare/medicare-fee-for-service-payment/sharedsavingsprogram/program-data  
 - https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/sharedsavingsprogram/Downloads/MSSP-ACO-data.pdf  
-- 
+- https://www.cms.gov/medicare/payment/fee-for-service-providers/shared-savings-program-ssp-acos/guidance-regulations  ## MSSP doc 2026
 # QPP
 - https://qpp.cms.gov/
 - [2021 APM Performance Pathway (APP) Toolkit](https://qpp-cm-prod-content.s3.amazonaws.com/uploads/1495/2021%20APM%20Performance%20Pathway%20%28APP%29%20Toolkit.zip)
