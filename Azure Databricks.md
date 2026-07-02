@@ -1,3 +1,10 @@
+# Databricks Scheduling  
+- schedule.quartz_cron_expression
+```
+37      35      20    ?            *     Sun, Tue
+seconds minutes hours day-of-month month day-of-week
+```
+
 # How to get current working dir/path  
 
 ```
