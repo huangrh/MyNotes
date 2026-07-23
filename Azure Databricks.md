@@ -501,11 +501,18 @@ spark.catalog.dropGlobalTempView("people")
 ## Schema
 [PySpark StructType & StructField Explained with Examples](https://sparkbyexamples.com/pyspark/pyspark-structtype-and-structfield/)
 
+## install package from github. 
+```
+# Works the same as your laptop's pip install -e .
+# git+https://<username>:<token>@<repo-url>.git
+# public
+%pip install git+https://github.com/huangrh/cmmihcc.git
+```
 
 ## spark-excel
 driver: https://mvnrepository.com/artifact/com.crealytics/spark-excel_2.13/3.2.1_0.17.1  
 instruction: https://stackoverflow.com/questions/56426069/how-to-read-xlsx-or-xls-files-as-spark-dataframe
-github: https://github.com/crealytics/spark-excel
+github: https://github.com/crealytics/spark-excel 
 - clusters > your cluster > libraries > install new > select Maven and in 'Coordinates' paste com.crealytics:spark-excel_2.13:3.2.1_0.17.1
 
 ```
