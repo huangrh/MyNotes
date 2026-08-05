@@ -1,4 +1,63 @@
+
+
 # Remove filter 
+```
+# fixed to true global max/2nd-max year, ignoring slicers.
+* LatestYear = CALCULATE(
+    MAX(('patient metric'[year])), 
+    REMOVEFILTERS()
+)
+
+# 
+* 2nd LatestYear = 
+VAR latestyear = [* LatestYear]
+VAR secondLatest = CALCULATE(
+    MAX(('patient metric'[year])), 
+    REMOVEFILTERS(), 'patient metric'[year] < latestyear
+)
+
+RETURN secondLatest
+
+# clean ratio calculation, no embedded filters, fully responsive to whatever context is passed in.
+% Op RAF = SUM('patient metric'[num])/SUM('patient metric'[den]) * AVERAGE('patient metric'[measure_direction])*AVERAGE('patient metric'[multiplier])
+
+# - This is the key piece that makes everything else work:
+# MAX('patient metric'[end_date]) here is evaluated within whatever filter context is active when this measure is called, not globally. That's the important part.
+% Rate - Year End = 
+CALCULATE(
+    [% Op RAF],
+    'patient metric'[end_date] = MAX('patient metric'[end_date])
+)
+
+#
+% Op RAF - Current Year = 
+VAR latestYear = [* LatestYear]
+VAR rate = CALCULATE(
+    [% Rate - Year End],
+    'patient metric'[year] = latestYear
+)
+
+RETURN rate
+
+#
+% Op RAF - Last Year = 
+VAR secLatestYear = [* 2nd LatestYear]
+VAR rate = CALCULATE(
+    [% Rate - Year End],
+    'patient metric'[year] = secLatestYear
+)
+
+RETURN rate
+
+# 
+% Op RAF YoY = 
+
+CALCULATE(
+    [% Op RAF - Current Year] - [% Op RAF - Last Year]
+)
+```
+
+
 ```
 // 
 # Patient = CALCULATE(DISTINCTCOUNT(table_name[Chart_ID]))
