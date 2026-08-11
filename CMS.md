@@ -1,3 +1,14 @@
+# MMR Adjustment Reason Codes (ARC)
+- ADJUSTMENT REASON CODE (ARC) 
+- https://www.cms.gov/files/document/mapd-plan-communications-user-guide-v19-2-june-2026.pdf
+  - - MAPD Plan Communications User Guide, v19.2 (June 2, 2026), Table 6‑12
+```
+ARC 25 – Part C Risk Adjustment Factor Change/Recon (used for both mid‑year and final CMS‑HCC reconciliation)
+ARC 26 – Mid‑year Part C Risk Adjustment Factor Change
+ARC 37 – Part D Risk Adjustment Factor Change (RxHCC reconciliation)
+ARC 41 – Part D Risk Adjustment Factor Change (ongoing)
+```
+
 # MA 
 - https://www.kff.org/medicare/how-medicare-pays-medicare-advantage-plans-issues-and-policy-options/#06bea8de-754d-491c-aad8-9e8f1df31977
 # NPPES NPI
