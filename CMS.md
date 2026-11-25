@@ -126,4 +126,6 @@ https://qualitynet.cms.gov/inpatient/measures/readmission/methodology
 
 - # HCC Risk adjustment factor
 - https://www.cms.gov/medicare/health-plans/medicareadvtgspecratestats/risk-adjustors-items/cpt-hcpcs
-- 
+# HCC ICD10 Mappint
+- Version 28
+- https://www.cms.gov/medicare/payment/medicare-advantage-rates-statistics/risk-adjustment/2027-model-software-icd-10-mappings 
